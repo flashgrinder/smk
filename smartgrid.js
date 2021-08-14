@@ -4,23 +4,20 @@ module.exports = {
 	columns: 12,
 	offset: "30px",
 	container: {
-		maxWidth: "1920px",
+		maxWidth: "1440px",
 		fields: "30px"
 	},
 	breakPoints: {
-	large: {
-			width: '1919px'
-		},
 		medium: {
-				width: '1279px'
+				width: '1200px',
 		},
 		tablet: {
 				width: '1023px'
 		},
 		mobile: {
 				width: "767px",
-				offset: "20px",
-				fields: "10px"
+				offset: "15px",
+				fields: "15px"
 		}
 	},
 	mobileFirst: false

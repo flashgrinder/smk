@@ -14,10 +14,6 @@
     display: none !important;
 }
 
-.hide-extra-large {
-	@include large(display, none !important);
-}
-
 .hide-medium {
 	@include medium(display, none !important);
 }
@@ -47,18 +43,12 @@
 /* Background */
 
 .bg {
-    &_blue {
-        background-color: var(--color-blue);
-    }
-    &_white {
+    &--white {
         background-color: var(--color-white);
     }
-    &_gray {
-        background-color: var(--color-gray);
+    &--dark {
+        background-color: var(--color-dark);
     }
-    &_dark-gray {
-        background-color: var(--color-dark-gray);
-	}
 }
 
 /* Title */
@@ -67,43 +57,36 @@
     font-family: var(--font-gotham);
     font-style: normal;
     margin: 0;
-    &_big {
-		font-size: 38px;
+    &--big {
+		font-size: 45px;
     }
-    &_medium {
-        font-size: 24px;
+    &--large {
+        font-size: 26px;
     }
-    &_blue {
-        color: var(--color-blue);
+    &--medium {
+        font-size: 22px;
     }
-    &_white {
+    &--orange {
+        color: var(--color-orange);
+    }
+    &--white {
         color: var(--color-white);
 	}
-	&_w-black {
-		font-weight: 900;
-	}
-	&_w-bold {
-		font-weight: bold;
-	}
-	&_w-medium {
+	&--w-light {
+		font-weight: 300;
+    }
+    &--w-medium {
 		font-weight: 500;
 	}
-	&_w-regular {
-		font-weight: normal;
+	&--w-bold {
+		font-weight: bold;
 	}
-	&_uppercase {
+	&--w-black {
+		font-weight: 900;
+	}
+	&--uppercase {
 		text-transform: uppercase;
 	}
-}
-
-.title-second {
-    font-family: var(--font-roboto);
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 100%;
-    color: var(--color-blue);
-    margin: 0;
 }
 
 /* Text */
@@ -112,28 +95,34 @@
     font-family: var(--font-roboto);
     font-style: normal;
     margin: 0;
-	&_dark {
-		color: var(--color-dark); 
+	&--black-gray {
+		color: var(--color-black-gray); 
 	}
-	&_white {
+	&--orange {
+		color: var(--color-orange);
+	}
+	&--white {
 		color: var(--color-white);
-	} 
-	&_white-gray {
-		color: var(--color-white-gray);
 	}
-	&_s-normal {
+	&--s-normal {
 		font-size: 16px;
 	}
-	&_w-light {
+	&--w-light {
 		font-weight: 300;
 	}
-	&_w-regular {
-		font-weight: 400;
+	&--w-regular {
+		font-weight: normal;
 	}
-	&_w-medium {
+	&--w-medium {
 		font-weight: 500;
 	}
-	&_w-bold {
+	&--w-bold {
 		font-weight: 700;
-	}
+    }
+	&--w-black {
+		font-weight: 900;
+    }
+    &--italic {
+        font-style: italic;
+    }
 }
