@@ -121,6 +121,7 @@
 
 :root {
   --color-orange: #FF9D00;
+  --color-yellow: #FFD600;
   --color-dark: #595959;
   --color-black-gray: #2C2B33;
   --color-gray: #EFEFEF;
@@ -141,41 +142,6 @@ html {
 
 img {
   max-width: 100%;
-}
-
-.debug {
-  height: 100vh;
-  position: fixed;
-  width: 100%;
-}
-
-.debug > div {
-  height: inherit;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.debug > div > div {
-  height: inherit;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.debug > div > div > div {
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: calc(8.33333% - 30px);
-  height: inherit;
-  outline: 1px solid #ff0;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 /* Animation */
@@ -294,8 +260,16 @@ img {
   color: var(--color-white);
 }
 
-.text--s-normal {
+.text--normal {
   font-size: 16px;
+}
+
+.text--small {
+  font-size: 12px;
+}
+
+.text--tiny {
+  font-size: 10px;
 }
 
 .text--w-light {
@@ -331,7 +305,7 @@ img {
   margin: 0;
   font-family: var(--font-roboto);
   font-size: 16px;
-  line-height: 1.15;
+  line-height: 1.35;
   background-color: var(--color-dark);
   overflow-x: hidden;
 }
@@ -339,6 +313,165 @@ img {
 .page__container {
   max-width: 1920px;
   margin: 0 auto;
+}
+
+/* Technique */
+
+.button {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--font-gotham);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-white);
+  padding: 13px 26px;
+  max-width: 217px;
+  width: 100%;
+  z-index: 10;
+  border-radius: 50px;
+  transition: .2s;
+}
+
+.button--yellow {
+  background: var(--color-orange);
+  border: 1px solid var(--color-yellow);
+  box-shadow: 9px 9px 18px rgba(10, 40, 53, 0.15), inset 0px 4px 24px rgba(255, 255, 255, 0.33);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+/* Technique */
+
+.technique {
+  padding: 30px 0 30px;
+}
+
+.technique__heading {
+  margin: 0 0 30px 50px;
+}
+
+/* Technique-card */
+
+.technique-card {
+  padding: 20px 27px 26px 50px;
+  background: var(--color-black-gray);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.technique-card__heading {
+  margin-bottom: 20px;
+}
+
+.technique-card__inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: start;
+          align-items: start;
+  width: 100%;
+}
+
+.technique-card__side--left {
+  width: 40%;
+  margin-right: 100px;
+}
+
+.technique-card__title {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.technique-card__table {
+  font-family: var(--font-roboto);
+  font-weight: normal;
+  color: var(--color-white);
+  font-size: 12px;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-left: -21px;
+}
+
+.technique-card__tr:nth-child(odd) {
+  background: rgba(126, 129, 129, 0.25);
+}
+
+.technique-card__td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.technique-card__td:first-child {
+  padding-left: 21px;
+  width: 70%;
+}
+
+.technique-card__td:last-child {
+  padding-left: 25px;
+  width: 30%;
+}
+
+.technique-card__side--right {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  width: 60%;
+}
+
+.technique-card__text {
+  margin-bottom: 15px;
+}
+
+.technique-card__picture {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.technique-card__features {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.technique-card__item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-right: 22px;
+}
+
+.technique-card__item-pic {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background: #000;
+  border-radius: 50px;
+}
+
+.technique-card__wrapp {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.technique-card__action {
+  max-width: 217px;
+  width: 100%;
 }
 
 /* ANOTHER MODULES */
@@ -370,25 +503,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .debug > div {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .debug > div > div {
-    margin-left: -7.5px;
-    margin-right: -7.5px;
-  }
-
-  .debug > div > div > div {
-    margin-left: 7.5px;
-    margin-right: 7.5px;
-  }
-
-  .debug > div > div > div {
-    width: calc(8.33333% - 15px);
-  }
-
   .container {
     padding-left: 15px;
     padding-right: 15px;

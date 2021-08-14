@@ -1,0 +1,26 @@
+.button {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--font-gotham);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-white);
+    padding: 13px 26px;
+    max-width: 217px;
+    width: 100%;
+    z-index: 10;
+    border-radius: 50px;
+    transition: .2s;
+}
+
+.button--yellow {
+    background: var(--color-orange);
+    border: 1px solid var(--color-yellow);
+    box-shadow: 9px 9px 18px rgba(10, 40, 53, 0.15), inset 0px 4px 24px rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(20px);
+}

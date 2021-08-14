@@ -1,0 +1,104 @@
+.technique-card {
+    padding: 20px 27px 26px 50px;
+    background: var(--color-black-gray);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.technique-card__heading {
+    margin-bottom: 20px;
+}
+
+.technique-card__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+.technique-card__side--left {
+    width: 40%;
+    margin-right: 100px;
+}
+
+.technique-card__title {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.technique-card__table {
+    font-family: var(--font-roboto);
+    font-weight: normal;
+    color: var(--color-white);
+    font-size: 12px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: -21px;
+}
+
+.technique-card__tr:nth-child(odd) {
+    background: rgba(126, 129, 129, 0.25);
+}
+
+.technique-card__td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.technique-card__td:first-child {
+    padding-left: 21px;
+    width: 70%;
+}
+
+.technique-card__td:last-child {
+    padding-left: 25px;
+    width: 30%;
+}
+
+.technique-card__side--right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.technique-card__text {
+    margin-bottom: 15px;
+}
+
+.technique-card__picture {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.technique-card__features {
+    display: flex;
+}
+
+.technique-card__item {
+    display: flex;
+    align-items: center;
+    margin-right: 22px;
+}
+
+.technique-card__item-pic {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background: #000;
+    border-radius: 50px;
+}
+
+.technique-card__wrapp {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technique-card__action {
+    max-width: 217px;
+    width: 100%;
+}

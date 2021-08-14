@@ -104,8 +104,14 @@
 	&--white {
 		color: var(--color-white);
 	}
-	&--s-normal {
+	&--normal {
 		font-size: 16px;
+	}
+	&--small {
+		font-size: 12px;
+	}
+	&--tiny {
+		font-size: 10px;
 	}
 	&--w-light {
 		font-weight: 300;
