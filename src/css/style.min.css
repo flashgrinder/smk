@@ -340,7 +340,30 @@ img {
   margin: 0 auto;
 }
 
-/* Technique */
+/* Header */
+
+.header {
+  position: fixed;
+  background: url("../img/header-bg.png") center left no-repeat;
+  background-size: cover;
+  height: 175px;
+  width: 100%;
+  z-index: 999;
+}
+
+.header__body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.header__menu-list {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Button */
 
 .button {
   position: relative;
@@ -370,10 +393,52 @@ img {
           backdrop-filter: blur(20px);
 }
 
+/* Main-screen */
+
+.main-screen {
+  position: relative;
+  height: 100vh;
+  background: url("../img/main-screen-bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.main-screen__vector {
+  width: 100%;
+}
+
+.main-screen__vector-img {
+  width: 100%;
+  height: 420px;
+}
+
+.main-screen__line {
+  position: absolute;
+  background: url("../img/line.png") center no-repeat;
+  background-size: cover;
+  height: 82px;
+  width: 100vw;
+  bottom: 0;
+}
+
+.main-screen__trapezoid {
+  width: 100%;
+  background: url("../img/trapezoid.png") center bottom no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 52px;
+  bottom: 0;
+}
+
 /* Technique */
 
 .technique {
   padding: 30px 0 30px;
+}
+
+/* Services-slider */
+
+.services-slider {
+  padding: 30px 0 50px;
 }
 
 /* Technique-card */

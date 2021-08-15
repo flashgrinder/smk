@@ -1,0 +1,33 @@
+.main-screen {
+    position: relative;
+    height: 100vh;
+    background: url('../img/main-screen-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.main-screen__vector {
+    width: 100%;
+}
+
+.main-screen__vector-img {
+    width: 100%;
+    height: 420px;
+}
+
+.main-screen__line {
+    position: absolute;
+    background: url('../img/line.png') center no-repeat;
+    background-size: cover;
+    height: 82px;
+    width: 100vw;
+    bottom: 0;
+}
+
+.main-screen__trapezoid {
+    width: 100%;
+    background: url('../img/trapezoid.png') center bottom no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 52px;
+    bottom: 0;
+}
