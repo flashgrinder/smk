@@ -126,6 +126,7 @@
   --color-black-gray: #2C2B33;
   --color-gray: #EFEFEF;
   --color-white: #FFFFFF;
+  --gradien-dark: linear-gradient(180deg, rgba(89, 89, 89, 0.75) -22.17%, rgba(44, 43, 51, 0.75) 122.17%);
   --font-roboto: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-gotham: "GothamPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -190,6 +191,17 @@ img {
 
 .bg--dark {
   background-color: var(--color-dark);
+}
+
+/* Links */
+
+.link {
+  text-decoration: none;
+  transition: ease .3s;
+}
+
+.link:hover {
+  color: var(--color-orange);
 }
 
 /* Title */
@@ -492,6 +504,63 @@ img {
   margin: 0 0 30px 50px;
 }
 
+.management__cards {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.management__card {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  background: var(--gradien-dark);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 20px 20px 38px var(--color-black-gray);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 20px;
+  text-align: center;
+  padding: 0 15px 25px 15px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 100px;
+}
+
+.management__card ~ .management__card {
+  margin-left: 20px;
+}
+
+.management__photo {
+  margin-top: -75px;
+}
+
+.management__rank {
+  margin-top: 15px;
+}
+
+.management__name {
+  margin-top: 5px;
+}
+
+.management__phones {
+  margin-top: 7px;
+}
+
+.management__emails {
+  margin-top: 15px;
+}
+
+.management__link {
+  display: block;
+}
+
 /* Contacts */
 
 .contacts {
@@ -530,7 +599,6 @@ img {
 
 .contacts__link {
   display: block;
-  text-decoration: none;
 }
 
 .contacts__link ~ .contacts__link {
@@ -578,5 +646,13 @@ img {
 
   .hide-mobile {
     display: none !important;
+  }
+
+  .management__card {
+    margin-top: 60px;
+  }
+
+  .management__card ~ .management__card {
+    margin-left: 0;
   }
 }
