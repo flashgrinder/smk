@@ -18,6 +18,12 @@ module.exports = {
 				width: "767px",
 				offset: "15px",
 				fields: "15px"
+		},
+		mobileXL: {
+				width: "567px"
+		},
+		mobileXS: {
+				width: "400px"
 		}
 	},
 	mobileFirst: false

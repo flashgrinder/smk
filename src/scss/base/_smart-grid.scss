@@ -4,16 +4,22 @@ $atom: (100% / $columns);
 $break_medium: 1200px;
 $break_tablet: 1023px;
 $break_mobile: 767px;
+$break_mobileXL: 567px;
+$break_mobileXS: 400px;
 
 $offset: 30px;
 $offset_medium: $offset;
 $offset_tablet: $offset;
 $offset_mobile: 15px;
+$offset_mobileXL: $offset_mobile;
+$offset_mobileXS: $offset_mobile;
 
 $offset_one_side: ($offset / 2);
 $offset_medium_one_side: ($offset_medium / 2);
 $offset_tablet_one_side: ($offset_tablet / 2);
 $offset_mobile_one_side: ($offset_mobile / 2);
+$offset_mobileXL_one_side: ($offset_mobileXL / 2);
+$offset_mobileXS_one_side: ($offset_mobileXS / 2);
 
 $fields: 30px;
 $fields_mobile: 15px;
@@ -107,6 +113,16 @@ $fields_mobile: 15px;
 @mixin size-mobile($n){
     $val: 100% / $columns * $n;
     @include mobile(width, #{calc(#{$val} - #{$offset_mobile})});
+}
+
+@mixin size-mobileXL($n){
+    $val: 100% / $columns * $n;
+    @include mobileXL(width, #{calc(#{$val} - #{$offset_mobileXL})});
+}
+
+@mixin size-mobileXS($n){
+    $val: 100% / $columns * $n;
+    @include mobileXS(width, #{calc(#{$val} - #{$offset_mobileXS})});
 }
 
 @mixin shift($n){
@@ -237,6 +253,70 @@ $fields_mobile: 15px;
     @include mobile(padding-right, #{calc(#{$val} + #{$offset_mobile_one_side})});
 }
 
+@mixin shift-mobileXL($n){
+    $val: 100% / $columns * $n;
+    @include mobileXL(margin-left, #{calc(#{$val} + #{$offset_mobileXL_one_side})});
+    @include mobileXL(margin-right, #{calc(#{$val} + #{$offset_mobileXL_one_side})});
+}
+
+@mixin shift-mobileXL-left($n){
+    $val: 100% / $columns * $n;
+    @include mobileXL(margin-left, #{calc(#{$val} + #{$offset_mobileXL_one_side})});
+}
+
+@mixin shift-mobileXL-right($n){
+    $val: 100% / $columns * $n;
+    @include mobileXL(margin-right, #{calc(#{$val} + #{$offset_mobileXL_one_side})});
+}
+
+@mixin shift-mobileXL-padding($n){
+    $val: 100% / $columns * $n;
+    @include mobileXL(padding-left, #{calc(#{$val} + #{$offset_mobileXL_one_side})});
+    @include mobileXL(padding-right, #{calc(#{$val} + #{$offset_mobileXL_one_side})});
+}
+
+@mixin shift-mobileXL-padding-left($n){
+    $val: 100% / $columns * $n;
+    @include mobileXL(padding-left, #{calc(#{$val} + #{$offset_mobileXL_one_side})});
+}
+
+@mixin shift-mobileXL-padding-right($n){
+    $val: 100% / $columns * $n;
+    @include mobileXL(padding-right, #{calc(#{$val} + #{$offset_mobileXL_one_side})});
+}
+
+@mixin shift-mobileXS($n){
+    $val: 100% / $columns * $n;
+    @include mobileXS(margin-left, #{calc(#{$val} + #{$offset_mobileXS_one_side})});
+    @include mobileXS(margin-right, #{calc(#{$val} + #{$offset_mobileXS_one_side})});
+}
+
+@mixin shift-mobileXS-left($n){
+    $val: 100% / $columns * $n;
+    @include mobileXS(margin-left, #{calc(#{$val} + #{$offset_mobileXS_one_side})});
+}
+
+@mixin shift-mobileXS-right($n){
+    $val: 100% / $columns * $n;
+    @include mobileXS(margin-right, #{calc(#{$val} + #{$offset_mobileXS_one_side})});
+}
+
+@mixin shift-mobileXS-padding($n){
+    $val: 100% / $columns * $n;
+    @include mobileXS(padding-left, #{calc(#{$val} + #{$offset_mobileXS_one_side})});
+    @include mobileXS(padding-right, #{calc(#{$val} + #{$offset_mobileXS_one_side})});
+}
+
+@mixin shift-mobileXS-padding-left($n){
+    $val: 100% / $columns * $n;
+    @include mobileXS(padding-left, #{calc(#{$val} + #{$offset_mobileXS_one_side})});
+}
+
+@mixin shift-mobileXS-padding-right($n){
+    $val: 100% / $columns * $n;
+    @include mobileXS(padding-right, #{calc(#{$val} + #{$offset_mobileXS_one_side})});
+}
+
 @mixin medium($name, $value){
     @media screen and (max-width: $break_medium){
         #{$name}: $value;
@@ -269,6 +349,30 @@ $fields_mobile: 15px;
 
 @mixin mobile-block(){
     @media screen and (max-width: $break_mobile){
+        @content;
+    }
+}
+
+@mixin mobileXL($name, $value){
+    @media screen and (max-width: $break_mobileXL){
+        #{$name}: $value;
+    }
+}
+
+@mixin mobileXL-block(){
+    @media screen and (max-width: $break_mobileXL){
+        @content;
+    }
+}
+
+@mixin mobileXS($name, $value){
+    @media screen and (max-width: $break_mobileXS){
+        #{$name}: $value;
+    }
+}
+
+@mixin mobileXS-block(){
+    @media screen and (max-width: $break_mobileXS){
         @content;
     }
 }

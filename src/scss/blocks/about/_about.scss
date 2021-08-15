@@ -1,0 +1,75 @@
+.about {
+    position: relative;
+    padding: 30px 0 50px;
+    background: url('../img/about/about-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.about__text {
+    padding: 20px 118px 50px 50px;
+    max-width: 835px;
+    background: var(--color-black-gray-op-75);
+    border-radius: 20px;
+    @include to(1440px) {
+        max-width: 735px;
+    }
+    @include to(1366px) {
+        max-width: 700px;
+    }
+    @include to(1280px) {
+        max-width: 100%;
+        padding: 10px 50px 250px 50px;
+    }
+    @include mobile-block {
+        padding: 10px 15px 220px 15px;
+        font-size: 12px;
+    }
+}
+
+.about__inner {
+    @include to(1280px) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+
+.about__pic {
+    position: absolute;
+    bottom: 0;
+    @include to(1280px) {
+        display: inline-block;
+        position: static;
+        margin-top: -200px;
+        margin-bottom: -50px;
+        bottom: auto;
+    }
+}
+
+.about__pic--left {
+    right: 430px;
+    @include to(1280px) {
+        right: auto;
+        margin-right: -70px;
+    }
+    @include to(1366px) {
+        right: 400px;
+    }
+    @include mobile(margin-right, -50px);
+    @include mobileXL(margin-right, -20px);
+}
+
+.about__pic--right {
+    right: 0px;
+    @include to(1280px) {
+        right: auto;
+    }
+    @include to(1366px) {
+        right: -30px;
+    }
+    @include mobileXL(margin-right, 0px);
+}
+
+.about__img {
+    display: block;
+}
