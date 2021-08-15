@@ -212,6 +212,10 @@ img {
   font-size: 22px;
 }
 
+.title--small {
+  font-size: 16px;
+}
+
 .title--orange {
   color: var(--color-orange);
 }
@@ -222,6 +226,10 @@ img {
 
 .title--w-light {
   font-weight: 300;
+}
+
+.title--w-normal {
+  font-weight: 400;
 }
 
 .title--w-medium {
