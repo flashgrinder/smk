@@ -1,3 +1,4 @@
 .technique {
     padding: 30px 0 30px;
+    @include tablet(padding, 25px 0 30px);
 }

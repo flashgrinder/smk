@@ -3,6 +3,7 @@
     padding: 30px 0 50px;
     background: url('../img/about/about-bg.jpg') center no-repeat;
     background-size: cover;
+    @include tablet(padding, 25px 0 30px);
 }
 
 .about__text {
@@ -20,9 +21,8 @@
         max-width: 100%;
         padding: 10px 50px 250px 50px;
     }
-    @include mobile-block {
+    @include tablet-block {
         padding: 10px 15px 220px 15px;
-        font-size: 12px;
     }
 }
 
@@ -44,6 +44,7 @@
         margin-bottom: -50px;
         bottom: auto;
     }
+    @include tablet(margin-bottom, -30px);
 }
 
 .about__pic--left {

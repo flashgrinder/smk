@@ -4,12 +4,22 @@
     height: 278px;
     width: 100%;
     padding-top: 100px;
+    @include tablet-block {
+        background: var(--color-orange);
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .footer__body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @include tablet-block {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__logo {
@@ -18,6 +28,15 @@
 
 .footer__menu {
     margin-top: 28px;
+    // @include tablet-block {
+    //     width: 50%;
+    // }
+}
+
+.footer__menu-list.menu__list {
+    // @include tablet-block {
+    //     flex-direction: column;
+    // }
 }
 
 .footer__text {
@@ -35,6 +54,9 @@
     margin-top: 28px;
     text-decoration: none;
     color: var(--color-black-gray);
+    // @include tablet-block {
+    //     width: 100%;
+    // }
 }
 
 .footer__social-icons {

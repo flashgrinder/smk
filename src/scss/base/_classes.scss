@@ -72,10 +72,12 @@
 		font-size: 45px;
     }
     &--large {
-        font-size: 26px;
+        font-size: responsive 20px 26px;
+        font-range: 1024px 1440px;
     }
     &--medium {
-        font-size: 22px;
+        font-size: responsive 18px 22px;
+        font-range: 1024px 1440px;
     }
     &--small {
         font-size: 16px;
@@ -114,6 +116,8 @@
 
 .title--indent {
     margin: 0 0 30px 50px;
+    @include tablet(margin, 0 0 20px 15px);
+    @include mobile(margin, 0 0 20px 0);
 }
 
 /* Text */
@@ -135,7 +139,8 @@
 		font-size: 22px;
 	}
 	&--normal {
-		font-size: 16px;
+        font-size: responsive 12px 16px;
+        font-range: 1024px 1440px;
 	}
 	&--small {
 		font-size: 12px;

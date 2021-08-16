@@ -219,11 +219,39 @@ img {
 }
 
 .title--large {
-  font-size: 26px;
+  font-size: calc(20px + 6 * ((100vw - 1024px) / 416));
+}
+
+@media screen and (min-width: 1440px) {
+
+  .title--large {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .title--large {
+    font-size: 20px;
+  }
 }
 
 .title--medium {
-  font-size: 22px;
+  font-size: calc(18px + 4 * ((100vw - 1024px) / 416));
+}
+
+@media screen and (min-width: 1440px) {
+
+  .title--medium {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .title--medium {
+    font-size: 18px;
+  }
 }
 
 .title--small {
@@ -299,7 +327,21 @@ img {
 }
 
 .text--normal {
-  font-size: 16px;
+  font-size: calc(12px + 4 * ((100vw - 1024px) / 416));
+}
+
+@media screen and (min-width: 1440px) {
+
+  .text--normal {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .text--normal {
+    font-size: 12px;
+  }
 }
 
 .text--small {
@@ -571,17 +613,46 @@ img {
 .technique-card__title {
   display: block;
   margin-bottom: 20px;
+  font-size: calc(14px + 2 * ((100vw - 1024px) / 416));
+}
+
+@media screen and (min-width: 1440px) {
+
+  .technique-card__title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .technique-card__title {
+    font-size: 14px;
+  }
 }
 
 .technique-card__table {
   font-family: var(--font-roboto);
   font-weight: normal;
   color: var(--color-white);
-  font-size: 12px;
+  font-size: calc(10px + 2 * ((100vw - 1024px) / 416));
   width: 100%;
   border-collapse: collapse;
   text-align: left;
   margin-left: -21px;
+}
+
+@media screen and (min-width: 1440px) {
+
+  .technique-card__table {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .technique-card__table {
+    font-size: 10px;
+  }
 }
 
 .technique-card__tr:nth-child(odd) {
@@ -633,7 +704,10 @@ img {
   display: flex;
   -webkit-align-items: center;
           align-items: center;
-  margin-right: 22px;
+}
+
+.technique-card__item ~ .technique-card__item {
+  margin-left: 22px;
 }
 
 .technique-card__item-pic {
@@ -789,6 +863,21 @@ img {
 
 .contacts__link {
   display: block;
+  font-size: calc(16px + 6 * ((100vw - 1024px) / 416));
+}
+
+@media screen and (min-width: 1440px) {
+
+  .contacts__link {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .contacts__link {
+    font-size: 16px;
+  }
 }
 
 .contacts__link ~ .contacts__link {
@@ -904,6 +993,10 @@ img {
 }
 
 @media screen and (max-width: 1280px) {
+  .technique-card__side--left {
+    margin-right: 30px;
+  }
+
   .about__text {
     max-width: 100%;
     padding: 10px 50px 250px 50px;
@@ -946,6 +1039,92 @@ img {
   .hide-tablet {
     display: none !important;
   }
+
+  .title--indent {
+    margin: 0 0 20px 15px;
+  }
+
+  .technique {
+    padding: 25px 0 30px;
+  }
+
+  .technique-card {
+    padding: 0;
+  }
+
+  .technique-card__heading {
+    padding: 20px 20px 0 20px;
+  }
+
+  .technique-card__inner {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .technique-card__side--left {
+    width: 100%;
+  }
+
+  .technique-card__title {
+    padding: 0 20px 0 20px;
+  }
+
+  .technique-card__table {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .technique-card__side--right {
+    width: 100%;
+    padding: 20px 30px 20px 20px;
+  }
+
+  .technique-card__wrapp {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .technique-card__action {
+    margin-top: 20px;
+  }
+
+  .about {
+    padding: 25px 0 30px;
+  }
+
+  .about__text {
+    padding: 10px 15px 220px 15px;
+  }
+
+  .about__pic {
+    margin-bottom: -30px;
+  }
+
+  .management {
+    padding: 25px 0 30px;
+  }
+
+  .management__card {
+    margin-top: 60px;
+  }
+
+  .contacts {
+    padding: 25px 0 30px;
+  }
+
+  .footer {
+    background: var(--color-orange);
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer__body {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -963,21 +1142,55 @@ img {
     display: none !important;
   }
 
-  .about__text {
-    padding: 10px 15px 220px 15px;
-    font-size: 12px;
+  .title--indent {
+    margin: 0 0 20px 0;
+  }
+
+  .technique-card__side--right {
+    width: 100%;
+    padding: 20px 15px 20px 15px;
+  }
+
+  .technique-card__item {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .technique-card__item ~ .technique-card__item {
+    margin-left: 10px;
+  }
+
+  .technique-card__item-pic {
+    margin-right: 0;
+    margin-bottom: 5px;
   }
 
   .about__pic--left {
     margin-right: -50px;
   }
 
-  .management__card {
-    margin-top: 60px;
-  }
-
   .management__card ~ .management__card {
     margin-left: 0;
+  }
+
+  .contacts__info {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+
+  .contacts__side ~ .contacts__side {
+    margin-top: 30px;
+  }
+
+  .contacts__side--left {
+    margin-right: 100px;
+  }
+
+  .contacts__link ~ .contacts__link {
+    margin-top: 10px;
   }
 }
 
