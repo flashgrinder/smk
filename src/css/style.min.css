@@ -120,6 +120,7 @@
 /* Variables */
 
 :root {
+  --color-orange-hight: #FF5C01;
   --color-orange: #FF9D00;
   --color-yellow: #FFD600;
   --color-dark: #595959;
@@ -423,28 +424,48 @@ img {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  font-family: var(--font-gotham);
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
   text-decoration: none;
   text-align: center;
   color: var(--color-white);
-  padding: 13px 23px;
   max-width: 217px;
   width: 100%;
   z-index: 10;
   border-radius: 50px;
-  transition: .2s;
+  transition: .3s;
 }
 
 .button--yellow {
+  font-family: var(--font-gotham);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 13px 23px;
   background: var(--color-orange);
   border: 1px solid var(--color-yellow);
   box-shadow: 9px 9px 18px rgba(10, 40, 53, 0.15), inset 0px 4px 24px rgba(255, 255, 255, 0.33);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
+}
+
+.button--yellow:hover {
+  background: var(--color-orange-hight);
+}
+
+.button--trs {
+  font-family: var(--font-roboto);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 14px 23px;
+  background: transparent;
+  border: 1px solid var(--color-white);
+}
+
+.button--trs:hover {
+  color: var(--color-yellow);
+  border: 1px solid var(--color-yellow);
 }
 
 /* Main-screen */
