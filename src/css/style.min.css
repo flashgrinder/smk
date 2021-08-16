@@ -285,6 +285,10 @@ img {
   color: var(--color-white);
 }
 
+.text--large {
+  font-size: 22px;
+}
+
 .text--normal {
   font-size: 16px;
 }
@@ -356,11 +360,61 @@ img {
   display: flex;
   -webkit-justify-content: space-between;
           justify-content: space-between;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
 }
 
-.header__menu-list {
+.header__logo {
+  margin: 20px 0 0 37px;
+}
+
+.header__menu {
+  margin-top: 28px;
+}
+
+.header__phone {
   display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 18px;
+  font-family: var(--font-gotham);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-black-gray);
+}
+
+.header__icon-phone {
+  margin: 2px 10px 0 0;
+}
+
+/* Menu */
+
+.menu__list {
+  display: -webkit-flex;
+  display: flex;
+  font-family: var(--font-gotham);
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu__item {
+  color: var(--color-black-gray);
+}
+
+.menu__item ~ .menu__item {
+  margin-left: 20px;
+}
+
+.menu__link {
+  color: var(--color-black-gray);
+  text-decoration: none;
 }
 
 /* Button */
@@ -377,7 +431,7 @@ img {
   text-decoration: none;
   text-align: center;
   color: var(--color-white);
-  padding: 13px 26px;
+  padding: 13px 23px;
   max-width: 217px;
   width: 100%;
   z-index: 10;
@@ -403,12 +457,28 @@ img {
 }
 
 .main-screen__vector {
+  position: relative;
   width: 100%;
+  height: 480px;
+  background: url("../img/vector.png") center no-repeat;
+  background-size: cover;
 }
 
-.main-screen__vector-img {
-  width: 100%;
-  height: 420px;
+.main-screen__actions {
+  position: absolute;
+  top: 211px;
+}
+
+.main-screen__button ~ .main-screen__button {
+  margin-top: 20px;
+}
+
+.main-screen__text {
+  padding: 125px 100px 0 27.3%;
+}
+
+.main-screen__heading {
+  margin-bottom: 30px;
 }
 
 .main-screen__line {
@@ -713,6 +783,18 @@ img {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1440px) {
+  .main-screen__vector {
+    height: 406px;
+  }
+
+  .main-screen__actions {
+    top: 222px;
+  }
+
+  .main-screen__text {
+    padding: 125px 110px 0 27.3%;
+  }
+
   .about__text {
     max-width: 735px;
   }
