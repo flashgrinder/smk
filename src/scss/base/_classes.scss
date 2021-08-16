@@ -80,11 +80,17 @@
     &--small {
         font-size: 16px;
     }
+    &--tiny {
+        font-size: 12px;
+    }
     &--orange {
         color: var(--color-orange);
     }
     &--white {
         color: var(--color-white);
+	}
+    &--black-gray {
+		color: var(--color-black-gray); 
 	}
 	&--w-light {
 		font-weight: 300;
