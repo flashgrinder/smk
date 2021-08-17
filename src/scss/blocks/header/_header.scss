@@ -5,20 +5,103 @@
     height: 175px;
     width: 100%;
     z-index: 999;
+    @include tablet-block {
+        background: var(--color-orange);
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
 
 .header__body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @include tablet-block {
+        align-items: center;
+    }
 }
 
 .header__logo {
     margin: 20px 0 0 37px;
+    text-decoration: none;
+    @include tablet-block {
+        width: 40px;
+        margin: 0;
+    }
+}
+
+.header__logo-img {
+    display: block;
 }
 
 .header__menu {
     margin-top: 28px;
+    @include tablet-block {
+        position: absolute;
+        top: 100%;
+        height: calc(100vh - 0px);
+        left: 0;
+        margin-top: 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        z-index: 101;
+        transform: scale(1) scaleZ(1) rotateX(-90deg) rotateY(0deg);
+        transform-origin: 0% 0%;
+        transition: ease-in-out .4s;
+        transition-delay: 1s;
+    }
+}
+
+.header__menu.is-open {
+    @include tablet-block {
+        opacity: 1;
+        transform: scale(1) scaleZ(1) rotateX(0deg) rotateY(0deg);
+        transform-origin: 50% 0%;
+        transition-delay: 0s;
+    }
+}
+
+.header__menu {
+    @include tablet-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.header__menu .menu__list {
+    @include tablet-block {
+        flex-direction: column;
+    }
+}
+
+.header__menu .menu__item {
+    @include tablet-block {
+        opacity: 0;
+        transition: ease-out .2s;
+    }
+}
+
+.header__menu .menu__item ~ .menu__item {
+    @include tablet-block {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+.header__menu .menu__link {
+    @include tablet-block {
+        color: var(--color-white);
+        font-size: 22px;
+    }
+}
+
+.header__menu .menu__link.header__menu-link:hover {
+    @include tablet-block {
+        color: var(--color-orange);
+    }
 }
 
 .header__phone {
@@ -30,7 +113,12 @@
     font-weight: 700;
     text-decoration: none;
     color: var(--color-black-gray);
+    transition: ease .3s;
+    @include tablet(margin, 0);
+}
 
+.header__phone:hover {
+    color: var(--color-white);
 }
 
 .header__icon-phone {
