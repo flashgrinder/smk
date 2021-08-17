@@ -16,35 +16,79 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     @include tablet-block {
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
 }
 
 .footer__logo {
     margin: 0 0 0 37px;
+    @include tablet-block {
+        margin: 0;
+    }
+    @include mobile-block {
+        width: 70px;
+    }
 }
 
 .footer__menu {
     margin-top: 28px;
-    // @include tablet-block {
-    //     width: 50%;
-    // }
+    @include to(1440px) {
+        margin-top: 30px;
+    }
+    @include tablet-block {
+        margin-top: 0;
+        margin-left: 60px;
+    }
 }
 
-.footer__menu-list.menu__list {
-    // @include tablet-block {
-    //     flex-direction: column;
-    // }
+.footer__menu .menu__list {
+    @include tablet-block {
+        flex-direction: column;
+    }
+    @include mobile-block {
+        flex-direction: column;
+    }
+}
+
+.footer__menu .menu__item ~ .menu__item {
+    @include tablet-block {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    @include mobile-block {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.footer__wrapper-text {
+    display: none;
+    @include tablet-block {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .footer__text {
     margin-top: 45px;
+    @include tablet-block {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.footer__inner .footer__text {
+    @include tablet-block {
+        display: none;
+    }
 }
 
 .footer__descr {
     margin-top: 15px;
+    font-size: responsive 8px 12px;
+    font-range: 320px 768px;
 }
 
 .footer__social {
@@ -54,9 +98,13 @@
     margin-top: 28px;
     text-decoration: none;
     color: var(--color-black-gray);
-    // @include tablet-block {
-    //     width: 100%;
-    // }
+    @include to(1440px) {
+        margin-top: 30px;
+    }
+    @include tablet-block {
+        align-items: center;
+        width: 100%;
+    }
 }
 
 .footer__social-icons {

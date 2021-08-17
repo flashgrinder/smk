@@ -12,7 +12,7 @@ module.exports = {
 				width: '1200px',
 		},
 		tablet: {
-				width: '1023px'
+				width: '1024px'
 		},
 		mobile: {
 				width: "767px",

@@ -901,6 +901,8 @@ img {
           justify-content: space-between;
   -webkit-align-items: flex-start;
           align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .footer__logo {
@@ -911,12 +913,31 @@ img {
   margin-top: 28px;
 }
 
+.footer__wrapper-text {
+  display: none;
+}
+
 .footer__text {
   margin-top: 45px;
 }
 
 .footer__descr {
   margin-top: 15px;
+  font-size: calc(8px + 4 * ((100vw - 320px) / 448));
+}
+
+@media screen and (min-width: 768px) {
+
+  .footer__descr {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .footer__descr {
+    font-size: 8px;
+  }
 }
 
 .footer__social {
@@ -975,6 +996,14 @@ img {
 
   .about__text {
     max-width: 735px;
+  }
+
+  .footer__menu {
+    margin-top: 30px;
+  }
+
+  .footer__social {
+    margin-top: 30px;
   }
 }
 
@@ -1035,7 +1064,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .hide-tablet {
     display: none !important;
   }
@@ -1120,10 +1149,49 @@ img {
   }
 
   .footer__body {
+    -webkit-justify-content: center;
+            justify-content: center;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+
+  .footer__menu {
+    margin-top: 0;
+    margin-left: 60px;
+  }
+
+  .footer__menu .menu__list {
     -webkit-flex-direction: column;
             flex-direction: column;
+  }
+
+  .footer__menu .menu__item ~ .menu__item {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .footer__wrapper-text {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+  }
+
+  .footer__text {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer__inner .footer__text {
+    display: none;
+  }
+
+  .footer__social {
     -webkit-align-items: center;
             align-items: center;
+    width: 100%;
   }
 }
 
@@ -1190,6 +1258,20 @@ img {
   }
 
   .contacts__link ~ .contacts__link {
+    margin-top: 10px;
+  }
+
+  .footer__logo {
+    width: 70px;
+  }
+
+  .footer__menu .menu__list {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__menu .menu__item ~ .menu__item {
+    margin-left: 0;
     margin-top: 10px;
   }
 }
