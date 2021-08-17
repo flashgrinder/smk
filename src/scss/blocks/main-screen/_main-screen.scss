@@ -14,6 +14,23 @@
     @include to(1440px) {
         height: 406px;
     }
+    @include to(1280px) {
+        height: 363px;
+    }
+    @include tablet-block {
+        background: rgba(62, 62, 62, 0.65);
+        height: auto;
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+}
+
+.main-screen__inner {
+    @include tablet-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .main-screen__actions {
@@ -21,6 +38,15 @@
     top: 211px;
     @include to(1440px) {
         top: 222px;
+    }
+    @include to(1280px) {
+        top: 185px;
+    }
+    @include tablet-block {
+        position: static;
+        top: auto;
+        margin-top: 20px;
+        text-align: center;
     }
 }
 
@@ -33,10 +59,30 @@
     @include to(1440px) {
         padding: 125px 110px 0 27.3%;
     }
+    @include to(1280px) {
+        padding: 90px 115px 0 29.3%;
+    }
+    @include tablet-block {
+        padding: 0;
+        order: -1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .main-screen__heading {
     margin-bottom: 30px;
+    @include tablet-block {
+        margin-bottom: 10px;
+    }
+}
+
+.main-screen__subtitle {
+    @include tablet-block {
+        max-width: 300px;
+    }
 }
 
 .main-screen__line {

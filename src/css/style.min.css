@@ -216,6 +216,21 @@ img {
 
 .title--big {
   font-size: 45px;
+  font-size: calc(16px + 29 * ((100vw - 320px) / 1120));
+}
+
+@media screen and (min-width: 1440px) {
+
+  .title--big {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .title--big {
+    font-size: 16px;
+  }
 }
 
 .title--large {
@@ -324,6 +339,21 @@ img {
 
 .text--large {
   font-size: 22px;
+  font-size: calc(14px + 8 * ((100vw - 320px) / 1120));
+}
+
+@media screen and (min-width: 1440px) {
+
+  .text--large {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .text--large {
+    font-size: 14px;
+  }
 }
 
 .text--normal {
@@ -1073,6 +1103,18 @@ img {
 }
 
 @media screen and (max-width: 1280px) {
+  .main-screen__vector {
+    height: 363px;
+  }
+
+  .main-screen__actions {
+    top: 185px;
+  }
+
+  .main-screen__text {
+    padding: 90px 115px 0 29.3%;
+  }
+
   .technique-card__side--left {
     margin-right: 30px;
   }
@@ -1208,6 +1250,50 @@ img {
   .burger-menu {
     display: -webkit-flex;
     display: flex;
+  }
+
+  .main-screen__vector {
+    background: rgba(62, 62, 62, 0.65);
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+
+  .main-screen__inner {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+
+  .main-screen__actions {
+    position: static;
+    top: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .main-screen__text {
+    padding: 0;
+    -webkit-order: -1;
+            order: -1;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+
+  .main-screen__heading {
+    margin-bottom: 10px;
+  }
+
+  .main-screen__subtitle {
+    max-width: 300px;
   }
 
   .technique {
