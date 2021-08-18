@@ -2317,10 +2317,24 @@ button.swiper-pagination-bullet {
     margin: 0 0 20px 0;
   }
 
+  .modal__body {
+    max-width: 450px;
+  }
+
   .modal__close {
     top: 5px;
     right: 5px;
     border: 1px solid var(--color-white);
+    width: 30px;
+    height: 30px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-content: center;
+            align-content: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
   }
 
   .technique-card__side--right {
@@ -2389,10 +2403,6 @@ button.swiper-pagination-bullet {
   .modal__body {
     padding: 16px 15px 30px;
     max-width: 320px;
-  }
-
-  .modal__body {
-    max-width: 300px;
   }
 
   .about__pic--left {
