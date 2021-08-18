@@ -137,6 +137,11 @@
 	&--white {
 		color: var(--color-white);
 	}
+	&--big {
+		font-size: 22px;
+        font-size: responsive 20px 30px;
+        font-range: 320px 1440px;
+	}
 	&--large {
 		font-size: 22px;
         font-size: responsive 14px 22px;
@@ -170,4 +175,7 @@
     &--italic {
         font-style: italic;
     }
+    &--uppercase {
+		text-transform: uppercase;
+	}
 }
