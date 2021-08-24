@@ -171,6 +171,7 @@
 }
 
 .services-slider__action .button--yellow {
+    box-shadow: none;
     @include tablet-block {
         padding: 13px 9px 13px 9px;
     }

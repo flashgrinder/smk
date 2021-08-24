@@ -1293,6 +1293,10 @@ img {
   width: 100%;
 }
 
+.services-slider__action .button--yellow {
+  box-shadow: none;
+}
+
 .services-slider__action--outer {
   display: -webkit-inline-flex;
   display: inline-flex;
