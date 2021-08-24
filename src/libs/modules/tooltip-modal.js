@@ -2,20 +2,20 @@
 const tooltipModalService = () => {
     const d = document;
     const body = d.querySelector('body');
-    const buttons = d.querySelectorAll('[data-modal-trigger]');
+    const buttons = d.querySelectorAll('[data-tooltip-trigger]');
 
     for(let button of buttons) {
-        triggerEvent(button);
+        triggerEventTooltip(button);
     }
     
-    function triggerEvent(button) {
+    function triggerEventTooltip(button) {
       button.addEventListener('click', () => {
-        const trigger = button.getAttribute('data-modal-trigger');
-        const modal = d.querySelector(`[data-modal=${trigger}]`);
+        const trigger = button.getAttribute('data-tooltip-trigger');
+        const modal = d.querySelector(`[data-tooltip=${trigger}]`);
         const modalBody = modal.querySelector('.tooltip-modal__body');
-        const closeBtn = modal.querySelector('.tooltip-modal__close');
+        const closeBtnTooltip = modal.querySelector('.tooltip-modal__close');
         
-        closeBtn.addEventListener('click', () => {
+        closeBtnTooltip.addEventListener('click', () => {
             modal.classList.remove('is-open')
             modal.classList.add('is-out');
             setTimeout(() => {
