@@ -58,35 +58,33 @@
 }
 
 .modal__close {
-    @include mobile-block {
-        top: 5px;
-        right: 5px;
-        border: 1px solid var(--color-white);
-        width: 30px;
-        height: 30px;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
+    @include mobileXL-block {
+        top: 2px;
+        right: 2px;
     }
     display: inline-block;
     position: absolute;
-    right: -20px;
-    top: -20px;
-    border: 1px solid var(--color-blue);
+    right: 5px;
+    top: 5px;
     border-radius: 50%;
     padding: 5px;
     cursor: pointer;
 }
 
 .modal__close-svg {
-    width: 12px;
-    height: 12px;
+    @include mobileXL-block {
+        width: 21px;
+        height: 21px;
+    }
+    width: 26px;
+    height: 26px;
     fill: var(--color-white);
 }
 
 .modal__header {
-    margin-bottom: 20px;
+    @include tablet(margin-bottom, 20px);
+    @include mobileXL(margin-bottom, 10px);
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -101,6 +99,7 @@
 }
 
 .modal__input {
+    @include mobileXL(padding, 13px);
     width: 100%;
     max-width: 400px;
     padding: 17px;

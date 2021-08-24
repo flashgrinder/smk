@@ -634,22 +634,21 @@ img {
 .modal__close {
   display: inline-block;
   position: absolute;
-  right: -20px;
-  top: -20px;
-  border: 1px solid var(--color-blue);
+  right: 5px;
+  top: 5px;
   border-radius: 50%;
   padding: 5px;
   cursor: pointer;
 }
 
 .modal__close-svg {
-  width: 12px;
-  height: 12px;
+  width: 26px;
+  height: 26px;
   fill: var(--color-white);
 }
 
 .modal__header {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -2180,6 +2179,10 @@ button.swiper-pagination-bullet {
     margin: 0 0 20px 15px;
   }
 
+  .modal__header {
+    margin-bottom: 20px;
+  }
+
   .header {
     background: var(--color-orange);
     height: auto;
@@ -2515,22 +2518,6 @@ button.swiper-pagination-bullet {
     max-width: 450px;
   }
 
-  .modal__close {
-    top: 5px;
-    right: 5px;
-    border: 1px solid var(--color-white);
-    width: 30px;
-    height: 30px;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-content: center;
-            align-content: center;
-    -webkit-justify-content: center;
-            justify-content: center;
-    -webkit-align-items: center;
-            align-items: center;
-  }
-
   .tooltip-modal__body {
     max-width: 450px;
   }
@@ -2647,6 +2634,24 @@ button.swiper-pagination-bullet {
   .modal__body {
     padding: 16px 15px 30px;
     max-width: 320px;
+  }
+
+  .modal__close {
+    top: 2px;
+    right: 2px;
+  }
+
+  .modal__close-svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .modal__header {
+    margin-bottom: 10px;
+  }
+
+  .modal__input {
+    padding: 13px;
   }
 
   .tooltip-modal__body {
