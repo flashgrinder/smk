@@ -265,6 +265,102 @@ img {
   }
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes slideOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
+}
+
 /* Base Classes */
 
 /* Containers */
@@ -756,8 +852,7 @@ img {
   display: none;
   background-color: transparent;
   overflow-y: hidden;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  opacity: 0;
   z-index: 998;
   top: 0;
   bottom: 0;
@@ -771,31 +866,28 @@ img {
 .tooltip-modal.is-open {
   display: block;
   position: fixed;
-  -webkit-transform: scaleY(0.01) scaleX(0);
-          transform: scaleY(0.01) scaleX(0);
-  -webkit-animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  opacity: 1;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
 }
 
 .tooltip-modal.is-open .tooltip-modal__body {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: slideIn .3s;
+          animation: slideIn .3s;
 }
 
 .tooltip-modal.is-out {
   display: block;
   position: fixed;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -webkit-animation: fadeOut .5s;
+          animation: fadeOut .5s;
 }
 
 .tooltip-modal.is-out .tooltip-modal__body {
-  -webkit-animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  -webkit-animation: slideOut .3s;
+          animation: slideOut .3s;
 }
 
 .tooltip-modal__body {
@@ -811,6 +903,8 @@ img {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border-radius: 20px;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
 }
 
 .tooltip-modal__close {

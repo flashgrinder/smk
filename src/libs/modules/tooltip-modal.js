@@ -20,7 +20,7 @@ const tooltipModalService = () => {
             modal.classList.add('is-out');
             setTimeout(() => {
                 modal.classList.remove('is-out');
-            }, 1300);
+            }, 500);
         } )
 
         modal.addEventListener('click', () => {
@@ -28,7 +28,7 @@ const tooltipModalService = () => {
             modal.classList.add('is-out');
             setTimeout(() => {
                 modal.classList.remove('is-out');
-            }, 1300);
+            }, 500);
         } )
         
         modalBody.addEventListener('click', (e) => e.stopPropagation());
