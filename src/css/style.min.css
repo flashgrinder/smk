@@ -427,7 +427,6 @@ img {
 }
 
 .title--big {
-  font-size: 45px;
   font-size: calc(16px + 29 * ((100vw - 320px) / 1120));
 }
 
@@ -550,7 +549,6 @@ img {
 }
 
 .text--big {
-  font-size: 22px;
   font-size: calc(20px + 10 * ((100vw - 320px) / 1120));
 }
 
@@ -569,7 +567,6 @@ img {
 }
 
 .text--large {
-  font-size: 22px;
   font-size: calc(14px + 8 * ((100vw - 320px) / 1120));
 }
 
@@ -847,6 +844,8 @@ img {
   padding: 10px 53px;
   cursor: pointer;
 }
+
+/* Modal-tooltip */
 
 .tooltip-modal {
   display: none;
