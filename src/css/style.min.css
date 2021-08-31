@@ -1725,7 +1725,7 @@ img {
   padding-bottom: 100px;
 }
 
-.services-store__container {
+.services-store__container.services-store__container--archive {
   display: -ms-grid;
   display: grid;
   grid-column: 402px 1fr;
@@ -1734,13 +1734,13 @@ img {
       grid-template-areas: "sidebar shops-cards shops-cards";
 }
 
-.services-store__container .sidebar {
+.services-store__container .sidebar--archive {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: sidebar;
 }
 
-.services-store__container .services-store__shop-cards {
+.services-store__container .services-store__shop-cards--archive {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -1807,40 +1807,23 @@ img {
 .shop-card {
   background: var(--color-black-gray-hight);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: minmax(0, 103px) minmax(0, 372px) minmax(0, 133px) minmax(0, 129px) minmax(186px, 1fr);
-  grid-template-columns: minmax(0, 103px) minmax(0, 372px) minmax(0, 133px) minmax(0, 129px) minmax(186px, 1fr);
-  -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
   height: 100px;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
   overflow: hidden;
 }
 
-.shop-card > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+.shop-card.shop-card--archive {
+  -ms-grid-columns: minmax(0, 103px) minmax(0, 372px) minmax(0, 133px) minmax(0, 129px) minmax(186px, 1fr);
+  grid-template-columns: minmax(0, 103px) minmax(0, 372px) minmax(0, 133px) minmax(0, 129px) minmax(186px, 1fr);
 }
 
-.shop-card > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-
-.shop-card > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.shop-card > *:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-}
-
-.shop-card > *:nth-child(5) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
+.shop-card.shop-card--basket {
+  -ms-grid-columns: minmax(0, 103px) minmax(0, 372px) minmax(0, 133px) minmax(0, 129px) minmax(186px, 1fr);
+  grid-template-columns: minmax(0, 103px) minmax(0, 372px) minmax(0, 133px) minmax(0, 129px) minmax(186px, 1fr);
 }
 
 .shop-card:first-child {

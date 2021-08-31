@@ -1,12 +1,19 @@
 .shop-card {
     background: var(--color-black-gray-hight);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    display: grid;
-    grid-template-columns: minmax(0, 103px) minmax(0, 372px) minmax(0, 133px) minmax(0,129px) minmax(186px, 1fr);
-    grid-template-rows: 1fr;
     height: 100px;
     width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
     overflow: hidden;
+}
+
+.shop-card.shop-card--archive {
+    grid-template-columns: minmax(0, 103px) minmax(0, 372px) minmax(0, 133px) minmax(0,129px) minmax(186px, 1fr);
+}
+
+.shop-card.shop-card--basket {
+    grid-template-columns: minmax(0, 103px) minmax(0, 372px) minmax(0, 133px) minmax(0,129px) minmax(186px, 1fr);
 }
 
 .shop-card:first-child {
