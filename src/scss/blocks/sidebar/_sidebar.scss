@@ -6,7 +6,13 @@
     align-items: center;
     text-decoration: none;
     height: 100px;
+    width: 100%;
     max-width: 402px;
+}
+
+.sidebar__aside {
+    top: 200px;
+    position: sticky;
 }
 
 .sidebar__category.is-active {
@@ -20,6 +26,17 @@
 .sidebar__category:last-child {
     border-bottom: none;
     border-radius: 0 0 20px 20px;
+}
+
+.sidebar__cat-icon {
+    flex-shrink: 0;
+    width: 50px;
+}
+
+.sidebar__cat-img {
+    display: block;
+    width: 50px;
+    height: auto;
 }
 
 .sidebar__cat-name {

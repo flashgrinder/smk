@@ -2,3 +2,19 @@
     padding-top: 30px;
     padding-bottom: 100px;
 }
+
+.services-store__container {
+    display: grid;
+    grid-column: 402px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "sidebar shops-cards shops-cards";
+}
+
+.services-store__container .sidebar {
+    grid-area: sidebar;
+}
+
+.services-store__container .services-store__shop-cards {
+    grid-area: shops-cards;
+}
