@@ -1,14 +1,26 @@
 .services-store {
     padding-top: 30px;
+}
+
+.services-store.services-store--archive {
     padding-bottom: 100px;
 }
 
-.services-store__container.services-store__container--archive {
+.services-store__shop-cards.services-store__container--archive,
+.services-store__container.services-store__container--basket {
     display: grid;
+}
+
+.services-store__container.services-store__container--archive {
     grid-column: 402px 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
         "sidebar shops-cards shops-cards";
+}
+
+.services-store__container.services-store__container--basket {
+    grid-column: 1fr;
+    grid-template-rows: 1fr;
 }
 
 .services-store__container .sidebar--archive {
@@ -17,4 +29,50 @@
 
 .services-store__container .services-store__shop-cards--archive {
     grid-area: shops-cards;
+}
+
+.services-store__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 45px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 20px;
+}
+
+.service-store__buttons {
+    display: flex;
+}
+
+.services-store__btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+.services-store__btn ~.services-store__btn {
+    margin-left: 50px;
+}
+
+.services-store__img-btn {
+    display: block;
+}
+
+.services-store__name-btn {
+    margin-left: 15px;
+}
+
+.services-store__ordering {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.services-store__order {
+    margin-top: 30px;
+}
+
+.services-store__subtotal-price {
+    font-size: responsive 24px 38px;
+    font-range: 1024px 1440px;
+    margin-left: 20px;
 }

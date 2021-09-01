@@ -13,7 +13,7 @@
 }
 
 .shop-card.shop-card--basket {
-    grid-template-columns: minmax(0, 103px) minmax(0, 372px) minmax(0, 133px) minmax(0,129px) minmax(186px, 1fr);
+    grid-template-columns: minmax(0, 133px) minmax(0, 1fr) minmax(0, 227px) minmax(0,208px) minmax(0, 94px);
 }
 
 .shop-card:first-child {
@@ -60,6 +60,7 @@
 .shop-card__quantity {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 16px 12px;
 }
@@ -72,6 +73,12 @@
     padding: 10px 4px;
     outline: 0;
     text-align: center;
+}
+
+.shop-card__field,
+.shop-card__range {
+    max-width: 109px;
+    width: 100%;
 }
 
 .shop-card__field[type="number"]::-webkit-outer-spin-button,
@@ -93,7 +100,6 @@
     -webkit-appearance: none;
     appearance: none;
     margin-top: 15px;
-    width: 100%;
     height: 2px;
     background: var(--color-white);
     outline: none;
@@ -133,4 +139,17 @@
 
 .shop-card__action {
     padding: 10px;
+}
+
+.shop-card__btn {
+    text-decoration: none;
+}
+
+.shop-card__btn-svg {
+    stroke: var(--color-white);
+    transition: ease .3s;
+}
+
+.shop-card__btn-svg:hover {
+    stroke: var(--color-orange);
 }
