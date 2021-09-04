@@ -37,7 +37,7 @@
 }
 
 .modal__body {
-    @include mobileXL-block {
+    @include mobileXS-block {
         padding: 16px 15px 30px;
         max-width: 320px;
     }
@@ -58,7 +58,7 @@
 }
 
 .modal__close {
-    @include mobileXL-block {
+    @include mobileXS-block {
         top: 2px;
         right: 2px;
     }
@@ -72,7 +72,7 @@
 }
 
 .modal__close-svg {
-    @include mobileXL-block {
+    @include mobileXS-block {
         width: 21px;
         height: 21px;
     }
@@ -83,7 +83,7 @@
 
 .modal__header {
     @include tablet(margin-bottom, 20px);
-    @include mobileXL(margin-bottom, 10px);
+    @include mobileXS(margin-bottom, 10px);
     margin-bottom: 30px;
     text-align: center;
 }
@@ -99,7 +99,7 @@
 }
 
 .modal__input {
-    @include mobileXL(padding, 13px);
+    @include mobileXS(padding, 13px);
     width: 100%;
     max-width: 400px;
     padding: 17px;

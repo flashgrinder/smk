@@ -9,11 +9,105 @@
 }
 
 .shop-card.shop-card--archive {
-    grid-template-columns: minmax(0, 103px) minmax(0, 372px) minmax(0, 133px) minmax(0,129px) minmax(186px, 1fr);
+    grid-template-columns: minmax(0, 103px) minmax(0, 372px) minmax(133px, 1fr) minmax(129px,1fr) minmax(186px, 1fr);
+    @include to(1366px){
+        grid-template-columns: minmax(0, 103px) 1fr 1fr 1fr 1fr;
+        grid-template-areas: "icon name name quantity price"
+                             "icon name name quantity action";
+    }
+}
+
+.shop-card.shop-card--archive .shop-card__icon {
+    @include to(1366px){
+        grid-area: icon;
+        padding: 10px 20px;
+    }
+}
+.shop-card.shop-card--archive .shop-card__name {
+    @include to(1366px){
+        grid-area: name;
+    }
+}
+.shop-card.shop-card--archive .shop-card__quantity {
+    @include to(1366px){
+        grid-area: quantity;
+        padding: 5px 12px;
+    }
+}
+.shop-card.shop-card--archive .shop-card__price {
+    @include to(1366px){
+        grid-area: price;
+        padding: 5px;
+    }
+}
+.shop-card.shop-card--archive .shop-card__action {
+    @include to(1366px){
+        grid-area: action;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 0 5px 5px 5px;
+    }
 }
 
 .shop-card.shop-card--basket {
     grid-template-columns: minmax(0, 133px) minmax(0, 1fr) minmax(0, 227px) minmax(0,208px) minmax(0, 94px);
+    @include tabletSM-block {
+        height: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: minmax(0, 103px) 1fr 1fr 1fr;
+        grid-template-areas: "icon name name quantity price"
+                             "icon name name quantity action";
+    }
+    @include mobileXS-block {
+        grid-template-rows: 100px 50px 50px;
+        grid-template-columns: minmax(0, 70px) minmax(0, 100px) minmax(140px, 1fr);
+        grid-template-areas: "icon name name"
+                             "quantity quantity price"
+                             "quantity quantity action";
+    }
+}
+
+.shop-card.shop-card--basket .shop-card__icon {
+    @include tabletSM-block{
+        grid-area: icon;
+        padding: 15px 10px;
+    }
+    @include mobile-block {
+        background: transparent;
+    }
+}
+.shop-card.shop-card--basket .shop-card__name {
+    @include tabletSM-block{
+        grid-area: name;
+    }
+    @include mobile-block {
+        padding: 5px 10px;
+    }
+}
+.shop-card.shop-card--basket .shop-card__quantity {
+    @include tabletSM-block{
+        grid-area: quantity;
+        background:rgba(255, 255, 255, 0.1);
+    }
+}
+.shop-card.shop-card--basket .shop-card__price {
+    @include tabletSM-block{
+        grid-area: price;
+        background: transparent;
+    }
+    @include mobile-block {
+        background:rgba(255, 255, 255, 0.1);
+        padding: 10px 5px 5px 0;
+    }
+}
+.shop-card.shop-card--basket .shop-card__action {
+    @include tabletSM-block{
+        grid-area: action;
+        background: transparent;
+    }
+    @include mobile-block {
+        background:rgba(255, 255, 255, 0.1);
+        padding: 0 5px 5px 5px;
+    }
 }
 
 .shop-card:first-child {
@@ -63,6 +157,9 @@
     align-items: center;
     justify-content: center;
     padding: 16px 12px;
+    @include tabletSM-block {
+        padding: 21px 20px;
+    }
 }
 
 .shop-card__field {
@@ -79,6 +176,9 @@
 .shop-card__range {
     max-width: 109px;
     width: 100%;
+    @include tabletSM-block {
+        max-width: 200px;
+    }
 }
 
 .shop-card__field[type="number"]::-webkit-outer-spin-button,

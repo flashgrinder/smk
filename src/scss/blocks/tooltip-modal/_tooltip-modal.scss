@@ -36,7 +36,7 @@
 }
 
 .tooltip-modal__body {
-    @include mobileXL-block {
+    @include mobileXS-block {
         padding: 20px;
         max-width: 320px;
     }

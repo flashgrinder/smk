@@ -58,7 +58,7 @@
         right: 400px;
     }
     @include mobile(margin-right, -50px);
-    @include mobileXL(margin-right, -20px);
+    @include mobileXS(margin-right, -20px);
 }
 
 .about__pic--right {
@@ -69,7 +69,7 @@
     @include to(1366px) {
         right: -30px;
     }
-    @include mobileXL(margin-right, 0px);
+    @include mobileXS(margin-right, 0px);
 }
 
 .about__img {
