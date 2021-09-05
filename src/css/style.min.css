@@ -2066,6 +2066,37 @@ img {
   stroke: var(--color-orange);
 }
 
+/* Bascket */
+
+.bascket {
+  top: 75px;
+  right: 5px;
+  position: fixed;
+  background: var(--color-orange);
+  z-index: 1001;
+  border-radius: 50%;
+}
+
+.bascket__icon {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.bascket__svg {
+  stroke: var(--color-black-gray);
+  transition: ease .3s;
+}
+
+.bascket__svg:hover {
+  stroke: var(--color-white);
+}
+
 /* ANOTHER MODULES */
 
 /* ANOTHER MODULES */
@@ -3045,6 +3076,10 @@ button.swiper-pagination-bullet {
 
   .services-store__btn ~ .services-store__btn {
     margin-left: 25px;
+  }
+
+  .bascket {
+    top: 55px;
   }
 }
 
