@@ -8,6 +8,9 @@
     height: 100px;
     width: 100%;
     max-width: 402px;
+    @include mobile-block {
+        max-width: 100%;
+    }
 }
 
 .sidebar__aside {

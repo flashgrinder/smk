@@ -6,6 +6,12 @@
     padding-bottom: 100px;
 }
 
+.services-store.services-store--bascket {
+    @include tablet-block {
+        padding-bottom: 50px;
+    }
+}
+
 .services-store__container.services-store__container--archive,
 .services-store__container.services-store__container--basket {
     display: grid;
@@ -13,7 +19,6 @@
 
 .services-store__container.services-store__container--archive {
     grid-template-columns: 402px 1fr;
-    grid-template-rows: 1fr;
     grid-gap: 20px;
     grid-template-areas: 
         "sidebar shops-cards";
@@ -23,11 +28,12 @@
     @include large-block {
         grid-template-columns: 320px 1fr;
     }
-}
-
-.services-store__container.services-store__container--basket {
-    grid-column: 1fr;
-    grid-template-rows: 1fr;
+    @include mobile-block {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "sidebar"
+            "shops-cards";
+    }
 }
 
 .services-store__container .sidebar--archive {
@@ -41,14 +47,20 @@
 .services-store__actions {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 45px;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     padding-top: 20px;
+    @include mobile-block {
+        flex-direction: column;
+    }
 }
 
-.service-store__buttons {
+.services-store__buttons {
     display: flex;
+    @include mobile-block {
+        flex-direction: column;
+    }
 }
 
 .services-store__btn {
@@ -56,8 +68,15 @@
     align-items: center;
 }
 
-.services-store__btn ~.services-store__btn {
+.services-store__btn ~ .services-store__btn {
     margin-left: 50px;
+    @include tablet-block {
+        margin-left: 25px;
+    }
+    @include mobile-block {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
 }
 
 .services-store__img-btn {
@@ -68,14 +87,22 @@
     margin-left: 15px;
 }
 
+.services-store__subtotal {
+    @include mobile-block {
+        margin-top: 15px;
+    }
+}
+
 .services-store__ordering {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: flex-end;
+    @include mobile-block {
+        justify-content: center;
+    }
 }
 
 .services-store__order {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .services-store__subtotal-price {

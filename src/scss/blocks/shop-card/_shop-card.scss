@@ -15,6 +15,14 @@
         grid-template-areas: "icon name name quantity price"
                              "icon name name quantity action";
     }
+    @include mobileXS-block {
+        height: auto;
+        grid-template-rows: 100px 50px 50px;
+        grid-template-columns: minmax(0, 70px) minmax(0, 120px) minmax(140px, 1fr);
+        grid-template-areas: "icon name name"
+                             "quantity quantity price"
+                             "quantity quantity action";
+    }
 }
 
 .shop-card.shop-card--archive .shop-card__icon {
@@ -22,10 +30,17 @@
         grid-area: icon;
         padding: 10px 20px;
     }
+    @include mobileXS-block {
+        padding: 15px 10px;
+        background: transparent;
+    }
 }
 .shop-card.shop-card--archive .shop-card__name {
     @include to(1366px){
         grid-area: name;
+    }
+    @include mobileXS-block {
+        padding: 5px 10px;
     }
 }
 .shop-card.shop-card--archive .shop-card__quantity {
@@ -33,11 +48,17 @@
         grid-area: quantity;
         padding: 5px 12px;
     }
+    @include mobileXS-block {
+        padding: 21px 20px
+    }
 }
 .shop-card.shop-card--archive .shop-card__price {
     @include to(1366px){
         grid-area: price;
         padding: 5px;
+    }
+    @include mobileXS-block {
+        background: rgba(255, 255, 255, 0.1);
     }
 }
 .shop-card.shop-card--archive .shop-card__action {
@@ -45,6 +66,9 @@
         grid-area: action;
         background: rgba(255, 255, 255, 0.2);
         padding: 0 5px 5px 5px;
+    }
+    @include mobileXS-block {
+        background: rgba(255, 255, 255, 0.1);
     }
 }
 
@@ -59,7 +83,7 @@
     }
     @include mobileXS-block {
         grid-template-rows: 100px 50px 50px;
-        grid-template-columns: minmax(0, 70px) minmax(0, 100px) minmax(140px, 1fr);
+        grid-template-columns: minmax(0, 70px) minmax(0, 120px) minmax(140px, 1fr);
         grid-template-areas: "icon name name"
                              "quantity quantity price"
                              "quantity quantity action";

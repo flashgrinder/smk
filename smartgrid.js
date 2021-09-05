@@ -23,7 +23,8 @@ module.exports = {
 				fields: "15px"
 		},
 		mobileXS: {
-				width: "576px"
+				width: "576px",
+                fields: "10px"
 		},
 		mobileXSS: {
 				width: "400px"

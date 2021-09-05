@@ -26,6 +26,7 @@ $offset_mobileXSS_one_side: ($offset_mobileXSS / 2);
 
 $fields: 30px;
 $fields_mobile: 15px;
+$fields_mobileXS: 10px;
 
 @mixin wrapper-full(){
     padding-left: $fields;
@@ -34,6 +35,11 @@ $fields_mobile: 15px;
     @include mobile-block(){
         padding-left: $fields_mobile;
         padding-right: $fields_mobile;
+    }
+
+    @include mobileXS-block(){
+        padding-left: $fields_mobileXS;
+        padding-right: $fields_mobileXS;
     }
 }
 
