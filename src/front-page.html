@@ -35,8 +35,10 @@
     <div class="modal" data-modal="modal">
         <div class="modal__body">
             <div class="modal__close">
-                <svg class="modal__close-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
-                    <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285 L284.286,256.002z"></path>
+                <svg class="modal__close-svg" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="12.5" fill="#C4C4C4" fill-opacity="0.2" stroke="white" />
+                    <line x1="6.8574" y1="6.45968" x2="19.5403" y2="19.1426" stroke="white" />
+                    <line x1="6.45968" y1="19.1426" x2="19.1426" y2="6.4597" stroke="white" />
                 </svg>
             </div>
             <div class="modal__header">
@@ -139,6 +141,20 @@
         </div>
     </header>
 
+    <!-- Basket -->
+    <a href="javascript:;" class="bascket">
+        <div class="bascket__icon">
+            <svg class="bascket__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 7H3.45017C4.64994 7 5.73432 7.71481 6.20726 8.81743L6.32274 9.08667M9.37243 16.1968H19.3883C20.6293 16.1968 21.7422 15.4327 22.188 14.2746L22.6154 13.1645C23.3719 11.1993 21.9214 9.08667 19.8157 9.08667H6.32274M9.37243 16.1968L6.32274 9.08667M9.37243 16.1968L9.53355 16.6327C9.9689 17.8105 11.0918 18.5926 12.3475 18.5926H21.0455"
+                stroke-linecap="round" />
+                <circle cx="12.5926" cy="21.6433" r="1.33041" />
+                <circle cx="18.6942" cy="21.6433" r="1.33041" />
+                <path d="M29.5 15C29.5 23.0081 23.0081 29.5 15 29.5C6.99187 29.5 0.5 23.0081 0.5 15C0.5 6.99187 6.99187 0.5 15 0.5C23.0081 0.5 29.5 6.99187 29.5 15Z" />
+            </svg>
+        </div>
+    </a>
+    <!-- /. Basket -->
+
     <!-- MAIN -->
     <main class="main page__container bg--dark">
 
@@ -177,14 +193,16 @@
 
         <!-- Services-slider -->
         <section class="services-slider">
-            <div class="tooltip-modal" data-modal="modal-1">
+            <div class="tooltip-modal" data-tooltip="tooltip-id-1">
                 <div class="tooltip-modal__body">
                     <div class="tooltip-modal__close">
-                        <svg class="tooltip-modal__close-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
-                            <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285 L284.286,256.002z"></path>
+                        <svg class="tooltip-modal__close-svg" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="13" cy="13" r="12.5" fill="#C4C4C4" fill-opacity="0.2" stroke="white" />
+                            <line x1="6.8574" y1="6.45968" x2="19.5403" y2="19.1426" stroke="white" />
+                            <line x1="6.45968" y1="19.1426" x2="19.1426" y2="6.4597" stroke="white" />
                         </svg>
                     </div>
-                    <div class="tooltip-modal__text wysiwyg">
+                    <div class="tooltip-modal__text text text--normal text--w-regular text--white wysiwyg">
                         <ul>
                             <li>Чистка и уборка прилегающих территорий</li>
                             <li>Благоустройство ландшафта</li>
@@ -238,7 +256,7 @@
                                     Чистка и уборка прилегающих территорий
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="" class="button button--trs">
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
 
                                     Узнать подробнее
 
@@ -246,7 +264,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal-1">
+                                <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
 
                                 Рассчитать услугу
 
@@ -265,7 +283,7 @@
                                     Благоустройство ландшафта
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="" class="button button--trs">
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
 
                                     Узнать подробнее
 
@@ -292,7 +310,7 @@
                                     Комплексное обслуживание территорий и помещений
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="" class="button button--trs">
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
 
                                     Узнать подробнее
 
@@ -319,7 +337,7 @@
                                     Выполнение строительного контроля и авторского надзора
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="" class="button button--trs">
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
 
                                     Узнать подробнее
 
@@ -346,7 +364,7 @@
                                     Сбор неопасных отходов и обработка сточных вод
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="" class="button button--trs">
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
 
                                     Узнать подробнее
 
@@ -373,7 +391,7 @@
                                     Управления проектами строительства
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="" class="button button--trs">
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
 
                                     Узнать подробнее
 
@@ -400,7 +418,7 @@
                                     Деятельность в области инженерных изысканий
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="" class="button button--trs">
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
 
                                     Узнать подробнее
 
@@ -427,7 +445,7 @@
                                     Строительство и эксплуатация автомобильных дорог и автомагистралей
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="" class="button button--trs">
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
 
                                     Узнать подробнее
 
@@ -557,7 +575,7 @@
                                         </div>
                                     </div>
                                     <div class="technique-card__action">
-                                        <a href="" class="technique-card__button button button--yellow">
+                                        <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
 
                                         Арендовать
 
@@ -668,7 +686,7 @@
                                         </div>
                                     </div>
                                     <div class="technique-card__action">
-                                        <a href="" class="technique-card__button button button--yellow">
+                                        <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
 
                                         Арендовать
 
@@ -779,7 +797,7 @@
                                         </div>
                                     </div>
                                     <div class="technique-card__action">
-                                        <a href="" class="technique-card__button button button--yellow">
+                                        <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
 
                                         Арендовать
 

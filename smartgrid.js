@@ -8,21 +8,25 @@ module.exports = {
 		fields: "30px"
 	},
 	breakPoints: {
-		medium: {
+		large: {
 				width: '1200px',
 		},
 		tablet: {
 				width: '1024px'
 		},
+		tabletSM: {
+				width: '992px'
+		},
 		mobile: {
-				width: "767px",
+				width: "768px",
 				offset: "15px",
 				fields: "15px"
 		},
-		mobileXL: {
-				width: "567px"
-		},
 		mobileXS: {
+				width: "576px",
+                fields: "10px"
+		},
+		mobileXSS: {
 				width: "400px"
 		}
 	},

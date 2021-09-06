@@ -1,0 +1,279 @@
+.shop-card {
+    background: var(--color-black-gray-hight);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+}
+
+.shop-card.shop-card--archive {
+    grid-template-columns: minmax(0, 103px) minmax(0, 372px) minmax(133px, 1fr) minmax(129px,1fr) minmax(186px, 1fr);
+    @include to(1366px){
+        grid-template-columns: minmax(0, 103px) 1fr 1fr 1fr 1fr;
+        grid-template-areas: "icon name name quantity price"
+                             "icon name name quantity action";
+    }
+    @include mobileXS-block {
+        height: auto;
+        grid-template-rows: 100px 50px 50px;
+        grid-template-columns: minmax(0, 70px) minmax(0, 120px) minmax(140px, 1fr);
+        grid-template-areas: "icon name name"
+                             "quantity quantity price"
+                             "quantity quantity action";
+    }
+}
+
+.shop-card.shop-card--archive .shop-card__icon {
+    @include to(1366px){
+        grid-area: icon;
+        padding: 10px 20px;
+    }
+    @include mobileXS-block {
+        padding: 15px 10px;
+        background: transparent;
+    }
+}
+.shop-card.shop-card--archive .shop-card__name {
+    @include to(1366px){
+        grid-area: name;
+    }
+    @include mobileXS-block {
+        padding: 5px 10px;
+    }
+}
+.shop-card.shop-card--archive .shop-card__quantity {
+    @include to(1366px){
+        grid-area: quantity;
+        padding: 5px 12px;
+    }
+    @include mobileXS-block {
+        padding: 21px 20px
+    }
+}
+.shop-card.shop-card--archive .shop-card__price {
+    @include to(1366px){
+        grid-area: price;
+        padding: 5px;
+    }
+    @include mobileXS-block {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+.shop-card.shop-card--archive .shop-card__action {
+    @include to(1366px){
+        grid-area: action;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 0 5px 5px 5px;
+    }
+    @include mobileXS-block {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.shop-card.shop-card--basket {
+    grid-template-columns: minmax(0, 133px) minmax(0, 1fr) minmax(0, 227px) minmax(0,208px) minmax(0, 94px);
+    @include tabletSM-block {
+        height: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: minmax(0, 103px) 1fr 1fr 1fr;
+        grid-template-areas: "icon name name quantity price"
+                             "icon name name quantity action";
+    }
+    @include mobileXS-block {
+        grid-template-rows: 100px 50px 50px;
+        grid-template-columns: minmax(0, 70px) minmax(0, 120px) minmax(140px, 1fr);
+        grid-template-areas: "icon name name"
+                             "quantity quantity price"
+                             "quantity quantity action";
+    }
+}
+
+.shop-card.shop-card--basket .shop-card__icon {
+    @include tabletSM-block{
+        grid-area: icon;
+        padding: 15px 10px;
+    }
+    @include mobile-block {
+        background: transparent;
+    }
+}
+.shop-card.shop-card--basket .shop-card__name {
+    @include tabletSM-block{
+        grid-area: name;
+    }
+    @include mobile-block {
+        padding: 5px 10px;
+    }
+}
+.shop-card.shop-card--basket .shop-card__quantity {
+    @include tabletSM-block{
+        grid-area: quantity;
+        background:rgba(255, 255, 255, 0.1);
+    }
+}
+.shop-card.shop-card--basket .shop-card__price {
+    @include tabletSM-block{
+        grid-area: price;
+        background: transparent;
+    }
+    @include mobile-block {
+        background:rgba(255, 255, 255, 0.1);
+        padding: 10px 5px 5px 0;
+    }
+}
+.shop-card.shop-card--basket .shop-card__action {
+    @include tabletSM-block{
+        grid-area: action;
+        background: transparent;
+    }
+    @include mobile-block {
+        background:rgba(255, 255, 255, 0.1);
+        padding: 0 5px 5px 5px;
+    }
+}
+
+.shop-card:first-child {
+    border-radius: 20px 20px 0 0;
+}
+
+.shop-card:last-child {
+    border-bottom: none;
+    border-radius: 0 0 20px 20px;
+}
+
+.shop-card__img {
+    display: block;
+}
+
+.shop-card__icon,
+.shop-card__quantity {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.shop-card__name,
+.shop-card__action {
+    background: var(--color-black-gray-hight);
+}
+
+.shop-card__price {
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.shop-card__icon,
+.shop-card__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-card__name {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 25px;
+}
+
+.shop-card__quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 12px;
+    @include tabletSM-block {
+        padding: 21px 20px;
+    }
+}
+
+.shop-card__field {
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    padding: 10px 4px;
+    outline: 0;
+    text-align: center;
+}
+
+.shop-card__field,
+.shop-card__range {
+    max-width: 109px;
+    width: 100%;
+    @include tabletSM-block {
+        max-width: 200px;
+    }
+}
+
+.shop-card__field[type="number"]::-webkit-outer-spin-button,
+.shop-card__field[type="number"]::-webkit-inner-spin-button,
+.shop-card__field[type="number"]:hover,
+.shop-card__field[type="number"]:focus,
+.shop-card__field[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    -moz-appearance: number-input;
+    margin: 0;
+}
+
+.shop-card__field::placeholder {
+    color: var(--color-white);
+}
+
+.shop-card__range {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 15px;
+    height: 2px;
+    background: var(--color-white);
+    outline: none;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+
+.shop-card__range:hover {
+    opacity: 1;
+}
+
+.shop-card__range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--color-white);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.shop-card__range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--color-white);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.shop-card__price {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 11px;
+}
+
+.shop-card__action {
+    padding: 10px;
+}
+
+.shop-card__btn {
+    text-decoration: none;
+}
+
+.shop-card__btn-svg {
+    stroke: var(--color-white);
+    transition: ease .3s;
+}
+
+.shop-card__btn-svg:hover {
+    stroke: var(--color-orange);
+}

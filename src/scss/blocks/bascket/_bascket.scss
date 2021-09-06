@@ -1,0 +1,28 @@
+.bascket {
+    top: 75px;
+    right: 5px;
+    position: fixed;
+    background: var(--color-orange);
+    z-index: 1001;
+    border-radius: 50%;
+    @include tablet-block {
+        top: 55px;
+    }
+}
+
+.bascket__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.bascket__svg {
+    stroke: var(--color-black-gray);
+    transition: ease .3s;
+}
+
+.bascket__svg:hover {
+    stroke: var(--color-white);
+}
