@@ -5,7 +5,7 @@
     <footer class="footer">
         <div class="footer__body container">
             <div class="footer__logo logo">
-                <img src="img/logo-big.png" alt="" class="footer__logo-img logo__img">
+                <img src="<?php echo STANDART_DIR; ?>img/logo-big.png" alt="" class="footer__logo-img logo__img">
             </div>
             <div class="footer__inner">
                 <nav class="footer__menu menu">
@@ -63,16 +63,16 @@
                 </span>
                 <div class="footer__social-icons">
                     <a href="#" class="footer__social-icon">
-                        <img src="img/icon-vk.png" alt="" class="footer__social-img">
+                        <img src="<?php echo STANDART_DIR; ?>img/icon-vk.png" alt="" class="footer__social-img">
                     </a>
                     <a href="#" class="footer__social-icon">
-                        <img src="img/icon-inst.png" alt="" class="footer__social-img">
+                        <img src="<?php echo STANDART_DIR; ?>img/icon-inst.png" alt="" class="footer__social-img">
                     </a>
                     <a href="#" class="footer__social-icon">
-                        <img src="img/icon-fb.png" alt="" class="footer__social-img">
+                        <img src="<?php echo STANDART_DIR; ?>img/icon-fb.png" alt="" class="footer__social-img">
                     </a>
                     <a href="#" class="footer__social-icon">
-                        <img src="img/icon-tg.png" alt="" class="footer__social-img">
+                        <img src="<?php echo STANDART_DIR; ?>img/icon-tg.png" alt="" class="footer__social-img">
                     </a>
                 </div>
             </div>
@@ -91,7 +91,8 @@
     </footer>
     <!-- /. Footer -->
 
-    <script src="js/scripts.min.js"></script>
+    <?php wp_footer(); ?>
+
 </body>
 
 </html>

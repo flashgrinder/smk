@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="page bg--dark">
+<body <?php body_class('page') ?>>
 
     <!-- Modal window -->
     <div class="modal" data-modal="modal">
@@ -69,7 +69,7 @@
         <div class="header__bg"></div>
         <div class="header__body container">
             <a href="<?php echo home_url(); ?>" class="header__logo logo">
-                <img src="img/logo-big.png" alt="" class="header__logo-img logo__img">
+                <img src="<?php echo STANDART_DIR; ?>img/logo-big.png" alt="" class="header__logo-img logo__img">
             </a>
             <div class="header__menu js-menu">
                 <nav class="menu">

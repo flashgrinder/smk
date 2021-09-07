@@ -55,11 +55,8 @@
             </div>
             <div class="services-slider__body container">
                 <div class="services-slider__inner">
-                    <h2
-                        class="services-slider__heading title title--white title--large title--uppercase title--w-black">
-
+                    <h2 class="services-slider__heading title title--white title--large title--uppercase title--w-black">
                         Наши услуги:
-
                     </h2>
                     <div class="services-slider__nav">
                         <div class="services-slider__arrow services-slider__arrow--prev">
@@ -72,9 +69,7 @@
                         </div>
                         <div class="services-slider__arrow services-slider__arrow--next">
                             <span class="services-slider__arrow-text text text--white text--normal text--w-regular">
-
                                 Посмотреть еще
-
                             </span>
                             <svg class="services-slider__arrow-svg services-slider__arrow-svg--next" width="22"
                                 height="24" viewBox="0 0 22 24" xmlns="http://www.w3.org/2000/svg">
@@ -90,240 +85,190 @@
                         <div class="services-slider__slide swiper-slide">
                             <div class="services-slider__card">
                                 <div class="services-slider__illustration">
-                                    <img src="img/service-slider/service-img-1.png" alt=""
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-1.png" alt=""
                                         class="services-slider__illustration-img">
                                 </div>
                                 <div class="services-slider__icon">
-                                    <img src="img/service-slider/service-icon-1.png" alt=""
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-1.png" alt=""
                                         class="services-slider__icon-img">
                                 </div>
                                 <div class="services-slider__text title title--white title--medium title--w-bold">
                                     Чистка и уборка прилегающих территорий
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs"
-                                        data-tooltip-trigger="tooltip-id-1">
-
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
                                         Узнать подробнее
-
                                     </a>
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
                                 <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
-
                                     Рассчитать услугу
-
                                 </a>
                             </div>
                         </div>
                         <div class="services-slider__slide swiper-slide">
                             <div class="services-slider__card">
                                 <div class="services-slider__illustration">
-                                    <img src="img/service-slider/service-img-2.png" alt=""
-                                        class="services-slider__illustration-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-2.png" alt="" class="services-slider__illustration-img">
                                 </div>
                                 <div class="services-slider__icon">
-                                    <img src="img/service-slider/service-icon-2.png" alt=""
-                                        class="services-slider__icon-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-2.png" alt="" class="services-slider__icon-img">
                                 </div>
                                 <div class="services-slider__text title title--white title--medium title--w-bold">
                                     Благоустройство ландшафта
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs"
-                                        data-tooltip-trigger="tooltip-id-1">
-
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
                                         Узнать подробнее
-
                                     </a>
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
                                 <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
-
                                     Рассчитать услугу
-
                                 </a>
                             </div>
                         </div>
                         <div class="services-slider__slide swiper-slide">
                             <div class="services-slider__card">
                                 <div class="services-slider__illustration">
-                                    <img src="img/service-slider/service-img-3.png" alt=""
-                                        class="services-slider__illustration-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-3.png" alt="" class="services-slider__illustration-img">
                                 </div>
                                 <div class="services-slider__icon">
-                                    <img src="img/service-slider/service-icon-3.png" alt=""
-                                        class="services-slider__icon-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-3.png" alt="" class="services-slider__icon-img">
                                 </div>
                                 <div class="services-slider__text title title--white title--medium title--w-bold">
                                     Комплексное обслуживание территорий и помещений
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs"
-                                        data-tooltip-trigger="tooltip-id-1">
-
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
                                         Узнать подробнее
-
                                     </a>
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
                                 <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
-
                                     Рассчитать услугу
-
                                 </a>
                             </div>
                         </div>
                         <div class="services-slider__slide swiper-slide">
                             <div class="services-slider__card">
                                 <div class="services-slider__illustration">
-                                    <img src="img/service-slider/service-img-4.png" alt=""
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-4.png" alt=""
                                         class="services-slider__illustration-img">
                                 </div>
                                 <div class="services-slider__icon">
-                                    <img src="img/service-slider/service-icon-4.png" alt=""
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-4.png" alt=""
                                         class="services-slider__icon-img">
                                 </div>
                                 <div class="services-slider__text title title--white title--medium title--w-bold">
                                     Выполнение строительного контроля и авторского надзора
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs"
-                                        data-tooltip-trigger="tooltip-id-1">
-
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
                                         Узнать подробнее
-
                                     </a>
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
                                 <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
-
                                     Рассчитать услугу
-
                                 </a>
                             </div>
                         </div>
                         <div class="services-slider__slide swiper-slide">
                             <div class="services-slider__card">
                                 <div class="services-slider__illustration">
-                                    <img src="img/service-slider/service-img-5.png" alt=""
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-5.png" alt=""
                                         class="services-slider__illustration-img">
                                 </div>
                                 <div class="services-slider__icon">
-                                    <img src="img/service-slider/service-icon-5.png" alt=""
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-5.png" alt=""
                                         class="services-slider__icon-img">
                                 </div>
                                 <div class="services-slider__text title title--white title--medium title--w-bold">
                                     Сбор неопасных отходов и обработка сточных вод
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs"
-                                        data-tooltip-trigger="tooltip-id-1">
-
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
                                         Узнать подробнее
-
                                     </a>
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
                                 <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
-
                                     Рассчитать услугу
-
                                 </a>
                             </div>
                         </div>
                         <div class="services-slider__slide swiper-slide">
                             <div class="services-slider__card">
                                 <div class="services-slider__illustration">
-                                    <img src="img/service-slider/service-img-6.png" alt=""
-                                        class="services-slider__illustration-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-6.png" alt="" class="services-slider__illustration-img">
                                 </div>
                                 <div class="services-slider__icon">
-                                    <img src="img/service-slider/service-icon-6.png" alt=""
-                                        class="services-slider__icon-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-6.png" alt="" class="services-slider__icon-img">
                                 </div>
                                 <div class="services-slider__text title title--white title--medium title--w-bold">
                                     Управления проектами строительства
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs"
-                                        data-tooltip-trigger="tooltip-id-1">
-
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
                                         Узнать подробнее
-
                                     </a>
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
                                 <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
-
                                     Рассчитать услугу
-
                                 </a>
                             </div>
                         </div>
                         <div class="services-slider__slide swiper-slide">
                             <div class="services-slider__card">
                                 <div class="services-slider__illustration">
-                                    <img src="img/service-slider/service-img-7.png" alt=""
-                                        class="services-slider__illustration-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-7.png" alt="" class="services-slider__illustration-img">
                                 </div>
                                 <div class="services-slider__icon">
-                                    <img src="img/service-slider/service-icon-7.png" alt=""
-                                        class="services-slider__icon-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-7.png" alt="" class="services-slider__icon-img">
                                 </div>
                                 <div class="services-slider__text title title--white title--medium title--w-bold">
                                     Деятельность в области инженерных изысканий
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs"
-                                        data-tooltip-trigger="tooltip-id-1">
-
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
                                         Узнать подробнее
-
                                     </a>
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
                                 <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
-
                                     Рассчитать услугу
-
                                 </a>
                             </div>
                         </div>
                         <div class="services-slider__slide swiper-slide">
                             <div class="services-slider__card">
                                 <div class="services-slider__illustration">
-                                    <img src="img/service-slider/service-img-8.png" alt=""
-                                        class="services-slider__illustration-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-8.png" alt="" class="services-slider__illustration-img">
                                 </div>
                                 <div class="services-slider__icon">
-                                    <img src="img/service-slider/service-icon-8.png" alt=""
-                                        class="services-slider__icon-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-8.png" alt="" class="services-slider__icon-img">
                                 </div>
                                 <div class="services-slider__text title title--white title--medium title--w-bold">
                                     Строительство и эксплуатация автомобильных дорог и автомагистралей
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs"
-                                        data-tooltip-trigger="tooltip-id-1">
-
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
                                         Узнать подробнее
-
                                     </a>
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
                                 <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
-
                                     Рассчитать услугу
-
                                 </a>
                             </div>
                         </div>
@@ -336,11 +281,8 @@
         <!-- Techniaue -->
         <section class="technique">
             <div class="technique__body container">
-                <h2
-                    class="technique__heading title title--white title--large title--uppercase title--w-black title--indent">
-
+                <h2 class="technique__heading title title--white title--large title--uppercase title--w-black title--indent">
                     Аренда и лизинг <br>спецтехники
-
                 </h2>
                 <div class="technique__cards">
 
@@ -349,76 +291,42 @@
                         <div class="technique-card__inner">
                             <div class="technique-card__side technique-card__side--left">
                                 <h3 class="technique-card__heading title title--orange title--medium title--w-black">
-
-                                    Автобетононасосы Putzmeister
-
+                                    Автокран c телескопической стрелой LIEBHERR LTM 1050-3.1
                                 </h3>
                                 <span class="technique-card__title text text--white text--normal text-w-regular">
-
                                     Технические данные:
-
                                 </span>
                                 <table class="technique-card__table">
                                     <tbody class="technique-card__tbody">
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Объем подачи бетона</td>
-                                            <td class="technique-card__td">200 м³/ч</td>
+                                            <td class="technique-card__td">Макс. Грузоподъёмность</td>
+                                            <td class="technique-card__td">50 т</td>
                                         </tr>
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Давление подачи бетона</td>
-                                            <td class="technique-card__td">85 бар</td>
+                                            <td class="technique-card__td">Телескопическая стрела</td>
+                                            <td class="technique-card__td">38 м</td>
                                         </tr>
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Диаметр цилиндра</td>
-                                            <td class="technique-card__td">280 мм</td>
+                                            <td class="technique-card__td">Макс. высота подъёма</td>
+                                            <td class="technique-card__td">54 м</td>
                                         </tr>
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Ход цилиндра</td>
-                                            <td class="technique-card__td">2100 мм</td>
+                                            <td class="technique-card__td">Макс. вылет стрелы</td>
+                                            <td class="technique-card__td">44 м</td>
                                         </tr>
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Тип раскладывания</td>
-                                            <td class="technique-card__td">RZ-образное</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Количество секций распределительной стрелы
-                                            </td>
-                                            <td class="technique-card__td">5</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Дальность подачи вверх</td>
-                                            <td class="technique-card__td">62,1 м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Дальность подачи по горизонтали</td>
-                                            <td class="technique-card__td">58,1 м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Подача вниз</td>
-                                            <td class="technique-card__td">46,3 м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Бетоновод, внутренний диаметр</td>
-                                            <td class="technique-card__td">125 мм</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Длина концевого распредшланга</td>
-                                            <td class="technique-card__td">3 м</td>
+                                            <td class="technique-card__td">Количество осей </td>
+                                            <td class="technique-card__td">3</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="technique-card__side technique-card__side--right">
                                 <div class="technique-card__text text text--white text--normal text--w-regular">
-                                    Имеет пятисекционную распределительную стрелу RZ типа с максимально возможной
-                                    подачей бетона 62,1 м по вертикали. Такой диапазон доступен на мировом рынке только
-                                    с самой современной технологией, немецкого качетва Putzmeister. Насос высокой
-                                    производительности
-                                    до 200 кубометров в час смонтированный на шестиосном шасси полуприцепа делает M63-5
-                                    самым универсальным в своем классе.
+                                    Имеет пятисекционную распределительную стрелу RZ типа с максимально возможной подачей бетона 62,1 м по вертикали. Такой диапазон доступен на мировом рынке только с самой современной технологией, немецкого качетва Putzmeister. Насос высокой производительности до 200 кубометров в час смонтированный на шестиосном шасси полуприцепа делает M63-5 самым универсальным в своем классе.
                                 </div>
                                 <div class="technique-card__picture">
-                                    <img src="img/technique/tech-1.png" alt="" class="technique-card__img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-1.png" alt="" class="technique-card__img">
                                 </div>
                                 <div class="technique-card__wrapp">
                                     <div class="technique-card__features">
@@ -426,8 +334,7 @@
                                             <div class="technique-card__item-pic">
                                                 <img src="" alt="" class="technique-card__item-img">
                                             </div>
-                                            <div
-                                                class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
                                                 1 преимущество
                                             </div>
                                         </div>
@@ -435,8 +342,7 @@
                                             <div class="technique-card__item-pic">
                                                 <img src="" alt="" class="technique-card__item-img">
                                             </div>
-                                            <div
-                                                class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
                                                 2 преимущество
                                             </div>
                                         </div>
@@ -444,18 +350,14 @@
                                             <div class="technique-card__item-pic">
                                                 <img src="" alt="" class="technique-card__item-img">
                                             </div>
-                                            <div
-                                                class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
                                                 3 преимущество
                                             </div>
                                         </div>
                                     </div>
                                     <div class="technique-card__action">
-                                        <a href="javascript:;" class="technique-card__button button button--yellow"
-                                            data-modal-trigger="modal">
-
+                                        <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
                                             Арендовать
-
                                         </a>
                                     </div>
                                 </div>
@@ -469,76 +371,42 @@
                         <div class="technique-card__inner">
                             <div class="technique-card__side technique-card__side--left">
                                 <h3 class="technique-card__heading title title--orange title--medium title--w-black">
-
-                                    Автобетононасосы Putzmeister
-
+                                    Автокран c телескопической стрелой LIEBHERR LTM 1300-6.2
                                 </h3>
                                 <span class="technique-card__title text text--white text--normal text-w-regular">
-
                                     Технические данные:
-
                                 </span>
                                 <table class="technique-card__table">
                                     <tbody class="technique-card__tbody">
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Объем подачи бетона</td>
-                                            <td class="technique-card__td">200 м³/ч</td>
+                                            <td class="technique-card__td">Макс. Грузоподъёмность</td>
+                                            <td class="technique-card__td">300 т</td>
                                         </tr>
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Давление подачи бетона</td>
-                                            <td class="technique-card__td">85 бар</td>
+                                            <td class="technique-card__td">Телескопическая стрела</td>
+                                            <td class="technique-card__td">78 м</td>
                                         </tr>
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Диаметр цилиндра</td>
-                                            <td class="technique-card__td">280 мм</td>
+                                            <td class="technique-card__td">Макс. высота подъёма</td>
+                                            <td class="technique-card__td">114 м</td>
                                         </tr>
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Ход цилиндра</td>
-                                            <td class="technique-card__td">2100 мм</td>
+                                            <td class="technique-card__td">Макс. вылет стрелы</td>
+                                            <td class="technique-card__td">94 м</td>
                                         </tr>
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Тип раскладывания</td>
-                                            <td class="technique-card__td">RZ-образное</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Количество секций распределительной стрелы
-                                            </td>
-                                            <td class="technique-card__td">5</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Дальность подачи вверх</td>
-                                            <td class="technique-card__td">62,1 м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Дальность подачи по горизонтали</td>
-                                            <td class="technique-card__td">58,1 м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Подача вниз</td>
-                                            <td class="technique-card__td">46,3 м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Бетоновод, внутренний диаметр</td>
-                                            <td class="technique-card__td">125 мм</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Длина концевого распредшланга</td>
-                                            <td class="technique-card__td">3 м</td>
+                                            <td class="technique-card__td">Количество осей</td>
+                                            <td class="technique-card__td">6</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="technique-card__side technique-card__side--right">
                                 <div class="technique-card__text text text--white text--normal text--w-regular">
-                                    Имеет пятисекционную распределительную стрелу RZ типа с максимально возможной
-                                    подачей бетона 62,1 м по вертикали. Такой диапазон доступен на мировом рынке только
-                                    с самой современной технологией, немецкого качетва Putzmeister. Насос высокой
-                                    производительности
-                                    до 200 кубометров в час смонтированный на шестиосном шасси полуприцепа делает M63-5
-                                    самым универсальным в своем классе.
+                                    Имеет пятисекционную распределительную стрелу RZ типа с максимально возможной подачей бетона 62,1 м по вертикали. Такой диапазон доступен на мировом рынке только с самой современной технологией, немецкого качетва Putzmeister. Насос высокой производительности до 200 кубометров в час смонтированный на шестиосном шасси полуприцепа делает M63-5 самым универсальным в своем классе.
                                 </div>
                                 <div class="technique-card__picture">
-                                    <img src="img/technique/tech-2.png" alt="" class="technique-card__img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-2.png" alt="" class="technique-card__img">
                                 </div>
                                 <div class="technique-card__wrapp">
                                     <div class="technique-card__features">
@@ -546,8 +414,7 @@
                                             <div class="technique-card__item-pic">
                                                 <img src="" alt="" class="technique-card__item-img">
                                             </div>
-                                            <div
-                                                class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
                                                 1 преимущество
                                             </div>
                                         </div>
@@ -555,8 +422,7 @@
                                             <div class="technique-card__item-pic">
                                                 <img src="" alt="" class="technique-card__item-img">
                                             </div>
-                                            <div
-                                                class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
                                                 2 преимущество
                                             </div>
                                         </div>
@@ -564,18 +430,14 @@
                                             <div class="technique-card__item-pic">
                                                 <img src="" alt="" class="technique-card__item-img">
                                             </div>
-                                            <div
-                                                class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
                                                 3 преимущество
                                             </div>
                                         </div>
                                     </div>
                                     <div class="technique-card__action">
-                                        <a href="javascript:;" class="technique-card__button button button--yellow"
-                                            data-modal-trigger="modal">
-
+                                        <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
                                             Арендовать
-
                                         </a>
                                     </div>
                                 </div>
@@ -589,76 +451,38 @@
                         <div class="technique-card__inner">
                             <div class="technique-card__side technique-card__side--left">
                                 <h3 class="technique-card__heading title title--orange title--medium title--w-black">
-
-                                    Автобетононасосы Putzmeister
-
+                                    Гусеничный кран c телескопической стрелой LIEBHERR LTR 1220
                                 </h3>
                                 <span class="technique-card__title text text--white text--normal text-w-regular">
-
                                     Технические данные:
-
                                 </span>
                                 <table class="technique-card__table">
                                     <tbody class="technique-card__tbody">
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Объем подачи бетона</td>
-                                            <td class="technique-card__td">200 м³/ч</td>
+                                            <td class="technique-card__td">Макс. Грузоподъёмность</td>
+                                            <td class="technique-card__td">220 т</td>
                                         </tr>
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Давление подачи бетона</td>
-                                            <td class="technique-card__td">85 бар</td>
+                                            <td class="technique-card__td">Телескопическая стрела</td>
+                                            <td class="technique-card__td">60 м</td>
                                         </tr>
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Диаметр цилиндра</td>
-                                            <td class="technique-card__td">280 мм</td>
+                                            <td class="technique-card__td">Макс. высота подъёма</td>
+                                            <td class="technique-card__td">101 м</td>
                                         </tr>
                                         <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Ход цилиндра</td>
-                                            <td class="technique-card__td">2100 мм</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Тип раскладывания</td>
-                                            <td class="technique-card__td">RZ-образное</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Количество секций распределительной стрелы
-                                            </td>
-                                            <td class="technique-card__td">5</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Дальность подачи вверх</td>
-                                            <td class="technique-card__td">62,1 м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Дальность подачи по горизонтали</td>
-                                            <td class="technique-card__td">58,1 м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Подача вниз</td>
-                                            <td class="technique-card__td">46,3 м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Бетоновод, внутренний диаметр</td>
-                                            <td class="technique-card__td">125 мм</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Длина концевого распредшланга</td>
-                                            <td class="technique-card__td">3 м</td>
+                                            <td class="technique-card__td">Макс. вылет стрелы</td>
+                                            <td class="technique-card__td">88 м</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="technique-card__side technique-card__side--right">
                                 <div class="technique-card__text text text--white text--normal text--w-regular">
-                                    Имеет пятисекционную распределительную стрелу RZ типа с максимально возможной
-                                    подачей бетона 62,1 м по вертикали. Такой диапазон доступен на мировом рынке только
-                                    с самой современной технологией, немецкого качетва Putzmeister. Насос высокой
-                                    производительности
-                                    до 200 кубометров в час смонтированный на шестиосном шасси полуприцепа делает M63-5
-                                    самым универсальным в своем классе.
+                                    Имеет пятисекционную распределительную стрелу RZ типа с максимально возможной подачей бетона 62,1 м по вертикали. Такой диапазон доступен на мировом рынке только с самой современной технологией, немецкого качетва Putzmeister. Насос высокой производительности до 200 кубометров в час смонтированный на шестиосном шасси полуприцепа делает M63-5 самым универсальным в своем классе.
                                 </div>
                                 <div class="technique-card__picture">
-                                    <img src="img/technique/tech-3.png" alt="" class="technique-card__img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-3.png" alt="" class="technique-card__img">
                                 </div>
                                 <div class="technique-card__wrapp">
                                     <div class="technique-card__features">
@@ -666,8 +490,7 @@
                                             <div class="technique-card__item-pic">
                                                 <img src="" alt="" class="technique-card__item-img">
                                             </div>
-                                            <div
-                                                class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
                                                 1 преимущество
                                             </div>
                                         </div>
@@ -675,8 +498,7 @@
                                             <div class="technique-card__item-pic">
                                                 <img src="" alt="" class="technique-card__item-img">
                                             </div>
-                                            <div
-                                                class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
                                                 2 преимущество
                                             </div>
                                         </div>
@@ -684,18 +506,182 @@
                                             <div class="technique-card__item-pic">
                                                 <img src="" alt="" class="technique-card__item-img">
                                             </div>
-                                            <div
-                                                class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
                                                 3 преимущество
                                             </div>
                                         </div>
                                     </div>
                                     <div class="technique-card__action">
-                                        <a href="javascript:;" class="technique-card__button button button--yellow"
-                                            data-modal-trigger="modal">
-
+                                        <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
                                             Арендовать
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /. Technique-card -->
 
+                    <!-- Technique-card -->
+                    <div class="technique-card">
+                        <div class="technique-card__inner">
+                            <div class="technique-card__side technique-card__side--left">
+                                <h3 class="technique-card__heading title title--orange title--medium title--w-black">
+                                    Автобетоносмеситель LIEBHERR HTM 1004
+                                </h3>
+                                <span class="technique-card__title text text--white text--normal text-w-regular">
+                                    Технические данные:
+                                </span>
+                                <table class="technique-card__table">
+                                    <tbody class="technique-card__tbody">
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Номинальный объем смесителя</td>
+                                            <td class="technique-card__td">10 м³</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Максимальный объем в горизонтальном положении</td>
+                                            <td class="technique-card__td">11,05 м³</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Геометрический объем смесителя</td>
+                                            <td class="technique-card__td">17,64 м³</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Максимальная высота смесителя без рамы</td>
+                                            <td class="technique-card__td">3 907 мм</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Высота загрузки без рамы</td>
+                                            <td class="technique-card__td">3 817 мм</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Вес смесителя с приводом от шасси</td>
+                                            <td class="technique-card__td">7 290 кг</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Вес смесителя с отдельным двигателем</td>
+                                            <td class="technique-card__td">900 кг</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="technique-card__side technique-card__side--right">
+                                <div class="technique-card__text text text--white text--normal text--w-regular">
+                                    Имеет пятисекционную распределительную стрелу RZ типа с максимально возможной подачей бетона 62,1 м по вертикали. Такой диапазон доступен на мировом рынке только с самой современной технологией, немецкого качетва Putzmeister. Насос высокой производительности до 200 кубометров в час смонтированный на шестиосном шасси полуприцепа делает M63-5 самым универсальным в своем классе.
+                                </div>
+                                <div class="technique-card__picture">
+                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-4.png" alt="" class="technique-card__img">
+                                </div>
+                                <div class="technique-card__wrapp">
+                                    <div class="technique-card__features">
+                                        <div class="technique-card__item">
+                                            <div class="technique-card__item-pic">
+                                                <img src="" alt="" class="technique-card__item-img">
+                                            </div>
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                                1 преимущество
+                                            </div>
+                                        </div>
+                                        <div class="technique-card__item">
+                                            <div class="technique-card__item-pic">
+                                                <img src="" alt="" class="technique-card__item-img">
+                                            </div>
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                                2 преимущество
+                                            </div>
+                                        </div>
+                                        <div class="technique-card__item">
+                                            <div class="technique-card__item-pic">
+                                                <img src="" alt="" class="technique-card__item-img">
+                                            </div>
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                                3 преимущество
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="technique-card__action">
+                                        <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
+                                            Арендовать
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /. Technique-card -->
+
+                    <!-- Technique-card -->
+                    <div class="technique-card">
+                        <div class="technique-card__inner">
+                            <div class="technique-card__side technique-card__side--left">
+                                <h3 class="technique-card__heading title title--orange title--medium title--w-black">
+                                    Автобетононасос PUTZMEISTER BSF56-5.16Н VOLVO FMX460
+                                </h3>
+                                <span class="technique-card__title text text--white text--normal text-w-regular">
+                                    Технические данные:
+                                </span>
+                                <table class="technique-card__table">
+                                    <tbody class="technique-card__tbody">
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Объем подачи бетона макс.</td>
+                                            <td class="technique-card__td">160 м3/ч</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Высота подачи бетона</td>
+                                            <td class="technique-card__td">55,1 м</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Дальность подачи бетона по горизонтали</td>
+                                            <td class="technique-card__td">17,64 м³</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Максимальная высота смесителя без рамы</td>
+                                            <td class="technique-card__td">49,9 м</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Количество осей</td>
+                                            <td class="technique-card__td">5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="technique-card__side technique-card__side--right">
+                                <div class="technique-card__text text text--white text--normal text--w-regular">
+                                    Имеет пятисекционную распределительную стрелу RZ типа с максимально возможной подачей бетона 62,1 м по вертикали. Такой диапазон доступен на мировом рынке только с самой современной технологией, немецкого качетва Putzmeister. Насос высокой производительности до 200 кубометров в час смонтированный на шестиосном шасси полуприцепа делает M63-5 самым универсальным в своем классе.
+                                </div>
+                                <div class="technique-card__picture">
+                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-5.png" alt="" class="technique-card__img">
+                                </div>
+                                <div class="technique-card__wrapp">
+                                    <div class="technique-card__features">
+                                        <div class="technique-card__item">
+                                            <div class="technique-card__item-pic">
+                                                <img src="" alt="" class="technique-card__item-img">
+                                            </div>
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                                1 преимущество
+                                            </div>
+                                        </div>
+                                        <div class="technique-card__item">
+                                            <div class="technique-card__item-pic">
+                                                <img src="" alt="" class="technique-card__item-img">
+                                            </div>
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                                2 преимущество
+                                            </div>
+                                        </div>
+                                        <div class="technique-card__item">
+                                            <div class="technique-card__item-pic">
+                                                <img src="" alt="" class="technique-card__item-img">
+                                            </div>
+                                            <div class="technique-card__item-text text text--white text--tiny text--w-regular">
+                                                3 преимущество
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="technique-card__action">
+                                        <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
+                                            Арендовать
                                         </a>
                                     </div>
                                 </div>
@@ -712,11 +698,8 @@
         <!-- About -->
         <section class="about">
             <div class="about__body container">
-                <h2
-                    class="about__heading title title--orange title--large title--uppercase title--w-black title--indent">
-
+                <h2 class="about__heading title title--orange title--large title--uppercase title--w-black title--indent">
                     О компании
-
                 </h2>
                 <div class="about__text text text--white text--normal text-w-regular wysiwyg">
                     <p>
@@ -749,10 +732,10 @@
                 </div>
                 <div class="about__inner">
                     <div class="about__pic about__pic--left">
-                        <img src="img/about/man-1.png" alt="" class="about__img">
+                        <img src="<?php echo STANDART_DIR; ?>img/about/man-1.png" alt="" class="about__img">
                     </div>
                     <div class="about__pic about__pic--right">
-                        <img src="img/about/man-2.png" alt="" class="about__img">
+                        <img src="<?php echo STANDART_DIR; ?>img/about/man-2.png" alt="" class="about__img">
                     </div>
                 </div>
             </div>
@@ -762,16 +745,13 @@
         <!-- Management -->
         <section class="management">
             <div class="management__body container">
-                <h2
-                    class="management__heading title title--white title--large title--w-black title--uppercase title--indent">
-
+                <h2 class="management__heading title title--white title--large title--w-black title--uppercase title--indent">
                     Менеджмент <br>компании
-
                 </h2>
                 <div class="management__cards">
                     <div class="management__card">
                         <div class="management__photo">
-                            <img src="img/management/photo-1.png" alt="" class="management__img">
+                            <img src="<?php echo STANDART_DIR; ?>img/management/photo-1.png" alt="" class="management__img">
                         </div>
                         <div class="management__rank title title--white title--small title--w-normal">
                             Генеральный директор
@@ -780,37 +760,25 @@
                             Ткаченко Вячеслав Юрьевич
                         </div>
                         <div class="management__phones">
-                            <a href="tel:+74993807997"
-                                class="management__link management__link--phone title title--white title--small title--w-normal link">
-
+                            <a href="tel:+74993807997" class="management__link management__link--phone title title--white title--small title--w-normal link">
                                 +7 499 380 7997
-
                             </a>
-                            <a href="tel:+7903239604"
-                                class="management__link management__link--phone title title--white title--small title--w-normal link">
-
+                            <a href="tel:+7903239604" class="management__link management__link--phone title title--white title--small title--w-normal link">
                                 +7 903 239 604
-
                             </a>
                         </div>
                         <div class="management__emails">
-                            <a href="mailto:info@smk-contracts.ru"
-                                class="management__link management__link--email title title--white title--small title--w-normal link">
-
+                            <a href="mailto:info@smk-contracts.ru" class="management__link management__link--email title title--white title--small title--w-normal link">
                                 info@smk-contracts.ru
-
                             </a>
-                            <a href="mailto:smk.sales@yandex.ru"
-                                class="management__link management__link--email title title--white title--small title--w-normal link">
-
+                            <a href="mailto:smk.sales@yandex.ru" class="management__link management__link--email title title--white title--small title--w-normal link">
                                 smk.sales@yandex.ru
-
                             </a>
                         </div>
                     </div>
                     <div class="management__card">
                         <div class="management__photo">
-                            <img src="img/management/photo-2.png" alt="" class="management__img">
+                            <img src="<?php echo STANDART_DIR; ?>img/management/photo-2.png" alt="" class="management__img">
                         </div>
                         <div class="management__rank title title--white title--small title--w-normal">
                             Финансовый директор
@@ -819,31 +787,22 @@
                             Попова Наталья Игоревна
                         </div>
                         <div class="management__phones">
-                            <a href="tel:+74993807997"
-                                class="management__link management__link--phone title title--white title--small title--w-normal link">
-
+                            <a href="tel:+74993807997" class="management__link management__link--phone title title--white title--small title--w-normal link">
                                 +7 499 380 7997
-
                             </a>
                         </div>
                         <div class="management__emails">
-                            <a href="mailto:info@smk-contracts.ru"
-                                class="management__link management__link--email title title--white title--small title--w-normal link">
-
+                            <a href="mailto:info@smk-contracts.ru" class="management__link management__link--email title title--white title--small title--w-normal link">
                                 info@smk-contracts.ru
-
                             </a>
-                            <a href="mailto:smk.sales@yandex.ru"
-                                class="management__link management__link--email title title--white title--small title--w-normal link">
-
+                            <a href="mailto:smk.sales@yandex.ru" class="management__link management__link--email title title--white title--small title--w-normal link">
                                 smk.sales@yandex.ru
-
                             </a>
                         </div>
                     </div>
                     <div class="management__card">
                         <div class="management__photo">
-                            <img src="img/management/photo-3.png" alt="" class="management__img">
+                            <img src="<?php echo STANDART_DIR; ?>img/management/photo-3.png" alt="" class="management__img">
                         </div>
                         <div class="management__rank title title--white title--small title--w-normal">
                             Коммерческий директор
@@ -852,31 +811,19 @@
                             Айзенберг Полина Константиновна
                         </div>
                         <div class="management__phones">
-                            <a href="tel:+74993807997"
-                                class="management__link management__link--phone title title--white title--small title--w-normal link">
-
+                            <a href="tel:+74993807997" class="management__link management__link--phone title title--white title--small title--w-normal link">
                                 +7 499 380 7997
-
                             </a>
-                            <a href="tel:+79775944775"
-                                class="management__link management__link--phone title title--white title--small title--w-normal link">
-
+                            <a href="tel:+79775944775" class="management__link management__link--phone title title--white title--small title--w-normal link">
                                 +7 977 594 4775
-
                             </a>
                         </div>
                         <div class="management__emails">
-                            <a href="mailto:info@smk-contracts.ru"
-                                class="management__link management__link--email title title--white title--small title--w-normal link">
-
+                            <a href="mailto:info@smk-contracts.ru" class="management__link management__link--email title title--white title--small title--w-normal link">
                                 info@smk-contracts.ru
-
                             </a>
-                            <a href="mailto:smk.sales@yandex.ru"
-                                class="management__link management__link--email title title--white title--small title--w-normal link">
-
+                            <a href="mailto:smk.sales@yandex.ru" class="management__link management__link--email title title--white title--small title--w-normal link">
                                 smk.sales@yandex.ru
-
                             </a>
                         </div>
                     </div>
@@ -888,25 +835,16 @@
         <!-- Contacts -->
         <section class="contacts">
             <div class="contacts__body container">
-                <h2
-                    class="contacts__heading title title--white title--large title--uppercase title--w-black title--indent">
-
+                <h2 class="contacts__heading title title--white title--large title--uppercase title--w-black title--indent">
                     Контакты
-
                 </h2>
                 <div class="contacts__map">
-                    <a class="dg-widget-link"
-                        href="http://2gis.ru/moscow/firm/70000001049888823/center/37.623556,55.728322/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">
-
+                    <a class="dg-widget-link" href="http://2gis.ru/moscow/firm/70000001049888823/center/37.623556,55.728322/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">
                         Посмотреть на карте Москвы
-
                     </a>
                     <div class="dg-widget-link">
-                        <a
-                            href="http://2gis.ru/moscow/center/37.623556,55.728322/zoom/16/routeTab/rsType/bus/to/37.623556,55.728322╎СтройМонтаж?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">
-
+                        <a href="http://2gis.ru/moscow/center/37.623556,55.728322/zoom/16/routeTab/rsType/bus/to/37.623556,55.728322╎СтройМонтаж?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">
                             Найти проезд до СтройМонтаж
-
                         </a>
                     </div>
                     <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
@@ -944,17 +882,11 @@
                             </svg>
                         </div>
                         <div class="contacts__phones">
-                            <a href="tel:+74993807997"
-                                class="contacts__link contacts__link--phone title title--white title--medium title--uppercase title--w-bold link">
-
+                            <a href="tel:+74993807997" class="contacts__link contacts__link--phone title title--white title--medium title--uppercase title--w-bold link">
                                 +7 499 380 7997
-
                             </a>
-                            <a href="tel:+79775944775"
-                                class="contacts__link contacts__link--phone title title--white title--medium title--uppercase title--w-bold link">
-
+                            <a href="tel:+79775944775" class="contacts__link contacts__link--phone title title--white title--medium title--uppercase title--w-bold link">
                                 +7 977 594 4775
-
                             </a>
                         </div>
                     </div>
@@ -968,17 +900,11 @@
                             </svg>
                         </div>
                         <div class="contacts__emails">
-                            <a href="mailto:info@smk-contracts.ru"
-                                class="contacts__link contacts__link--email title title--white title--medium title--uppercase title--w-bold link">
-
+                            <a href="mailto:info@smk-contracts.ru" class="contacts__link contacts__link--email title title--white title--medium title--uppercase title--w-bold link">
                                 info@smk-contracts.ru
-
                             </a>
-                            <a href="mailto:smk.sales@yandex.ru"
-                                class="contacts__link contacts__link--email title title--white title--medium title--uppercase title--w-bold link">
-
+                            <a href="mailto:smk.sales@yandex.ru" class="contacts__link contacts__link--email title title--white title--medium title--uppercase title--w-bold link">
                                 smk.sales@yandex.ru
-
                             </a>
                         </div>
                     </div>
