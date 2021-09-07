@@ -14,8 +14,8 @@
     /* Отключение стилей WooCommerce */
     add_action( 'wp_enqueue_scripts', function() {
         
-        wp_deregister_script( 'woocommerce-general' );
-        wp_deregister_script( 'woocommerce-layout' );
+        wp_deregister_style( 'woocommerce-general' );
+        wp_deregister_style( 'woocommerce-layout' );
 
     } );
 
