@@ -12,17 +12,17 @@ document.addEventListener('DOMContentLoaded', function(e) {
     tooltipModal.init();
     // rangeCount.init();
 
-    const rangeSliders = document.querySelector(".shop-card__range");
-    const output = document.querySelector(".shop-card__field");
+    // const rangeSliders = document.querySelector(".shop-card__range");
+    // const output = document.querySelector(".shop-card__field");
 
-    output.setAttribute('value', '')
+    // output.setAttribute('value', '')
 
-    output.innerHTML = rangeSliders.value; // Display the default slider value
+    // output.innerHTML = rangeSliders.value; // Display the default slider value
 
     // Update the current slider value (each time you drag the slider handle)
-    rangeSliders.oninput = function() {
-        output.innerHTML = this.setAttribute(value, this.value);
-    }
+    // rangeSliders.oninput = function() {
+    //     output.innerHTML = this.setAttribute(value, this.value);
+    // }
 
     // rangeSliders.forEach(el => {
     //     // console.log(el);
