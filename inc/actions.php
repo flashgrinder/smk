@@ -43,3 +43,5 @@
         // add_theme_support( 'admin-bar', ['callback' => '__return_false'] );
 
     });
+
+    remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );

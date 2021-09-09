@@ -52,7 +52,7 @@ defined( 'ABSPATH' ) || exit;
 
                     <?php if ( woocommerce_product_loop() ) { ?>
 
-                    <?php woocommerce_output_all_notices(); ?>
+                    <!-- <?php woocommerce_output_all_notices(); ?> -->
 
                         <?php
 
