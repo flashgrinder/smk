@@ -130,8 +130,10 @@
     </header>
     <!-- /. Header -->
 
+    <?php if( is_shop() || is_product_category() || is_product() || is_product_tag() ) : ?>
+
     <!-- Basket -->
-    <a href="javascript:;" class="bascket">
+    <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="bascket">
         <div class="bascket__icon">
             <svg class="bascket__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -146,6 +148,8 @@
         </div>
     </a>
     <!-- /. Basket -->
+
+    <?php endif; ?>
 
     <!-- MAIN -->
     <main class="main page__container bg--dark">
