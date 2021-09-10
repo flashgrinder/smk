@@ -9,7 +9,7 @@
                         <a href="javascript:;" class="main-screen__button button button--yellow" data-modal-trigger="modal">
                             Оставить заявку
                         </a>
-                        <a href="" class="main-screen__button button button--yellow">
+                        <a href="<?php echo site_url('/shop/'); ?>" class="main-screen__button button button--yellow">
                             Перейти в магазин
                         </a>
                     </div>
