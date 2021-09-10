@@ -38,11 +38,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 
     <!-- Services-store -->
     <section class="services-store services-store--bascket">
-        <form class="woocommerce-cart-form services-store__body container" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
+        <div class="services-store__body container">
             <h2 class="services-store__heading title title--white title--large title--uppercase title--w-black title--indent">
                 Корзина
             </h2>
-            <div class="services-store__container services-store__container--basket">
+            <form class="services-store__container services-store__container--basket woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
             <?php do_action( 'woocommerce_before_cart_table' ); ?>
 
@@ -63,7 +63,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
                         <!-- Shop-card -->
                         <div class="shop-card shop-card--basket woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-                            <div class="shop-card__icon">
+                            <div class="shop-card__icon product-thumbnail">
                                 <?php
 
                                     $attr_class_img = [ 'class' => 'shop-card__img'];
@@ -74,7 +74,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                                     
                                 ?>
                             </div>
-                            <h3 class="shop-card__name text text--normal text--white text--w-regular" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+                            <h3 class="shop-card__name text text--normal text--white text--w-regular product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
                                 <?php
 
                                     echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
@@ -92,7 +92,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						        ?>
                             </h3>
-                            <div class="shop-card__quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
+                            <div class="shop-card__quantity product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
                                 <?php
                                 
                                     if ( $_product->is_sold_individually() ) {
@@ -103,7 +103,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                                                 'input_name'   => "cart[{$cart_item_key}][qty]",
                                                 'input_value'  => $cart_item['quantity'],
                                                 'max_value'    => $_product->get_max_purchase_quantity(),
-                                                'min_value'    => '0',
+                                                'min_value'    => '1',
                                                 'product_name' => $_product->get_name(),
                                             ),
                                             $_product,
@@ -111,18 +111,18 @@ do_action( 'woocommerce_before_cart' ); ?>
                                         );
                                     }
 
-                                    echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item );
+                                    echo $product_quantity
                                 
                                 ?>
                             </div>
-                            <div class="shop-card__price text text--white text--w-bold">
+                            <div class="shop-card__price text text--white text--w-bold product-subtotal">
                                 <?php
 
-                                    echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
+                                    echo WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] );
                                 
                                 ?>
                             </div>
-                            <div class="shop-card__action">
+                            <div class="shop-card__action product-remove">
                                 <?php
 
                                     echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
@@ -171,54 +171,12 @@ do_action( 'woocommerce_before_cart' ); ?>
 
                 <?php do_action( 'woocommerce_after_cart_table' ); ?>
 
-            </div>
+            </form>
 
             <?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
 
-            <div class="services-store__actions">
-                <div class="services-store__buttons">
-                    <a href="javascript:;" class="services-store__btn link text text--normal text--w-regular">
-                        <span class="services-store__icon">
-                            <img src="<?php echo STANDART_DIR; ?>img/icons/email.svg" alt="" class="services-store__img-btn">
-                        </span>
-                        <span class="services-store__name-btn">
-                            Отправить на e-mail
-                        </span>
-                    </a>
-                    <a href="javascript:;" class="services-store__btn link text text--normal text--w-regular">
-                        <span class="services-store__icon">
-                            <img src="<?php echo STANDART_DIR; ?>img/icons/download.svg" alt="" class="services-store__img-btn">
-                        </span>
-                        <span class="services-store__name-btn">
-                            Скачать список файлом
-                        </span>
-                    </a>
-                    <a href="javascript:;" class="services-store__btn link text text--normal text--w-regular">
-                        <span class="services-store__icon">
-                            <img src="<?php echo STANDART_DIR; ?>img/icons/print.svg" alt="" class="services-store__img-btn">
-                        </span>
-                        <span class="services-store__name-btn">
-                            Распечатать список
-                        </span>
-                    </a>
-                </div>
-                <div class="services-store__subtotal">
-                    <span class="services-store__subtotal-text text text--large text--white text--w-regular">
-                        Итого:
-                    </span>
-                    <span class="services-store__subtotal-price text text--white text--w-bold">
-                        9 999 999 руб.
-                    </span>
-                </div>
-            </div>
-            <div class="services-store__ordering">
-                <div class="services-store__order">
-                    <a href="javascript:;" class="button button--yellow">
-                        Оформить заказ
-                    </a>
-                </div>
-            </div>
-        </form>
+            <?php woocommerce_cart_totals(); ?>
+        </div>
     </section>
     <!-- /. Services-store -->
 
