@@ -40,7 +40,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     </h3>
     <div class="shop-card__quantity">
         <?php woocommerce_quantity_input() ?>
-        <input type="range" min="1" max="99999" value="1" class="shop-card__range">
     </div>
     <div class="shop-card__price text text--white text--w-bold">
         <?php echo $product->get_price(); ?> руб.

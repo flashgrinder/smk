@@ -38,15 +38,17 @@ do_action( 'woocommerce_before_cart' ); ?>
 
     <!-- Services-store -->
     <section class="services-store services-store--bascket">
-        <div class="services-store__body container">
+        <form class="woocommerce-cart-form services-store__body container" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
             <h2 class="services-store__heading title title--white title--large title--uppercase title--w-black title--indent">
                 Корзина
             </h2>
             <div class="services-store__container services-store__container--basket">
 
-            <?php do_action( 'woocommerce_before_cart_contents' ); ?>
+            <?php do_action( 'woocommerce_before_cart_table' ); ?>
 
-                <div class="services-store__shop-cards">
+                <div class="services-store__shop-cards shop_table shop_table_responsive cart woocommerce-cart-form__contents">
+
+                    <?php do_action( 'woocommerce_before_cart_contents' ); ?>
 
                     <?php
 
@@ -60,7 +62,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                     ?>
 
                         <!-- Shop-card -->
-                        <div class="shop-card shop-card--basket">
+                        <div class="shop-card shop-card--basket woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
                             <div class="shop-card__icon">
                                 <?php
 
@@ -112,10 +114,8 @@ do_action( 'woocommerce_before_cart' ); ?>
                                     echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item );
                                 
                                 ?>
-                                <input type="range" min="1" max="99999" value="1" class="shop-card__range">
                             </div>
                             <div class="shop-card__price text text--white text--w-bold">
-                                <!-- 9 999 999 руб. -->
                                 <?php
 
                                     echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
@@ -160,7 +160,21 @@ do_action( 'woocommerce_before_cart' ); ?>
 
                 </div>
 
+                <div class="services-store__upd-bascket">
+                    <button type="submit" class="button button--yellow" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+                    
+                    <?php do_action( 'woocommerce_cart_actions' ); ?>
+
+                    <?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
+                </div>
+                <?php do_action( 'woocommerce_after_cart_contents' ); ?>
+
+                <?php do_action( 'woocommerce_after_cart_table' ); ?>
+
             </div>
+
+            <?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
+
             <div class="services-store__actions">
                 <div class="services-store__buttons">
                     <a href="javascript:;" class="services-store__btn link text text--normal text--w-regular">
@@ -204,7 +218,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                     </a>
                 </div>
             </div>
-        </div>
+        </form>
     </section>
     <!-- /. Services-store -->
 
