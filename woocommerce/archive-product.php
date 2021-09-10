@@ -62,8 +62,6 @@ defined( 'ABSPATH' ) || exit;
                                     while ( have_posts() ) {
 
                                         the_post();
-                                        
-                                        // do_action( 'woocommerce_shop_loop' );
 
                                         wc_get_template_part( 'content', 'product' );
 
