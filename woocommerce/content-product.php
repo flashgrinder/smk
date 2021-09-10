@@ -42,7 +42,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         <?php woocommerce_quantity_input() ?>
     </div>
     <div class="shop-card__price text text--white text--w-bold">
-        <?php echo $product->get_price(); ?> руб.
+        <?php echo $product->get_price_html(); ?>
     </div>
     <div class="shop-card__action">
         <a href="<?php echo $product->add_to_cart_url(); ?>" class="button button--basket">
