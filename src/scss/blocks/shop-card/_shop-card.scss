@@ -77,7 +77,7 @@
     @include tabletSM-block {
         height: auto;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: minmax(0, 103px) 1fr 1fr 1fr;
+        grid-template-columns: minmax(0, 103px) minmax(0, 1fr) minmax(0, 227px) minmax(0,180px) minmax(0, 200px);
         grid-template-areas: "icon name name quantity price"
                              "icon name name quantity action";
     }

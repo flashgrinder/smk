@@ -654,7 +654,6 @@ img {
   font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.35;
-  background-color: var(--color-dark);
   overflow-x: hidden;
 }
 
@@ -937,6 +936,9 @@ img {
   height: 175px;
   width: 100%;
   z-index: 999;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header__body {
@@ -1646,7 +1648,9 @@ img {
 /* Footer */
 
 .footer {
-  background: url("../img/footer-bg.png") center left no-repeat;
+  background-image: url("../img/footer-bg.png");
+  background-position: center left;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 278px;
   width: 100%;
@@ -3093,8 +3097,8 @@ button.swiper-pagination-bullet {
     height: auto;
     -ms-grid-rows: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: minmax(0, 103px) 1fr 1fr 1fr;
-    grid-template-columns: minmax(0, 103px) 1fr 1fr 1fr;
+    -ms-grid-columns: minmax(0, 103px) minmax(0, 1fr) minmax(0, 227px) minmax(0, 180px) minmax(0, 200px);
+    grid-template-columns: minmax(0, 103px) minmax(0, 1fr) minmax(0, 227px) minmax(0, 180px) minmax(0, 200px);
         grid-template-areas: "icon name name quantity price" "icon name name quantity action";
   }
 

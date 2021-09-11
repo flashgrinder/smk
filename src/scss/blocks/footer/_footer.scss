@@ -1,5 +1,7 @@
 .footer {
-    background: url('../img/footer-bg.png') center left no-repeat;
+    background-image: url('../img/footer-bg.png');
+    background-position: center left;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 278px;
     width: 100%;
