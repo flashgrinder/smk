@@ -2,8 +2,9 @@
     <!-- /. MAIN -->
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__body container">
+    <?php $bg_classes = [ 'bg--black-gray-hight', 'bg--dark' ] ?>
+    <footer class="footer page__container <?php if(is_cart()) {echo $bg_classes[0]; } else { echo $bg_classes[1]; } ?>">
+        <div class="footer__body container ">
             <div class="footer__logo logo">
                 <img src="<?php echo STANDART_DIR; ?>img/logo-big.png" alt="" class="footer__logo-img logo__img">
             </div>
