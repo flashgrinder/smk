@@ -65,7 +65,7 @@
     <!-- /. Modal window -->
 
     <!-- Header -->
-    <header class="header">
+    <header class="header page__container">
         <div class="header__bg"></div>
         <div class="header__body container">
             <a href="<?php echo home_url(); ?>" class="header__logo logo">
@@ -152,4 +152,5 @@
     <?php endif; ?>
 
     <!-- MAIN -->
-    <main class="main page__container bg--dark">
+    <?php $bg_classes = [ 'bg--black-gray-hight', 'bg--dark' ] ?>
+    <main class="main page__container <?php if(is_cart()) {echo $bg_classes[0]; } else { echo $bg_classes[1]; } ?>">
