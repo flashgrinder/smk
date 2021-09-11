@@ -44,7 +44,7 @@ defined( 'ABSPATH' ) || exit;
                 <h2 class="services-store__heading title title--white title--large title--uppercase title--w-black title--indent">
                     Наши услуги:
                 </h2>
-                <?php woocommerce_output_all_notices(); ?>
+                
                 <div class="services-store__container services-store__container--archive">
 
                     <!-- Sidebar -->
@@ -248,36 +248,5 @@ defined( 'ABSPATH' ) || exit;
                 });
             });
         </script>
-
-        <style>
-            .shop-card.is-load {
-                opacity: 0.6;
-                backdrop-filter: blur(2px);
-                position: relative;
-                pointer-events: none;
-            }
-            .shop-card.is-load:after {
-                position: absolute;
-                content: '';
-                top: 50%;
-                left: 50%;
-                margin-left: -15px;
-                margin-top: -15px;
-                width: 30px;
-                height: 30px;
-                border: 6px solid #FFD600;
-                border-top: 6px solid #595959;
-                border-radius: 50%;
-                animation: rotate 2s infinite linear;
-            }
-            @keyframes rotate {
-                0% {
-                    transform: rotate(0deg);
-                }
-                100% {
-                    transform: rotate(360deg);
-                }
-            }
-        </style>
 
 <?php get_footer(); ?>

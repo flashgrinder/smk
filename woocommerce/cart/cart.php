@@ -184,40 +184,6 @@ do_action( 'woocommerce_before_cart' ); ?>
     </section>
     <!-- /. Services-store -->
 
-<style>
-    .blockUI.blockOverlay {
-        opacity: 1 !important;
-        background-color: rgba(255,255,255,0) !important;
-        backdrop-filter: blur(2px);
-        position: relative;
-    }
-    .services-store__container .blockUI.blockOverlay:after {
-        position: absolute;
-        content: '';
-        top: 50%;
-        left: 50%;
-        margin-left: -25px;
-        margin-top: -25px;
-        width: 50px;
-        height: 50px;
-        border: 6px solid #FFD600;
-        border-top: 6px solid #595959;
-        border-radius: 50%;
-        animation: rotate 4s infinite linear;
-    }
-    .services-store__upd-bascket {
-        display: none;
-    }
-    @keyframes rotate {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-</style>
-
     <script>
         jQuery(document).on('click', '.js-input-decr', function() {
             const wrapper = this.closest('.js-input-num-wrapper');

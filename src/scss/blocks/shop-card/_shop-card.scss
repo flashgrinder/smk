@@ -398,3 +398,24 @@
 .shop-card__btn-svg:hover {
     stroke: var(--color-orange);
 }
+
+.shop-card.is-load {
+    opacity: 0.6;
+    backdrop-filter: blur(2px);
+    position: relative;
+    pointer-events: none;
+}
+.shop-card.is-load:after {
+    position: absolute;
+    content: '';
+    top: 45%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    border: 6px solid #FFD600;
+    border-top: 6px solid #595959;
+    border-radius: 50%;
+    animation: rotate 2s infinite linear;
+}
