@@ -362,6 +362,36 @@ img {
   }
 }
 
+.a-reveal {
+  -webkit-transform: translate3d(0, 10px, 0);
+          transform: translate3d(0, 10px, 0);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, -webkit-transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.3s, opacity 0.3s ease-in-out;
+  transition: transform ease-in-out 0.3s, opacity 0.3s ease-in-out, -webkit-transform ease-in-out 0.3s;
+}
+
+.a-reveal.is-revealed {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.a-reveal-scale {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, -webkit-transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.3s, opacity 0.3s ease-in-out;
+  transition: transform ease-in-out 0.3s, opacity 0.3s ease-in-out, -webkit-transform ease-in-out 0.3s;
+}
+
+.a-reveal-scale.is-revealed {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
 /* Base Classes */
 
 /* Containers */
