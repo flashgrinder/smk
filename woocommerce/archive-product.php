@@ -44,7 +44,8 @@ defined( 'ABSPATH' ) || exit;
                 <h2 class="services-store__heading title title--white title--large title--uppercase title--w-black title--indent">
                     Наши услуги:
                 </h2>
-                
+                <div class="services-store__info">
+                </div>
                 <div class="services-store__container services-store__container--archive">
 
                     <!-- Sidebar -->
@@ -228,16 +229,21 @@ defined( 'ABSPATH' ) || exit;
 
                 cardItem.classList.add('is-load');
 
-                // const notice = document.querySelector(HTMLElement);
+                const notice = document.querySelector('.services-store__info');
                 jQuery.ajax({
                     url: this.href,
                     method: 'get',
                     success: function (response) {
-                        // notice.innerHTML = `
-                        // <div>
-                        //     Вы добавили ${value} x "${name.innerText}" в корзину, класс!
-                        // </div>
-                        // `;
+                        notice.innerHTML = `
+                        <div class="services-store__message">
+                            <div class="services-store__notice text text--white text--normal text--w-bold">
+                                Вы добавили "${name.innerText}" в корзину.
+                            </div>
+                            <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="services-store__button button button--yellow">
+                                В корзину
+                            </a>
+                        </div>
+                        `;
                         console.log(`Вы добавили ${value} x "${name.innerText}" в корзину, класс!`)
                         cardItem.classList.remove('is-load');
                     },

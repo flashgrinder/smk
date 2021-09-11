@@ -1891,6 +1891,23 @@ img {
   }
 }
 
+.services-store__message {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
+  background: var(--color-black-gray-op-75);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.services-store__notice {
+  margin-right: 30px;
+}
+
 .blockUI.blockOverlay {
   opacity: 1 !important;
   background-color: rgba(255, 255, 255, 0) !important;
@@ -2233,6 +2250,12 @@ img {
 
 .bascket__svg:hover {
   stroke: var(--color-white);
+}
+
+/* Woocommerce */
+
+.woocommerce-notices-wrapper {
+  display: none;
 }
 
 /* ANOTHER MODULES */
@@ -3591,6 +3614,16 @@ button.swiper-pagination-bullet {
   .services-store__ordering {
     -webkit-justify-content: center;
             justify-content: center;
+  }
+
+  .services-store__message {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .services-store__notice {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .sidebar__category {
