@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('page') ?>>
+<body <?php body_class('page bg--dark') ?>>
 
     <!-- Modal window -->
     <div class="modal" data-modal="modal">
