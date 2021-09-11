@@ -408,6 +408,10 @@ img {
   background-color: var(--color-dark);
 }
 
+.bg--black-gray-hight {
+  background-color: var(--color-black-gray-hight);
+}
+
 /* Links */
 
 .link {
