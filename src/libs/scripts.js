@@ -2,14 +2,16 @@ import burger from '../libs/modules/burger-menu.js';
 import servicesSlider from '../libs/modules/slider-swiper.js';
 import modal from '../libs/modules/modal.js';
 import tooltipModal from '../libs/modules/tooltip-modal.js';
+import reveal from '.../modules/reveal';
 // import rangeCount from '../libs/modules/range-count.js';
 
 document.addEventListener('DOMContentLoaded', function(e) {
-    console.log('i`m work');
     burger.init();
     modal.init();
     servicesSlider.init();
     tooltipModal.init();
+    reveal.init();
+
     // rangeCount.init();
 
     // const rangeSliders = document.querySelector(".shop-card__range");

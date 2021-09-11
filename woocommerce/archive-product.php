@@ -44,6 +44,7 @@ defined( 'ABSPATH' ) || exit;
                 <h2 class="services-store__heading title title--white title--large title--uppercase title--w-black title--indent">
                     Наши услуги:
                 </h2>
+                <?php woocommerce_output_all_notices(); ?>
                 <div class="services-store__container services-store__container--archive">
 
                     <!-- Sidebar -->
@@ -51,8 +52,7 @@ defined( 'ABSPATH' ) || exit;
                     <!-- /. Sidebar -->
 
                     <?php if ( woocommerce_product_loop() ) { ?>
-
-                    <!-- <?php woocommerce_output_all_notices(); ?> -->
+                        
 
                         <?php
 
@@ -85,5 +85,200 @@ defined( 'ABSPATH' ) || exit;
             </div>
         </section>
         <!-- /. Services-store -->
+
+        <script>
+            const links = document.querySelectorAll('.js-card-link');
+            links.forEach(link => {
+                const cardItem = link.closest('.js-card-item');
+                const input = cardItem.querySelector('.js-input-num');
+                const value = parseInt(input.value, 10);
+                link.href = `?add-to-cart=${getAllUrlParams(link.href)['add-to-cart']}&quantity=${input.value}`;
+            })
+            function getAllUrlParams(url) {
+                // извлекаем строку из URL или объекта window
+                var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+
+                // объект для хранения параметров
+                var obj = {};
+
+                // если есть строка запроса
+                if (queryString) {
+
+                // данные после знака # будут опущены
+                queryString = queryString.split('#')[0];
+
+                // разделяем параметры
+                var arr = queryString.split('&');
+
+                for (var i=0; i<arr.length; i++) {
+                    // разделяем параметр на ключ => значение
+                    var a = arr[i].split('=');
+
+                    // обработка данных вида: list[]=thing1&list[]=thing2
+                    var paramNum = undefined;
+                    var paramName = a[0].replace(/\[\d*\]/, function(v) {
+                    paramNum = v.slice(1,-1);
+                    return '';
+                    });
+
+                    // передача значения параметра ('true' если значение не задано)
+                    var paramValue = typeof(a[1])==='undefined' ? true : a[1];
+
+                    // преобразование регистра
+                    paramName = paramName.toLowerCase();
+                    paramValue = paramValue.toLowerCase();
+
+                    // если ключ параметра уже задан
+                    if (obj[paramName]) {
+                    // преобразуем текущее значение в массив
+                    if (typeof obj[paramName] === 'string') {
+                        obj[paramName] = [obj[paramName]];
+                    }
+                    // если не задан индекс...
+                    if (typeof paramNum === 'undefined') {
+                        // помещаем значение в конец массива
+                        obj[paramName].push(paramValue);
+                    }
+                    // если индекс задан...
+                    else {
+                        // размещаем элемент по заданному индексу
+                        obj[paramName][paramNum] = paramValue;
+                    }
+                    }
+                    // если параметр не задан, делаем это вручную
+                    else {
+                    obj[paramName] = paramValue;
+                    }
+                }
+                }
+
+                return obj;
+            }
+            jQuery(document).on('click', '.js-input-decr', function() {
+                const wrapper = this.closest('.js-input-num-wrapper');
+                const input = wrapper.querySelector('.js-input-num');
+                const pricePerOne = input.dataset.price;
+                const cardItem = wrapper.closest('.js-card-item');
+                const cardPrice = cardItem.querySelector('.js-card-item-price');
+                const link = cardItem.querySelector('.js-card-link');
+
+                let step = input.step ? parseInt(input.step, 10) : 1;
+                let min = parseInt(input.min, 10);
+                let value = parseInt(input.value, 10);
+
+                if (min !== undefined) {
+                    if (value - step > min) {
+                        input.value = value - step;
+                    }
+                } else {
+                    input.value = value - step;
+                }
+
+                const newPrice = (pricePerOne * input.value).toFixed(2);
+
+                cardPrice.innerHTML = `
+                    <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₽</span>${newPrice}</bdi></span>
+                `;
+
+                link.href = `/?add-to-cart=${getAllUrlParams(link.href)['add-to-cart']}&quantity=${input.value}`;
+
+                jQuery(input).trigger('change');
+            });
+            jQuery(document).on('click', '.js-input-incr', function() {
+                const wrapper = this.closest('.js-input-num-wrapper');
+                const input = wrapper.querySelector('.js-input-num');
+                const pricePerOne = input.dataset.price;
+                const cardItem = wrapper.closest('.js-card-item');
+                const cardPrice = cardItem.querySelector('.js-card-item-price');
+                const link = cardItem.querySelector('.js-card-link');
+
+                let step = input.step ? parseInt(input.step, 10) : 1;
+                let max = parseInt(input.max, 10);
+                let value = parseInt(input.value, 10);
+
+                if (max) {
+                    if (value + step < max) {
+                        input.value = value + step;
+                    }
+                } else {
+                    input.value = value + step;
+                }
+
+                const newPrice = (pricePerOne * input.value).toFixed(2);
+
+                cardPrice.innerHTML = `
+                    <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₽</span>${newPrice}</bdi></span>
+                `;
+
+                link.href = `?add-to-cart=${getAllUrlParams(link.href)['add-to-cart']}&quantity=${input.value}`;
+                jQuery(input).trigger('change');
+            });
+
+            jQuery(document).on('input', '.js-input-num', function() {
+                const cardItem = this.closest('.js-card-item');
+                const link = cardItem.querySelector('.js-card-link');
+                link.href = `?add-to-cart=${getAllUrlParams(link.href)['add-to-cart']}&quantity=${this.value}`;
+            })
+
+            jQuery(document).on('click', '.js-card-link', function(e) {
+                e.preventDefault();
+                const cardItem = this.closest('.js-card-item');
+                const input = cardItem.querySelector('.js-input-num');
+                const value = parseInt(input.value, 10);
+                const name = cardItem.querySelector('.js-shop-card-name');
+
+                cardItem.classList.add('is-load');
+
+                // const notice = document.querySelector(HTMLElement);
+                jQuery.ajax({
+                    url: this.href,
+                    method: 'get',
+                    success: function (response) {
+                        // notice.innerHTML = `
+                        // <div>
+                        //     Вы добавили ${value} x "${name.innerText}" в корзину, класс!
+                        // </div>
+                        // `;
+                        console.log(`Вы добавили ${value} x "${name.innerText}" в корзину, класс!`)
+                        cardItem.classList.remove('is-load');
+                    },
+                    error: function (response) {
+                        // Вывести сообщение об ошибке
+                        cardItem.classList.remove('is-load');
+                    }
+                });
+            });
+        </script>
+
+        <style>
+            .shop-card.is-load {
+                opacity: 0.6;
+                backdrop-filter: blur(2px);
+                position: relative;
+                pointer-events: none;
+            }
+            .shop-card.is-load:after {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                margin-left: -15px;
+                margin-top: -15px;
+                width: 30px;
+                height: 30px;
+                border: 6px solid #FFD600;
+                border-top: 6px solid #595959;
+                border-radius: 50%;
+                animation: rotate 2s infinite linear;
+            }
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
 
 <?php get_footer(); ?>

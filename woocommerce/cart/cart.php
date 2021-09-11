@@ -17,6 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
+
 do_action( 'woocommerce_before_cart' ); ?>
 
     <!-- Main-screen -->
@@ -62,7 +63,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                     ?>
 
                         <!-- Shop-card -->
-                        <div class="shop-card shop-card--basket woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+                        <div class="shop-card shop-card--basket js-card-item woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
                             <div class="shop-card__icon product-thumbnail">
                                 <?php
 
@@ -74,7 +75,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                                     
                                 ?>
                             </div>
-                            <h3 class="shop-card__name text text--normal text--white text--w-regular product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+                            <h3 class="shop-card__name js-shop-card-name text text--normal text--white text--w-regular product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
                                 <?php
 
                                     echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
@@ -118,7 +119,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                                     кв.м./месяц
                                 </span>
                             </div>
-                            <div class="shop-card__price text text--white text--w-bold product-subtotal">
+                            <div class="shop-card__price text text--white text--w-bold product-subtotal js-card-item-price">
                                 <?php
 
                                     echo WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] );
@@ -164,8 +165,8 @@ do_action( 'woocommerce_before_cart' ); ?>
                 </div>
 
                 <div class="services-store__upd-bascket">
-                    <button type="submit" class="button button--yellow" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
-                    
+                    <button type="submit" class="button button--yellow js-update-card" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+
                     <?php do_action( 'woocommerce_cart_actions' ); ?>
 
                     <?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
@@ -182,5 +183,93 @@ do_action( 'woocommerce_before_cart' ); ?>
         </div>
     </section>
     <!-- /. Services-store -->
+
+<style>
+    .blockUI.blockOverlay {
+        opacity: 1 !important;
+        background-color: rgba(255,255,255,0) !important;
+        backdrop-filter: blur(2px);
+        position: relative;
+    }
+    .services-store__container .blockUI.blockOverlay:after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        width: 50px;
+        height: 50px;
+        border: 6px solid #FFD600;
+        border-top: 6px solid #595959;
+        border-radius: 50%;
+        animation: rotate 4s infinite linear;
+    }
+    .services-store__upd-bascket {
+        display: none;
+    }
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+    <script>
+        jQuery(document).on('click', '.js-input-decr', function() {
+            const wrapper = this.closest('.js-input-num-wrapper');
+            const input = wrapper.querySelector('.js-input-num');
+            const pricePerOne = input.dataset.price;
+            const cardItem = wrapper.closest('.js-card-item');
+            const cardPrice = cardItem.querySelector('.js-card-item-price');
+            const link = cardItem.querySelector('.js-card-link');
+
+            let step = input.step ? parseInt(input.step, 10) : 1;
+            let min = parseInt(input.min, 10);
+            let value = parseInt(input.value, 10);
+
+            if (min !== undefined) {
+                if (value - step > min) {
+                    input.value = value - step;
+                }
+            } else {
+                input.value = value - step;
+            }
+
+            jQuery(input).trigger('change');
+        });
+        jQuery(document).on('click', '.js-input-incr', function() {
+            const wrapper = this.closest('.js-input-num-wrapper');
+            const input = wrapper.querySelector('.js-input-num');
+            const pricePerOne = input.dataset.price;
+            const cardItem = wrapper.closest('.js-card-item');
+            const cardPrice = cardItem.querySelector('.js-card-item-price');
+            const link = cardItem.querySelector('.js-card-link');
+
+            let step = input.step ? parseInt(input.step, 10) : 1;
+            let max = parseInt(input.max, 10);
+            let value = parseInt(input.value, 10);
+
+            if (max) {
+                if (value + step < max) {
+                    input.value = value + step;
+                }
+            } else {
+                input.value = value + step;
+            }
+
+            jQuery(input).trigger('change');
+        });
+        let timer;
+        jQuery(document).on('change', '.js-input-num', function() {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                jQuery('.js-update-card').trigger('click');
+            }, 500)
+        });
+    </script>
 
 <?php do_action( 'woocommerce_after_cart' ); ?>

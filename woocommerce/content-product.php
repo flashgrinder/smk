@@ -26,7 +26,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 ?>
 
 <!-- Shop-card -->
-<div <?php wc_product_class( 'shop-card shop-card--archive', $product ); ?>>
+<div <?php wc_product_class( 'shop-card shop-card--archive js-card-item', $product ); ?>>
     <div class="shop-card__icon">
         <?php
         
@@ -35,7 +35,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         ?>
         <img src="<?php echo $product_img; ?>" alt="" class="shop-card__img">
     </div>
-    <h3 class="shop-card__name text text--normal text--white text--w-regular">
+    <h3 class="shop-card__name js-shop-card-name text text--normal text--white text--w-regular">
         <?php echo $product->get_title(); ?>
     </h3>
     <div class="shop-card__quantity">
@@ -44,11 +44,11 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             кв.м./месяц
         </span>
     </div>
-    <div class="shop-card__price text text--white text--w-bold">
+    <div class="shop-card__price text text--white text--w-bold js-card-item-price">
         <?php echo $product->get_price_html(); ?>
     </div>
     <div class="shop-card__action">
-        <a href="<?php echo $product->add_to_cart_url(); ?>" class="button button--basket">
+        <a href="<?php echo $product->add_to_cart_url(); ?>" class="button button--basket ajax_add_to_cart js-card-link">
             <svg width="39" height="28" viewBox="0 0 39 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1H6.27939C7.47915 1 8.56354 1.71481 9.03648 2.81743L9.72386 4.42M14.7222 16.0733H32.4542C33.6951 16.0733 34.808 15.3093 35.2539 14.1511L37.4302 8.49779C38.1867 6.53265 36.7362 4.42 34.6305 4.42H9.72386M14.7222 16.0733L9.72386 4.42M14.7222 16.0733L15.4492 18.0401C15.8845 19.2179 17.0074 20 18.2631 20H33.8542"
                 stroke="white" stroke-width="2" stroke-linecap="round" />
@@ -58,4 +58,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         </a>
     </div>
 </div>
+
+
 <!-- /. Shop-card -->

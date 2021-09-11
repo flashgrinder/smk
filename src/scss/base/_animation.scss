@@ -79,3 +79,23 @@
         transform: translate(-50%, -100%);
     }
 }
+
+.a-reveal {
+    transform: translate3d(0, 10px, 0);
+    opacity: 0;
+    transition: transform ease-in-out 0.3s, opacity 0.3s ease-in-out;
+    &.is-revealed {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.a-reveal-scale {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform ease-in-out 0.3s, opacity 0.3s ease-in-out;
+    &.is-revealed {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
