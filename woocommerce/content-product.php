@@ -40,6 +40,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     </h3>
     <div class="shop-card__quantity">
         <?php woocommerce_quantity_input() ?>
+        <span class="shop-card__options text text--white text--normal">
+            кв.м./месяц
+        </span>
     </div>
     <div class="shop-card__price text text--white text--w-bold">
         <?php echo $product->get_price_html(); ?>

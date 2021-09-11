@@ -114,6 +114,9 @@ do_action( 'woocommerce_before_cart' ); ?>
                                     echo $product_quantity
                                 
                                 ?>
+                                <span class="shop-card__options text text--white text--normal">
+                                    кв.м./месяц
+                                </span>
                             </div>
                             <div class="shop-card__price text text--white text--w-bold product-subtotal">
                                 <?php
