@@ -52,7 +52,6 @@ defined( 'ABSPATH' ) || exit;
                     <!-- /. Sidebar -->
 
                     <?php if ( woocommerce_product_loop() ) { ?>
-                        
 
                         <?php
 
