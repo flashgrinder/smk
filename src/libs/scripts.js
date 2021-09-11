@@ -5,7 +5,7 @@ import tooltipModal from '../libs/modules/tooltip-modal.js';
 // import rangeCount from '../libs/modules/range-count.js';
 
 document.addEventListener('DOMContentLoaded', function(e) {
-    
+    console.log('i`m work');
     burger.init();
     modal.init();
     servicesSlider.init();
