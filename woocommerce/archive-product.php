@@ -46,43 +46,36 @@ defined( 'ABSPATH' ) || exit;
                 </h2>
                 <div class="services-store__info">
                 </div>
-                <div class="services-store__container services-store__container--archive">
 
-                    <!-- Sidebar -->
-                    <?php get_sidebar( 'shop' ); ?>
-                    <!-- /. Sidebar -->
+                <?php if ( woocommerce_product_loop() ) { ?>
 
-                    <?php if ( woocommerce_product_loop() ) { ?>
+                    <?php
 
-                        <?php
+                        woocommerce_product_loop_start();
+                    
+                            if ( wc_get_loop_prop( 'total' ) ) {
+                                while ( have_posts() ) {
 
-                            woocommerce_product_loop_start();
-                        
-                                if ( wc_get_loop_prop( 'total' ) ) {
-                                    while ( have_posts() ) {
+                                    the_post();
 
-                                        the_post();
+                                    wc_get_template_part( 'content', 'product' );
 
-                                        wc_get_template_part( 'content', 'product' );
-
-                                    }
                                 }
-                        
-                            woocommerce_product_loop_end();
-                        
-                        ?>
-
-                        <?php
-                        
-                            } else {
-
-                                wc_no_products_found();
                             }
-                        
-                        ?>
+                    
+                        woocommerce_product_loop_end();
+                    
+                    ?>   
 
-                </div>
             </div>
+            <?php
+                        
+                } else {
+
+                    wc_no_products_found();
+                }
+            
+            ?>
         </section>
         <!-- /. Services-store -->
 

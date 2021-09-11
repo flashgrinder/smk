@@ -19,5 +19,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-
-<div class="services-store__shop-cards services-store__shop-cards--archive">
+<div class="services-store__container services-store__container--archive">
+    <!-- Sidebar -->
+    <?php get_sidebar( 'shop' ); ?>
+    <!-- /. Sidebar -->
+    <div class="services-store__shop-cards services-store__shop-cards--archive">
+        

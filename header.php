@@ -6,12 +6,14 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php 
+<body <?php
 global $woocommerce;
-if ( $woocommerce->cart->cart_contents_count != 0 ) {
+if ( $woocommerce->cart->cart_contents_count == 0 ) {
     body_class('page bg--black-gray-hight');
-} else {
+} elseif( is_shop() || !empty(get_term_children(get_queried_object()->term_id, 'product_cat')) ) {
     body_class('page bg--dark');
+} else {
+    body_class('page bg--black-gray-hight');
 } ?>>
 
     <!-- Modal window -->
