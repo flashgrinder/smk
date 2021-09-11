@@ -6,7 +6,13 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('page bg--dark') ?>>
+<body <?php 
+global $woocommerce;
+if ( $woocommerce->cart->cart_contents_count != 0 ) {
+    body_class('page bg--black-gray-hight');
+} else {
+    body_class('page bg--dark');
+} ?>>
 
     <!-- Modal window -->
     <div class="modal" data-modal="modal">
