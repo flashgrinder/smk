@@ -1717,6 +1717,7 @@ img {
   height: 278px;
   width: 100%;
   padding-top: 100px;
+  margin-top: auto;
 }
 
 .footer__body {

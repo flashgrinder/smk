@@ -6,6 +6,7 @@
     height: 278px;
     width: 100%;
     padding-top: 100px;
+    margin-top: auto;
     @include tablet-block {
         background: var(--color-orange);
         height: auto;
