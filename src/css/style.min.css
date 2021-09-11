@@ -1590,7 +1590,7 @@ img {
   padding: 30px 0 50px;
 }
 
-.contacts__map iframe {
+.contacts__map ymaps {
   border-radius: 20px;
   margin-bottom: 30px;
 }
