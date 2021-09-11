@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
     <div class="services-store__actions">
-        <div class="services-store__buttons">
+        <div class="services-store__buttons hide">
             <a href="javascript:;" class="services-store__btn link text text--normal text--w-regular">
                 <span class="services-store__icon">
                     <img src="<?php echo STANDART_DIR; ?>img/icons/email.svg" alt="" class="services-store__img-btn">
