@@ -2259,6 +2259,11 @@ img {
   display: none;
 }
 
+.woocommerce-info {
+  width: 100%;
+  padding: 20px;
+}
+
 /* ANOTHER MODULES */
 
 /* ANOTHER MODULES */
