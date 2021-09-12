@@ -73,7 +73,7 @@ if ( $woocommerce->cart->cart_contents_count == 0 ) {
     <!-- /. Modal window -->
 
     <!-- Header -->
-    <header class="header page__container">
+    <header class="header">
         <div class="header__bg"></div>
         <div class="header__body container">
             <a href="<?php echo home_url(); ?>" class="header__logo logo">
