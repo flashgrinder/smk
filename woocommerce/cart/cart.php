@@ -63,7 +63,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                     ?>
 
                         <!-- Shop-card -->
-                        <div class="shop-card shop-card--basket js-card-item woocommerce-cart-form__cart-item js-reveal a-reveal <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+                        <div class="shop-card shop-card--basket js-card-item woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
                             <div class="shop-card__icon product-thumbnail">
                                 <?php
 
