@@ -22,13 +22,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 
     <!-- Main-screen -->
     <section class="main-screen main-screen--store">
-        <div class="main-screen__vector main-screen__vector--store">
+        <div class="main-screen__vector main-screen__vector--store js-reveal a-reveal-top">
             <div class="main-screen__inner container">
                 <div class="main-screen__text main-screen__text--store">
-                    <h1 class="main-screen__heading title title--white title--big title--uppercase title--w-black">
+                    <h1 class="main-screen__heading title title--white title--big title--uppercase title--w-black js-reveal a-reveal-opacity">
                         СТРОЙМОНТАЖКОНСАЛТИНГ
                     </h1>
-                    <p class="main-screen__subtitle text text--white text--large text-w-regular">
+                    <p class="main-screen__subtitle text text--white text--large text-w-regular js-reveal a-reveal-opacity">
                         Мы с Вами на площадке, мы слушаем Вас и помогаем найти оптимальные решения!
                     </p>
                 </div>
@@ -40,7 +40,7 @@ do_action( 'woocommerce_before_cart' ); ?>
     <!-- Services-store -->
     <section class="services-store services-store--bascket">
         <div class="services-store__body container">
-            <h2 class="services-store__heading title title--white title--large title--uppercase title--w-black title--indent">
+            <h2 class="services-store__heading title title--white title--large title--uppercase title--w-black title--indent js-reveal a-reveal">
                 Корзина
             </h2>
             <form class="services-store__container services-store__container--basket woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
@@ -63,7 +63,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                     ?>
 
                         <!-- Shop-card -->
-                        <div class="shop-card shop-card--basket js-card-item woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+                        <div class="shop-card shop-card--basket js-card-item woocommerce-cart-form__cart-item js-reveal a-reveal <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
                             <div class="shop-card__icon product-thumbnail">
                                 <?php
 

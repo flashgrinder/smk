@@ -26,7 +26,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 ?>
 
 <!-- Shop-card -->
-<div <?php wc_product_class( 'shop-card shop-card--archive js-card-item', $product ); ?>>
+<div <?php wc_product_class( 'shop-card shop-card--archive js-card-item js-reveal a-reveal', $product ); ?>>
     <div class="shop-card__icon">
         <?php
         

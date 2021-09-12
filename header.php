@@ -73,7 +73,7 @@ if ( $woocommerce->cart->cart_contents_count == 0 ) {
     <!-- /. Modal window -->
 
     <!-- Header -->
-    <header class="header">
+    <header class="header js-reveal a-reveal-header">
         <div class="header__bg"></div>
         <div class="header__body container">
             <a href="<?php echo home_url(); ?>" class="header__logo logo">
@@ -141,7 +141,7 @@ if ( $woocommerce->cart->cart_contents_count == 0 ) {
     <?php if( is_shop() || is_product_category() || is_product() || is_product_tag() ) : ?>
 
     <!-- Basket -->
-    <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="bascket">
+    <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="bascket js-reveal a-reveal-opacity">
         <div class="bascket__icon">
             <svg class="bascket__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
                 xmlns="http://www.w3.org/2000/svg">

@@ -4,7 +4,7 @@
 
     if( $product_categories ) : ?>
 
-    <div class="sidebar sidebar--archive">
+    <div class="sidebar sidebar--archive js-reveal a-reveal">
         <aside class="sidebar__aside">
 
             <?php foreach( $product_categories as $product_category) : ?>

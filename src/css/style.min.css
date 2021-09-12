@@ -446,12 +446,12 @@ img {
   opacity: 1;
 }
 
-.a-reveal-text {
+.a-reveal-opacity {
   opacity: 0;
   transition: opacity 0.5s ease-out 2.3s;
 }
 
-.a-reveal-text.is-revealed {
+.a-reveal-opacity.is-revealed {
   opacity: 1;
 }
 

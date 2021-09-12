@@ -3,9 +3,9 @@
 
         <!-- Main-screen -->
         <section class="main-screen">
-            <div class="main-screen__vector">
+            <div class="main-screen__vector js-reveal a-reveal-top">
                 <div class="main-screen__inner container">
-                    <div class="main-screen__actions">
+                    <div class="main-screen__actions js-reveal a-reveal-element">
                         <a href="javascript:;" class="main-screen__button button button--yellow" data-modal-trigger="modal">
                             Оставить заявку
                         </a>
@@ -14,17 +14,17 @@
                         </a>
                     </div>
                     <div class="main-screen__text">
-                        <h1 class="main-screen__heading title title--white title--big title--uppercase title--w-black">
+                        <h1 class="main-screen__heading title title--white title--big title--uppercase title--w-black js-reveal a-reveal-opacity">
                             СТРОЙМОНТАЖКОНСАЛТИНГ
                         </h1>
-                        <p class="main-screen__subtitle text text--white text--large text-w-regular">
+                        <p class="main-screen__subtitle text text--white text--large text-w-regular js-reveal a-reveal-opacity">
                             Мы с Вами на площадке, мы слушаем Вас и помогаем найти оптимальные решения!
                         </p>
                     </div>
                 </div>
             </div>
             <div class="main-screen__line"></div>
-            <div class="main-screen__trapezoid"></div>
+            <div class="main-screen__trapezoid js-reveal a-reveal"></div>
         </section>
         <!-- /. Main-screen -->
 
@@ -55,10 +55,10 @@
             </div>
             <div class="services-slider__body container">
                 <div class="services-slider__inner">
-                    <h2 class="services-slider__heading title title--white title--large title--uppercase title--w-black">
+                    <h2 class="services-slider__heading title title--white title--large title--uppercase title--w-black js-reveal a-reveal">
                         Наши услуги:
                     </h2>
-                    <div class="services-slider__nav">
+                    <div class="services-slider__nav js-reveal a-reveal">
                         <div class="services-slider__arrow services-slider__arrow--prev">
                             <svg class="services-slider__arrow-svg" width="22" height="24" viewBox="0 0 22 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="services-slider__swiper swiper-container">
+                <div class="services-slider__swiper swiper-container js-reveal a-reveal">
                     <div class="services-slider__wrapper swiper-wrapper">
                         <div class="services-slider__slide swiper-slide">
                             <div class="services-slider__card">
@@ -281,13 +281,13 @@
         <!-- Techniaue -->
         <section class="technique">
             <div class="technique__body container">
-                <h2 class="technique__heading title title--white title--large title--uppercase title--w-black title--indent">
+                <h2 class="technique__heading title title--white title--large title--uppercase title--w-black title--indent js-reveal a-reveal">
                     Аренда и лизинг <br>спецтехники
                 </h2>
                 <div class="technique__cards">
 
                     <!-- Technique-card -->
-                    <div class="technique-card">
+                    <div class="technique-card js-reveal a-reveal">
                         <div class="technique-card__inner">
                             <div class="technique-card__side technique-card__side--left">
                                 <h3 class="technique-card__heading title title--orange title--medium title--w-black">
@@ -367,7 +367,7 @@
                     <!-- /. Technique-card -->
 
                     <!-- Technique-card -->
-                    <div class="technique-card">
+                    <div class="technique-card js-reveal a-reveal">
                         <div class="technique-card__inner">
                             <div class="technique-card__side technique-card__side--left">
                                 <h3 class="technique-card__heading title title--orange title--medium title--w-black">
@@ -447,7 +447,7 @@
                     <!-- /. Technique-card -->
 
                     <!-- Technique-card -->
-                    <div class="technique-card">
+                    <div class="technique-card js-reveal a-reveal">
                         <div class="technique-card__inner">
                             <div class="technique-card__side technique-card__side--left">
                                 <h3 class="technique-card__heading title title--orange title--medium title--w-black">
@@ -523,7 +523,7 @@
                     <!-- /. Technique-card -->
 
                     <!-- Technique-card -->
-                    <div class="technique-card">
+                    <div class="technique-card js-reveal a-reveal">
                         <div class="technique-card__inner">
                             <div class="technique-card__side technique-card__side--left">
                                 <h3 class="technique-card__heading title title--orange title--medium title--w-black">
@@ -611,7 +611,7 @@
                     <!-- /. Technique-card -->
 
                     <!-- Technique-card -->
-                    <div class="technique-card">
+                    <div class="technique-card js-reveal a-reveal">
                         <div class="technique-card__inner">
                             <div class="technique-card__side technique-card__side--left">
                                 <h3 class="technique-card__heading title title--orange title--medium title--w-black">
@@ -698,10 +698,10 @@
         <!-- About -->
         <section class="about">
             <div class="about__body container">
-                <h2 class="about__heading title title--orange title--large title--uppercase title--w-black title--indent">
+                <h2 class="about__heading title title--orange title--large title--uppercase title--w-black title--indent js-reveal a-reveal">
                     О компании
                 </h2>
-                <div class="about__text text text--white text--normal text-w-regular wysiwyg">
+                <div class="about__text text text--white text--normal text-w-regular wysiwyg js-reveal a-reveal">
                     <p>
                         Крупные компании постоянно испытывают дефицит высокотехнологичной мобильной техники. Содержание
                         и обслуживание собственного автопарка дорогостоящей техники экономически не выгодно. Идеальным
@@ -745,11 +745,11 @@
         <!-- Management -->
         <section class="management">
             <div class="management__body container">
-                <h2 class="management__heading title title--white title--large title--w-black title--uppercase title--indent">
+                <h2 class="management__heading title title--white title--large title--w-black title--uppercase title--indent js-reveal a-reveal">
                     Менеджмент <br>компании
                 </h2>
                 <div class="management__cards">
-                    <div class="management__card">
+                    <div class="management__card js-reveal a-reveal">
                         <div class="management__photo">
                             <img src="<?php echo STANDART_DIR; ?>img/management/photo-1.png" alt="" class="management__img">
                         </div>
@@ -776,7 +776,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="management__card">
+                    <div class="management__card js-reveal a-reveal">
                         <div class="management__photo">
                             <img src="<?php echo STANDART_DIR; ?>img/management/photo-2.png" alt="" class="management__img">
                         </div>
@@ -800,7 +800,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="management__card">
+                    <div class="management__card js-reveal a-reveal">
                         <div class="management__photo">
                             <img src="<?php echo STANDART_DIR; ?>img/management/photo-3.png" alt="" class="management__img">
                         </div>
@@ -835,14 +835,14 @@
         <!-- Contacts -->
         <section class="contacts">
             <div class="contacts__body container">
-                <h2 class="contacts__heading title title--white title--large title--uppercase title--w-black title--indent">
+                <h2 class="contacts__heading title title--white title--large title--uppercase title--w-black title--indent js-reveal a-reveal">
                     Контакты
                 </h2>
-                <div class="contacts__map">
+                <div class="contacts__map js-reveal a-reveal">
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af5173eefed1361fa270b3dd092e54331f7d825e359efef2b6cd90ecdbb50d318&amp;width=100+'%'&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
                 </div>
                 <div class="contacts__info">
-                    <div class="contacts__side contacts__side--left">
+                    <div class="contacts__side contacts__side--left js-reveal a-reveal">
                         <div class="contacts__icon">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -861,7 +861,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="contacts__side contacts__side--right">
+                    <div class="contacts__side contacts__side--right js-reveal a-reveal">
                         <div class="contacts__icon">
                             <svg width="30" height="23" viewBox="0 0 30 23" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">

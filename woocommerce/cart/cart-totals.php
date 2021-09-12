@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 
-    <div class="services-store__actions">
+    <div class="services-store__actions js-reveal a-reveal">
         <div class="services-store__buttons hide">
             <a href="javascript:;" class="services-store__btn link text text--normal text--w-regular">
                 <span class="services-store__icon">
@@ -63,7 +63,7 @@ defined( 'ABSPATH' ) || exit;
         </div>
         
     </div>
-    <div class="services-store__ordering wc-proceed-to-checkout">
+    <div class="services-store__ordering wc-proceed-to-checkout js-reveal a-reveal">
         <div class="services-store__order">
             <?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
         </div>
