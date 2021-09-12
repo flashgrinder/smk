@@ -731,10 +731,10 @@
                     </p>
                 </div>
                 <div class="about__inner">
-                    <div class="about__pic about__pic--left">
+                    <div class="about__pic about__pic--left js-reveal a-reveal">
                         <img src="<?php echo STANDART_DIR; ?>img/about/man-1.png" alt="" class="about__img">
                     </div>
-                    <div class="about__pic about__pic--right">
+                    <div class="about__pic about__pic--right js-reveal a-reveal">
                         <img src="<?php echo STANDART_DIR; ?>img/about/man-2.png" alt="" class="about__img">
                     </div>
                 </div>
