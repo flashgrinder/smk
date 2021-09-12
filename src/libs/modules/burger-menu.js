@@ -25,6 +25,14 @@ function close() {
     isOpen = false;
 }
 
+const anchorLinks = document.querySelectorAll('.js-anchor-link'); // .js-anchor-link .menu__link
+
+anchorLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        close();
+    })
+});
+
 document.addEventListener('keydown', (e) => {if(e.keyCode === 27 || e.which === 27) {close()}});
 
 function toggle() {

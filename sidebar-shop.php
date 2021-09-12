@@ -11,7 +11,7 @@
                 <?php $term = get_term( $product_category->term_id, 'product_cat' ); ?>
                 <?php $term_slug = $term->slug; ?>
                 <a href="<?php echo get_term_link( $product_category ); ?>" 
-                   class="sidebar__category <?php if ( $product_category->slug == $product_category->name  ){echo 'is-active';} else{ echo '';} ?>">
+                   class="sidebar__category <?php if ( $product_category->slug == $product_category->name  ){echo 'is-active';} else{ echo '';} ?> js-sidebar-link">
                     <div class="sidebar__cat-icon">
                         <?php
 
@@ -27,7 +27,14 @@
                 </a>
 
             <?php endforeach; ?>
-
+            <script>
+                const sidebarLinks = document.querySelectorAll('.js-sidebar-link');
+                sidebarLinks.forEach(link => {
+                    if (link.href === window.location.href) {
+                        link.classList.add('is-active');
+                    }
+                })
+            </script>
         </aside>
     </div>
 
