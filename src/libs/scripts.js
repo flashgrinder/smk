@@ -3,6 +3,7 @@ import servicesSlider from '../libs/modules/slider-swiper.js';
 import modal from '../libs/modules/modal.js';
 import tooltipModal from '../libs/modules/tooltip-modal.js';
 import reveal from '../libs/modules/reveal.js';
+import sidebarActive from '../libs/modules/sidebar-active.js';
 
 document.addEventListener('DOMContentLoaded', function(e) {
     burger.init();
@@ -10,5 +11,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
     servicesSlider.init();
     tooltipModal.init();
     reveal.init();
+    sidebarActive.init();
     
 });
