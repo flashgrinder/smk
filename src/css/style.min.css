@@ -2332,6 +2332,37 @@ img {
   padding: 20px;
 }
 
+.woocommerce-info.cart-empty {
+  margin-top: 20%;
+  text-align: center;
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: calc(20px + 4 * ((100vw - 1024px) / 416));
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 1440px) {
+
+  .woocommerce-info.cart-empty {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .woocommerce-info.cart-empty {
+    font-size: 20px;
+  }
+}
+
+.return-to-shop {
+  text-align: center;
+}
+
+.return-to-shop:hover {
+  color: var(--color-orange);
+}
+
 /* ANOTHER MODULES */
 
 /* ANOTHER MODULES */
@@ -3729,6 +3760,10 @@ button.swiper-pagination-bullet {
   .shop-card.shop-card--basket .shop-card__action {
     background: rgba(255, 255, 255, 0.1);
     padding: 0 5px 5px 5px;
+  }
+
+  .woocommerce-info.cart-empty {
+    margin-top: 30%;
   }
 
   .services-store__container .sidebar--archive {
