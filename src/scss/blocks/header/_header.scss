@@ -1,17 +1,34 @@
 .header {
     position: fixed;
-    background: url('../img/header-bg.png') center left no-repeat;
-    background-size: cover;
     height: 175px;
     width: 100%;
     z-index: 999;
     left: 50%;
     transform: translateX(-50%);
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
     @include tablet-block {
-        background: var(--color-orange);
         height: auto;
         padding-top: 5px;
         padding-bottom: 5px;
+    }
+}
+
+.header__bg {
+    position: absolute;
+    background: url(../img/header-bg.png) center left/cover no-repeat;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    @include tablet-block {
+        background: var(--color-orange);
     }
 }
 
@@ -80,6 +97,9 @@
 }
 
 .header__menu .menu__item {
+    @include from(1024px) {
+        opacity: 1 !important;
+    }
     @include tablet-block {
         opacity: 0;
         transition: ease-out .2s;
