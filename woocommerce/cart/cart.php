@@ -40,7 +40,7 @@ defined( 'ABSPATH' ) || exit;
     <!-- Services-store -->
     <section class="services-store services-store--bascket">
         <div class="services-store__body container">
-            <h2 class="services-store__heading title title--white title--large title--uppercase title--w-black title--indent js-reveal a-reveal">
+            <h2 class="services-store__heading title title--orange title--large title--uppercase title--w-black title--indent js-reveal a-reveal">
                 Корзина
             </h2>
             <?php do_action( 'woocommerce_before_cart' ); ?>
