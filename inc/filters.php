@@ -11,3 +11,5 @@
     
     /* Убираем тег <p></p> у отрывков */
     remove_filter( 'the_excerpt','wpautop');
+
+    add_filter( 'wc_add_to_cart_message_html', '__return_null' );

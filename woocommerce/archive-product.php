@@ -222,7 +222,7 @@ defined( 'ABSPATH' ) || exit;
 
                 cardItem.classList.add('is-load');
 
-                const notice = document.querySelector('.services-store__info');
+                const notice = document.querySelector('.services-store--archive .services-store__info');
                 jQuery.ajax({
                     url: this.href,
                     method: 'get',

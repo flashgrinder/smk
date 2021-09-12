@@ -1,3 +1,11 @@
+.woocommerce-notices-wrapper {
+    display: none;
+}
+
+.services-store.services-store--bascket .woocommerce-notices-wrapper {
+    display: block;
+}
+
 .woocommerce-info {
     width: 100%;
     padding: 20px;
