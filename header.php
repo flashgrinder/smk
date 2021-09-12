@@ -8,13 +8,11 @@
 
 <body <?php
 global $woocommerce;
-if ( $woocommerce->cart->cart_contents_count == 0 ) {
+if ( is_cart() ) {
     body_class('page bg--black-gray-hight');
-} elseif( is_shop() || !empty(get_term_children(get_queried_object()->term_id, 'product_cat')) ) {
-    body_class('page bg--dark');
 } else {
     body_class('page bg--dark');
-} ?>>
+}  ?>>
 
     <!-- Modal window -->
     <div class="modal" data-modal="modal">
