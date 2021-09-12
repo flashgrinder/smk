@@ -13,7 +13,7 @@ if ( $woocommerce->cart->cart_contents_count == 0 ) {
 } elseif( is_shop() || !empty(get_term_children(get_queried_object()->term_id, 'product_cat')) ) {
     body_class('page bg--dark');
 } else {
-    body_class('page bg--black-gray-hight');
+    body_class('page bg--dark');
 } ?>>
 
     <!-- Modal window -->
