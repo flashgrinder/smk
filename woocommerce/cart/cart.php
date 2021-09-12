@@ -18,7 +18,7 @@
 defined( 'ABSPATH' ) || exit;
 
 
-do_action( 'woocommerce_before_cart' ); ?>
+?>
 
     <!-- Main-screen -->
     <section class="main-screen main-screen--store">
@@ -43,6 +43,7 @@ do_action( 'woocommerce_before_cart' ); ?>
             <h2 class="services-store__heading title title--white title--large title--uppercase title--w-black title--indent js-reveal a-reveal">
                 Корзина
             </h2>
+            <?php do_action( 'woocommerce_before_cart' ); ?>
             <form class="services-store__container services-store__container--basket woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
             <?php do_action( 'woocommerce_before_cart_table' ); ?>

@@ -26,7 +26,9 @@ if ( ! $notices ) {
 ?>
 
 <?php foreach ( $notices as $notice ) : ?>
-	<div class="woocommerce-message"<?php echo wc_get_notice_data_attr( $notice ); ?> role="alert">
-		<?php echo wc_kses_notice( $notice['notice'] ); ?>
+	<div class="woocommerce-message services-store__message"<?php echo wc_get_notice_data_attr( $notice ); ?> role="alert">
+        <div class="services-store__notice text text--white text--normal text--w-bold">
+            Вы удалили услугу <?php echo wc_kses_notice( $notice['notice'] ); ?>
+        </div>
 	</div>
 <?php endforeach; ?>
