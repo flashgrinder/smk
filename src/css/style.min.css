@@ -420,9 +420,9 @@ img {
   -webkit-transform: translate3d(0, -100px, 0);
           transform: translate3d(0, -100px, 0);
   opacity: 0;
-  transition: opacity 0.5s ease-in-out 1.5s, -webkit-transform ease-in-out 0.5s 1.5s;
-  transition: transform ease-in-out 0.5s 1.5s, opacity 0.5s ease-in-out 1.5s;
-  transition: transform ease-in-out 0.5s 1.5s, opacity 0.5s ease-in-out 1.5s, -webkit-transform ease-in-out 0.5s 1.5s;
+  transition: opacity 0.5s ease-in-out 1s, -webkit-transform ease-in-out 0.5s 1s;
+  transition: transform ease-in-out 0.5s 1s, opacity 0.5s ease-in-out 1s;
+  transition: transform ease-in-out 0.5s 1s, opacity 0.5s ease-in-out 1s, -webkit-transform ease-in-out 0.5s 1s;
 }
 
 .a-reveal-top.is-revealed {
@@ -435,9 +435,9 @@ img {
   -webkit-transform: translate3d(0, -50px, 0);
           transform: translate3d(0, -50px, 0);
   opacity: 0;
-  transition: opacity 0.5s ease-out 1s, -webkit-transform ease-out 0.5s 2s;
-  transition: transform ease-out 0.5s 2s, opacity 0.5s ease-out 1s;
-  transition: transform ease-out 0.5s 2s, opacity 0.5s ease-out 1s, -webkit-transform ease-out 0.5s 2s;
+  transition: opacity 0.5s ease-out 1.3s, -webkit-transform ease-out 0.5s 1.3s;
+  transition: transform ease-out 0.5s 1.3s, opacity 0.5s ease-out 1.3s;
+  transition: transform ease-out 0.5s 1.3s, opacity 0.5s ease-out 1.3s, -webkit-transform ease-out 0.5s 1.3s;
 }
 
 .a-reveal-element.is-revealed {
@@ -448,7 +448,7 @@ img {
 
 .a-reveal-opacity {
   opacity: 0;
-  transition: opacity 0.5s ease-out 2.3s;
+  transition: opacity 0.5s ease-out 1.3s;
 }
 
 .a-reveal-opacity.is-revealed {
