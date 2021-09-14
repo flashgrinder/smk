@@ -1,0 +1,12 @@
+.errors {
+    margin-bottom: 30px;
+    transition: ease .3s;
+}
+
+.errors__notice ~ .errors__notice {
+    margin-top: 20px;
+}
+
+.errors__notice strong {
+    color: var(--color-yellow);
+}

@@ -24,9 +24,9 @@ if ( ! $notices ) {
 }
 
 ?>
-<ul class="woocommerce-error" role="alert">
+<ul class="errors woocommerce-error" role="alert">
 	<?php foreach ( $notices as $notice ) : ?>
-		<li<?php echo wc_get_notice_data_attr( $notice ); ?>>
+		<li class="errors__notice text text--white text--normal" <?php echo wc_get_notice_data_attr( $notice ); ?>>
 			<?php echo wc_kses_notice( $notice['notice'] ); ?>
 		</li>
 	<?php endforeach; ?>
