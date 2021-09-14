@@ -21,35 +21,61 @@ if ( ! is_ajax() ) {
 	do_action( 'woocommerce_review_order_before_payment' );
 }
 ?>
-<div id="payment" class="woocommerce-checkout-payment">
+<div class="checkout-form__pay-info woocommerce-checkout-payment" id="payment">
+    <div class="checkout-form__pay-text text text--gray-hight text--small text--w-regular">
+        Текст с видом и условиями оплаты, дополнительная информация о платежных системах. Текст с видом и условиями оплаты, дополнительная информация о платежных системах
+    </div>
+    <div class="checkout-form__pay-carts">
+        <div class="checkout-form__pay-icon">
+            <img src="<?php echo STANDART_DIR; ?>img/checkout/maestro.svg" alt="" class="checkout-form__pay-img">
+        </div>
+        <div class="checkout-form__pay-icon">
+            <img src="<?php echo STANDART_DIR; ?>img/checkout/master-card.svg" alt="" class="checkout-form__pay-img">
+        </div>
+        <div class="checkout-form__pay-icon">
+            <img src="<?php echo STANDART_DIR; ?>img/checkout/visa.svg" alt="" class="checkout-form__pay-img">
+        </div>
+        <div class="checkout-form__pay-icon">
+            <img src="<?php echo STANDART_DIR; ?>img/checkout/google-pay.svg" alt="" class="checkout-form__pay-img">
+        </div>
+        <div class="checkout-form__pay-icon">
+            <img src="<?php echo STANDART_DIR; ?>img/checkout/alfa-bank.svg" alt="" class="checkout-form__pay-img">
+        </div>
+        <div class="checkout-form__pay-icon">
+            <img src="<?php echo STANDART_DIR; ?>img/checkout/tinkoff.svg" alt="" class="checkout-form__pay-img">
+        </div>
+    </div>
 	<?php if ( WC()->cart->needs_payment() ) : ?>
-		<ul class="wc_payment_methods payment_methods methods">
+		<div class="checkout-form__pay-methods wc_payment_methods payment_methods methods">
 			<?php
 			if ( ! empty( $available_gateways ) ) {
 				foreach ( $available_gateways as $gateway ) {
 					wc_get_template( 'checkout/payment-method.php', array( 'gateway' => $gateway ) );
 				}
 			} else {
-				echo '<li class="woocommerce-notice woocommerce-notice--info woocommerce-info">' . apply_filters( 'woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? esc_html__( 'Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.', 'woocommerce' ) : esc_html__( 'Please fill in your details above to see available payment methods.', 'woocommerce' ) ) . '</li>'; // @codingStandardsIgnoreLine
+				echo '<div class="checkout-form__notice woocommerce-notice woocommerce-notice--info woocommerce-info text text--black-gray text--normal text--w-bold">' . apply_filters( 'woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? esc_html__( 'Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.', 'woocommerce' ) : esc_html__( 'Please fill in your details above to see available payment methods.', 'woocommerce' ) ) . '</div>'; // @codingStandardsIgnoreLine
 			}
 			?>
-		</ul>
+		</div>
 	<?php endif; ?>
-	<div class="form-row place-order">
+	<div class="checkout-form__pay-actions form-row place-order">
 		<noscript>
 			<?php
 			/* translators: $1 and $2 opening and closing emphasis tags respectively */
 			printf( esc_html__( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so.', 'woocommerce' ), '<em>', '</em>' );
 			?>
-			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', 'woocommerce' ); ?>"><?php esc_html_e( 'Update totals', 'woocommerce' ); ?></button>
+			<br/><button type="submit" class="button button--yellow alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', 'woocommerce' ); ?>"><?php esc_html_e( 'Update totals', 'woocommerce' ); ?></button>
 		</noscript>
 
 		<?php wc_get_template( 'checkout/terms.php' ); ?>
 
 		<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 
-		<?php echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '">' . esc_html( $order_button_text ) . '</button>' ); // @codingStandardsIgnoreLine ?>
+        <div class="checkout-form__button">
 
+		    <?php echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button button--yellow alt" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '">' . esc_html( $order_button_text ) . '</button>' ); // @codingStandardsIgnoreLine ?>
+        
+        </div>
 		<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
 
 		<?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
