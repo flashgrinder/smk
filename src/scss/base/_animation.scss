@@ -136,13 +136,3 @@
         opacity: 1;
     }
 }
-
-.a-reveal-scale {
-    transform: scale(0);
-    opacity: 0;
-    transition: transform ease-in-out 0.5s, opacity 0.5s ease-in-out;
-    &.is-revealed {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
