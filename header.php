@@ -6,13 +6,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php
-global $woocommerce;
-if ( is_cart() ) {
-    body_class('page bg--black-gray-hight');
-} else {
-    body_class('page bg--dark');
-}  ?>>
+<body <?php body_class('page bg--black-gray-hight'); ?>>
 
     <!-- Modal window -->
     <div class="modal" data-modal="modal">
@@ -71,7 +65,7 @@ if ( is_cart() ) {
     <!-- /. Modal window -->
 
     <!-- Header -->
-    <header class="header js-reveal a-reveal-header">
+    <header class="header">
         <div class="header__bg"></div>
         <div class="header__body container">
             <a href="<?php echo home_url(); ?>" class="header__logo logo">
@@ -158,5 +152,4 @@ if ( is_cart() ) {
     <?php endif; ?>
 
     <!-- MAIN -->
-    <?php $bg_classes = [ 'bg--black-gray-hight', 'bg--dark' ] ?>
-    <main class="main page__container <?php if(is_cart()) {echo $bg_classes[0]; } else { echo $bg_classes[1]; } ?>">
+    <main class="main page__container bg--black-gray-hight">

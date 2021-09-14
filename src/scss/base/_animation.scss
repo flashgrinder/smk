@@ -99,16 +99,6 @@
     }
 }
 
-.a-reveal-header {
-    transform: translate3d(0, -100px, 0) translateX(-50%);
-    opacity: 0;
-    transition: transform ease-in-out 0.5s .5s, opacity 0.5s ease-in-out .5s;
-    &.is-revealed {
-        transform: translate3d(0,0,0) translateX(-50%);
-        opacity: 1;
-    }
-}
-
 .a-reveal-top {
     transform: translate3d(0, -100px, 0);
     opacity: 0;
