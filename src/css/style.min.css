@@ -128,6 +128,7 @@
   --color-black-gray: #2C2B33;
   --color-black-gray-op-75: rgba(53, 52, 58, 0.75);
   --color-gray: #bebebe;
+  --color-gray-hight: ##979797;
   --color-white: #FFFFFF;
   --gradien-dark: linear-gradient(180deg, rgba(89, 89, 89, 0.75) -22.17%, rgba(44, 43, 51, 0.75) 122.17%);
   --font-roboto: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -612,6 +613,10 @@ img {
 
 .title--black-gray {
   color: var(--color-black-gray);
+}
+
+.title--gray-hight {
+  color: var(--color-gray-hight);
 }
 
 .title--w-light {
@@ -2415,6 +2420,67 @@ img {
   background: var(--color-orange-hight);
 }
 
+/* Checkout-page */
+
+.checkout-page {
+  padding: 30px 0 50px;
+}
+
+/* Checkout-form */
+
+.checkout-form {
+  padding: 60px 100px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.checkout-form__field {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+}
+
+.checkout-form__field ~ .checkout-form__field {
+  margin-top: 30px;
+}
+
+.checkout-form__field label {
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+.checkout-form__field .required {
+  color: #f56a6a;
+}
+
+.checkout-form__field span {
+  display: block;
+  margin-top: 10px;
+}
+
+.checkout-form__input {
+  padding: 17px 13px;
+  height: 50px;
+  border-radius: 100px;
+  outline: none;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+.checkout-form__order-review {
+  background: var(--color-white);
+  border-radius: 20px;
+}
+
+.checkout-form__order-title {
+  padding: 40px 30px;
+}
+
 /* ANOTHER MODULES */
 
 /* ANOTHER MODULES */
@@ -3446,6 +3512,10 @@ button.swiper-pagination-bullet {
 
   .bascket {
     top: 55px;
+  }
+
+  .checkout-page {
+    padding: 25px 0 30px;
   }
 }
 
