@@ -99,9 +99,6 @@
     &--black-gray {
 		color: var(--color-black-gray); 
 	}
-    &--gray-hight {
-		color: var(--color-gray-hight); 
-	}
 	&--w-light {
 		font-weight: 300;
     }
@@ -142,6 +139,9 @@
 	}
 	&--white {
 		color: var(--color-white);
+	}
+    &--gray-hight {
+		color: var(--color-gray-hight); 
 	}
 	&--big {
         font-size: responsive 20px 30px;
