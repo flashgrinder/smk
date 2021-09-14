@@ -4,6 +4,13 @@
     border-radius: 20px;
 }
 
+.checkout-form__container-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 400px) minmax(0, 600px);
+    justify-content: space-between;
+    grid-gap: 30px;
+}
+
 .checkout-form__field {
     display: flex;
     flex-direction: column;
@@ -30,13 +37,28 @@
     margin-top: 10px;
 }
 
+.checkout-form__field.woocommerce-validated .checkout-form__input {
+    border: 2px solid green;
+}
+
+.checkout-form__field.woocommerce-invalid .checkout-form__input {
+    border: 2px solid red;
+}
+
 .checkout-form__input {
     padding: 17px 13px;
     height: 50px;
     border-radius: 100px;
     outline: none;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     width: 100%;
+}
+
+.checkout-form__input:focus,
+.checkout-form__input:hover,
+.checkout-form__input:active,
+.checkout-form__input:target {
+    border: 2px solid var(--color-orange);
 }
 
 .checkout-form__order-review {
@@ -45,5 +67,88 @@
 }
 
 .checkout-form__order-title {
-    padding: 40px 30px;
+    padding: 40px 30px 0 30px;
+    margin-bottom: 40px;
+}
+
+.checkout-form__product-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 120px);
+    grid-gap: 20px;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.checkout-form__product-row ~ .checkout-form__product-row {
+    margin-top: 20px;
+}
+
+.checkout-form__product-row--first {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-black-gray-hight);
+}
+
+.checkout-form__product-row--last {
+    padding-top: 20px;
+    border-top: 1px solid var(--color-black-gray-hight);
+}
+
+.checkout-form__pay-info {
+    padding: 25px 30px;
+}
+
+.checkout-form__pay-carts {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    grid-gap: 22px 23px;
+}
+
+.checkout-form__pay-img {
+    display: block;
+}
+
+.checkout-form__pay-methods {
+    margin-top: 30px;
+}
+
+.checkout-form__pay-method ~ .checkout-form__pay-method {
+    margin-top: 20px;
+}
+
+.checkout-form__pay-box{
+    margin-top: 20px;
+}
+
+.checkout-form__pay-box p{
+    margin: 0;
+}
+
+.checkout-form__notice {
+    margin-top: 30px;
+    padding: 0;
+}
+
+.checkout-form__pay-actions {
+    margin-top: 30px;
+}
+
+.checkout-form__pay-policy p {
+    margin: 0;
+}
+
+.checkout-form__pay-policy a {
+    text-decoration: none;
+    color: var(--color-yellow);
+}
+
+.checkout-form__pay-policy a:hover {
+    text-decoration: underline;
+}
+
+.checkout-form__button {
+    margin-top: 40px;
+    text-align: center;
 }
