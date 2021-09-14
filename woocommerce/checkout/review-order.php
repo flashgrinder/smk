@@ -39,7 +39,7 @@ defined( 'ABSPATH' ) || exit;
 
         <div class="checkout-form__product-row <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
             <div class="checkout-form__product-name text text--black-gray text--normal text--w-regular product-name">
-                <?php echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) ) . '&nbsp;'; ?> <span class="checkout-form__product-quantity text text--small text--w-bold">х 1</span>
+                <?php echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) ) . '&nbsp;'; ?> <?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <span class="checkout-form__product-quantity text text--small text--w-bold product-quantity">' . sprintf( '&times;&nbsp;%s', $cart_item['quantity'] ) . '</span>', $cart_item, $cart_item_key ); ?>
                 <?php echo wc_get_formatted_cart_item_data( $cart_item ); ?>
             </div>
             <div class="checkout-form__product-price text text--black-gray text--normal text--w-regular right product-total">
