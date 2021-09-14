@@ -17,6 +17,112 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
+
+                            <div class="checkout-form__order-table">
+                                <div class="checkout-form__product-row checkout-form__product-row--first">
+                                    <div class="checkout-form__table-title text text--black-gray text--normal text--w-bold product-name">
+                                        <?php esc_html_e( 'Product', 'woocommerce' ); ?>
+                                    </div>
+                                    <div class="checkout-form__table-title text text--black-gray text--normal text--w-bold right product-total">
+                                        <?php esc_html_e( 'Subtotal', 'woocommerce' ); ?>
+                                    </div>
+                                </div>
+                                <?php
+
+                                    do_action( 'woocommerce_review_order_before_cart_contents' );
+
+                                    foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+                                        $_product = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
+
+                                        if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_checkout_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
+                                ?>
+
+                                <div class="checkout-form__product-row <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+                                    <div class="checkout-form__product-name text text--black-gray text--normal text--w-regular">
+                                        <?php echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) ) . '&nbsp;'; ?> <span class="checkout-form__product-quantity text text--small text--w-bold">х 1</span>
+                                        <?php echo wc_get_formatted_cart_item_data( $cart_item ); ?>
+                                    </div>
+                                    <div class="checkout-form__product-price text text--black-gray text--normal text--w-regular right">
+                                        <?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); ?>
+                                    </div>
+                                </div>
+                                <?php
+                                        }
+                                    }
+
+                                    do_action( 'woocommerce_review_order_after_cart_contents' );
+
+                                ?>
+                                <div class="checkout-form__product-row checkout-form__product-row--last">
+                                    <div class="checkout-form__table-title text text--black-gray text--normal text--w-regular">
+                                        <?php esc_html_e( 'Subtotal', 'woocommerce' ); ?>
+                                    </div>
+                                    <div class="checkout-form__table-subtotal text text--black-gray text--normal text--w-bold right">
+                                        <?php wc_cart_totals_subtotal_html(); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-form__pay-info woocommerce-checkout-payment" id="payment">
+                                <div class="checkout-form__pay-text text text--gray-hight text--small text--w-regular">
+                                    Текст с видом и условиями оплаты, дополнительная информация о платежных системах. Текст с видом и условиями оплаты, дополнительная информация о платежных системах
+                                </div>
+                                <div class="checkout-form__pay-carts">
+                                    <div class="checkout-form__pay-icon">
+                                        <img src="img/checkout/maestro.svg" alt="" class="checkout-form__pay-img">
+                                    </div>
+                                    <div class="checkout-form__pay-icon">
+                                        <img src="img/checkout/master-card.svg" alt="" class="checkout-form__pay-img">
+                                    </div>
+                                    <div class="checkout-form__pay-icon">
+                                        <img src="img/checkout/visa.svg" alt="" class="checkout-form__pay-img">
+                                    </div>
+                                    <div class="checkout-form__pay-icon">
+                                        <img src="img/checkout/google-pay.svg" alt="" class="checkout-form__pay-img">
+                                    </div>
+                                    <div class="checkout-form__pay-icon">
+                                        <img src="img/checkout/alfa-bank.svg" alt="" class="checkout-form__pay-img">
+                                    </div>
+                                    <div class="checkout-form__pay-icon">
+                                        <img src="img/checkout/tinkoff.svg" alt="" class="checkout-form__pay-img">
+                                    </div>
+                                </div>
+                                <div class="checkout-form__pay-methods wc_payment_methods payment_methods methods">
+                                    <div class="checkout-form__pay-method wc_payment_method payment_method_cheque">
+                                        <input id="payment_method_cheque" type="radio" class="checkout-form__pay-method-input input-radio" name="payment_method" value="" data-order_button_text=""/>
+                                        <label class="checkout-form__pay-method-label text text--black-gray text--normal text--w-regular" for="payment_method_cheque">
+                                            Чековые платежи
+                                        </label>
+                                        <div class="checkout-form__pay-box text text--black-gray text--normal text--w-bold payment_box payment_method_cheque">
+                                            <p>
+                                                Пожалуйста, отправьте ваш чек, указав данные магазина: название, улицу, город, область / район, страну, почтовый индекс.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="checkout-form__notice woocommerce-notice woocommerce-notice--info woocommerce-info text text--black-gray text--normal text--w-bold">
+                                        К сожалению, у нас не предусмотрены методы оплаты, подходящие для вашего региона. Пожалуйста, свяжитесь с нами если вам необходима консультация или специальные условия.
+                                    </div>
+                                </div>
+                                <div class="checkout-form__pay-actions form-row place-order">
+                                    <noscript>
+                                        Поскольку ваш браузер не поддерживает JavaScript или в нем он отключен, просим убедиться в том, что вы нажали кнопку <em>Обновить итог</em> перед регистрацией заказа. Иначе, есть риск неправильного подсчета стоимости.
+                                        <br/>
+                                        <button type="submit" class="button button--yellow alt" name="woocommerce_checkout_update_totals" value="Обновить итог">Обновить итог</button>
+                                    </noscript>
+                                    <div class="checkout-form__pay-policy woocommerce-terms-and-conditions-wrapper text text--gray-hight text--small text--w-regular">
+                                        <p>
+                                            Ваши личные данные будут использоваться для обработки ваших заказов, 
+                                            упрощения вашей работы с сайтом и для других целей, 
+                                            описанных в нашей <a href="" class="woocommerce-privacy-policy-link">политике конфидециальности.</a> 
+                                        </p>
+                                    </div>
+                                    <div class="checkout-form__button">
+                                        <button type="submit" class="button button--yellow alt" name="woocommerce_checkout_place_order" id="place_order" value="" data-value="">
+                                            Подтвердить заказ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
 <table class="shop_table woocommerce-checkout-review-order-table">
 	<thead>
 		<tr>
