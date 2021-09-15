@@ -41,7 +41,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     <div class="shop-card__quantity">
         <?php woocommerce_quantity_input() ?>
         <span class="shop-card__options text text--white text--normal">
-            кв.м./месяц
+            <?php echo $product->get_attribute('unit_of_measurement'); ?>
         </span>
     </div>
     <div class="shop-card__price text text--white text--w-bold js-card-item-price">

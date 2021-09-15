@@ -100,7 +100,7 @@ defined( 'ABSPATH' ) || exit;
                                 
                                 ?>
                                 <span class="shop-card__options text text--white text--normal">
-                                    кв.м./месяц
+                                    <?php echo $_product->get_attribute('unit_of_measurement'); ?>
                                 </span>
                             </div>
                             <div class="shop-card__price text text--white text--w-bold product-subtotal js-card-item-price">
