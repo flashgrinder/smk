@@ -120,7 +120,7 @@
     </header>
     <!-- /. Header -->
 
-    <?php if( is_shop() || is_product_category() || is_product() || is_product_tag() ) : ?>
+    <?php if( is_shop() || is_product_category() || is_product() || is_product_tag() || is_checkout() || is_checkout_pay_page() ) : ?>
 
     <!-- Basket -->
     <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="bascket js-reveal a-reveal-opacity">
