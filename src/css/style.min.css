@@ -2412,8 +2412,8 @@ img {
 .checkout-form__container-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(0, 400px) 30px minmax(0, 600px);
-  grid-template-columns: minmax(0, 400px) minmax(0, 600px);
+  -ms-grid-columns: minmax(300px, 400px) 30px minmax(0, 600px);
+  grid-template-columns: minmax(300px, 400px) minmax(0, 600px);
   -webkit-justify-content: space-between;
           justify-content: space-between;
   -webkit-align-items: flex-start;
@@ -2472,6 +2472,10 @@ img {
 .checkout-form__input:active,
 .checkout-form__input:target {
   border: 2px solid var(--color-orange);
+}
+
+.checkout-form__order-review {
+  width: 100%;
 }
 
 .checkout-form__order-review {
@@ -3387,6 +3391,16 @@ button.swiper-pagination-bullet {
   .shop-card.shop-card--archive .shop-card__arrow--plus {
     right: -23px;
   }
+
+  .checkout-form {
+    padding: 30px 50px;
+  }
+
+  .checkout-form__container-grid {
+    -ms-grid-columns: minmax(0, 350px) 20px minmax(0, 550px);
+    grid-template-columns: minmax(0, 350px) minmax(0, 550px);
+    grid-gap: 20px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -3825,6 +3839,57 @@ button.swiper-pagination-bullet {
   .shop-card__range {
     max-width: 200px;
   }
+
+  .checkout-form {
+    padding: 30px;
+  }
+
+  .checkout-form__container-grid {
+    -ms-grid-columns: minmax(0, 300px) 20px minmax(0, 500px);
+    grid-template-columns: minmax(0, 300px) minmax(0, 500px);
+  }
+
+  .checkout-form__order-title {
+    padding: 30px 20px 0 20px;
+  }
+
+  .checkout-form__product-row {
+    -ms-grid-columns: minmax(0, 1fr) 20px minmax(0, 100px);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 100px);
+    padding: 0 20px;
+  }
+
+  .checkout-form__product-row--first {
+    padding-bottom: 20px;
+  }
+
+  .checkout-form__product-row--last {
+    padding-top: 20px;
+  }
+
+  .checkout-form__pay-info {
+    padding: 25px 20px;
+  }
+
+  .checkout-form__pay-carts {
+    margin-top: 20px;
+  }
+
+  .checkout-form__pay-methods {
+    margin-top: 20px;
+  }
+
+  .checkout-form__notice {
+    margin-top: 20px;
+  }
+
+  .checkout-form__pay-actions {
+    margin-top: 20px;
+  }
+
+  .checkout-form__button {
+    margin-top: 30px;
+  }
   .shop-card.shop-card--basket > .shop-card__icon {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
@@ -4150,6 +4215,11 @@ button.swiper-pagination-bullet {
     margin-top: 20px;
   }
 
+  .checkout-form__container-grid {
+    -ms-grid-columns: minmax(0, 270px) 20px minmax(0, 500px);
+    grid-template-columns: minmax(0, 270px) minmax(0, 500px);
+  }
+
   .services-store__container .sidebar--archive {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -4267,6 +4337,71 @@ button.swiper-pagination-bullet {
 
   .shop-card.shop-card--archive .shop-card__options {
     margin-top: 8px;
+  }
+
+  .checkout-form {
+    padding: 30px 15px 15px;
+  }
+
+  .checkout-form__container-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  .checkout-form__order-title {
+    padding: 30px 15px 0 15px;
+  }
+
+  .checkout-form__product-row {
+    -ms-grid-columns: minmax(0, 1fr) 20px minmax(0, 90px);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 90px);
+    padding: 0 15px;
+  }
+
+  .checkout-form__product-row--first {
+    padding-bottom: 20px;
+  }
+
+  .checkout-form__product-row--last {
+    padding-top: 20px;
+  }
+
+  .checkout-form__pay-info {
+    padding: 20px 15px;
+  }
+
+  .order-received__details {
+    padding: 0 15px;
+  }
+
+  .order-received__info-row {
+    -ms-grid-columns: minmax(0, 1fr) 20px minmax(0, 150px);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 150px);
+  }
+
+  .order-received__order-title {
+    padding: 30px 15px 0 15px;
+  }
+
+  .order-received__product-row {
+    -ms-grid-columns: minmax(0, 1fr) 10px minmax(0, 90px);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 90px);
+    grid-gap: 10px;
+    padding: 0 15px;
+  }
+
+  .order-received__footer .order-received__product-row {
+    -ms-grid-columns: minmax(0, 1fr) 10px minmax(0, 150px);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 150px);
+  }
+
+  .order-received__product-row--first {
+    padding-bottom: 20px;
+  }
+
+  .customer-details {
+    padding: 0 15px 30px 15px;
   }
 
   .shop-card.shop-card--archive .shop-card__icon {

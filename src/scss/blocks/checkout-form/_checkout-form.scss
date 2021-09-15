@@ -3,14 +3,37 @@
     width: 100%;
     border-radius: 20px;
     position: relative;
+    @include large-block {
+        padding: 30px 50px;
+    }
+    @include tabletSM-block {
+        padding: 30px;
+    }
+    @include mobileXS-block {
+        padding: 30px 15px 15px;
+    }
 }
 
 .checkout-form__container-grid {
     display: grid;
-    grid-template-columns: minmax(0, 400px) minmax(0, 600px);
+    grid-template-columns: minmax(300px, 400px) minmax(0, 600px);
     justify-content: space-between;
     align-items: flex-start;
     grid-gap: 30px;
+    @include large-block {
+        grid-template-columns: minmax(0, 350px) minmax(0, 550px);
+        grid-gap: 20px;
+    }
+    @include tabletSM-block {
+        grid-template-columns: minmax(0, 300px) minmax(0, 500px);
+    }
+    @include mobile-block {
+        grid-template-columns: minmax(0, 270px) minmax(0, 500px);
+    }
+    @include mobileXS-block {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
 }
 
 .checkout-form__field {
@@ -64,6 +87,10 @@
 }
 
 .checkout-form__order-review {
+    width: 100%;
+}
+
+.checkout-form__order-review {
     background: var(--color-white);
     border-radius: 20px;
 }
@@ -71,6 +98,12 @@
 .checkout-form__order-title {
     padding: 40px 30px 0 30px;
     margin-bottom: 40px;
+    @include tabletSM-block {
+        padding: 30px 20px 0 20px;
+    }
+    @include mobileXS-block {
+        padding: 30px 15px 0 15px;
+    }
 }
 
 .checkout-form__product-row {
@@ -79,6 +112,14 @@
     grid-gap: 20px;
     justify-content: space-between;
     padding: 0 30px;
+    @include tabletSM-block {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 100px);
+        padding: 0 20px;
+    }
+    @include mobileXS-block {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 90px);
+        padding: 0 15px;
+    }
 }
 
 .checkout-form__product-row ~ .checkout-form__product-row {
@@ -88,15 +129,33 @@
 .checkout-form__product-row--first {
     padding-bottom: 20px;
     border-bottom: 1px solid var(--color-black-gray-hight);
+    @include tabletSM-block {
+        padding-bottom: 20px;
+    }
+    @include mobileXS-block {
+        padding-bottom: 20px;
+    }
 }
 
 .checkout-form__product-row--last {
     padding-top: 20px;
     border-top: 1px solid var(--color-black-gray-hight);
+    @include tabletSM-block {
+        padding-top: 20px;
+    }
+    @include mobileXS-block {
+        padding-top: 20px;
+    }
 }
 
 .checkout-form__pay-info {
     padding: 25px 30px;
+    @include tabletSM-block {
+        padding: 25px 20px;
+    }
+    @include mobileXS-block {
+        padding: 20px 15px;
+    }
 }
 
 .checkout-form__pay-carts {
@@ -106,6 +165,9 @@
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     grid-gap: 22px 23px;
+    @include tabletSM-block {
+        margin-top: 20px;
+    }
 }
 
 .checkout-form__pay-img {
@@ -114,6 +176,9 @@
 
 .checkout-form__pay-methods {
     margin-top: 30px;
+    @include tabletSM-block {
+        margin-top: 20px;
+    }
 }
 
 .checkout-form__pay-method ~ .checkout-form__pay-method {
@@ -131,10 +196,16 @@
 .checkout-form__notice {
     margin-top: 30px;
     padding: 0;
+    @include tabletSM-block {
+        margin-top: 20px;
+    }
 }
 
 .checkout-form__pay-actions {
     margin-top: 30px;
+    @include tabletSM-block {
+        margin-top: 20px;
+    }
 }
 
 .checkout-form__pay-policy p {
@@ -153,4 +224,7 @@
 .checkout-form__button {
     margin-top: 40px;
     text-align: center;
+    @include tabletSM-block {
+        margin-top: 30px;
+    }
 }

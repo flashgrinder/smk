@@ -18,6 +18,9 @@
     list-style: none;
     padding: 0 30px;
     margin: 30px 0 0 0;
+    @include mobileXS-block {
+        padding: 0 15px;
+    }
 }
 
 .order-received__info-row {
@@ -25,6 +28,9 @@
     grid-template-columns: minmax(0, 1fr) minmax(0, 280px);
     grid-gap: 20px;
     justify-content: space-between;
+    @include mobileXS-block {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 150px);
+    }
 }
 
 .order-received__info-row ~ .order-received__info-row {
@@ -37,6 +43,9 @@
 
 .order-received__order-title {
     padding: 40px 30px 0 30px;
+    @include mobileXS-block {
+        padding: 30px 15px 0 15px;
+    }
 }
 
 .order-received__order-table {
@@ -49,10 +58,18 @@
     grid-gap: 20px;
     justify-content: space-between;
     padding: 0 30px;
+    @include mobileXS-block {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 90px);
+        grid-gap: 10px;
+        padding: 0 15px;
+    }
 }
 
 .order-received__footer .order-received__product-row {
     grid-template-columns: minmax(0, 1fr) minmax(0, 300px);
+    @include mobileXS-block {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 150px);
+    }
 }
 
 .order-received__product-row ~ .order-received__product-row {
@@ -62,6 +79,9 @@
 .order-received__product-row--first {
     padding-bottom: 20px;
     border-bottom: 1px solid var(--color-black-gray-hight);
+    @include mobileXS-block {
+        padding-bottom: 20px;
+    }
 }
 
 .order-received__footer {
