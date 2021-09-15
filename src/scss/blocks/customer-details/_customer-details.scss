@@ -1,0 +1,19 @@
+.customer-details {
+
+}
+
+.customer-details__address {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 30px 50px 30px;
+    margin-top: 30px;
+}
+
+.customer-details__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-details__info ~ .customer-details__info {
+    margin-top: 20px;
+}

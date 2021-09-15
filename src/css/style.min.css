@@ -2616,6 +2616,105 @@ img {
   color: var(--color-yellow);
 }
 
+/* Order-received */
+
+.order-received {
+  padding: 30px 0 50px;
+}
+
+.order-received__heading {
+  margin-bottom: 30px;
+}
+
+.order-received__container {
+  margin: 0 auto;
+  max-width: 600px;
+  background: var(--color-white);
+  border-radius: 20px;
+}
+
+.order-received__details {
+  list-style: none;
+  padding: 40px 30px 0 30px;
+  margin: 0;
+}
+
+.order-received__info-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 1fr) 20px minmax(0, 280px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 280px);
+  grid-gap: 20px;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.order-received__row ~ .order-received__row {
+  margin-top: 20px;
+}
+
+.order-received__order-review {
+  margin-top: 30px;
+}
+
+.order-received__order-title {
+  padding: 0 30px;
+}
+
+.order-received__order-table {
+  margin-top: 30px;
+}
+
+.order-received__product-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 1fr) 20px minmax(0, 120px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 120px);
+  grid-gap: 20px;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 0 30px;
+}
+
+.order-received__product-row ~ .order-received__product-row {
+  margin-top: 20px;
+}
+
+.order-received__product-row--first {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-black-gray-hight);
+}
+
+.order-received__footer {
+  border-top: 1px solid var(--color-black-gray-hight);
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+.order-received__footer .order-received__product-row:first-child {
+  margin-top: 20px;
+}
+
+/* Customer-details */
+
+.customer-details__address {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 30px 50px 30px;
+  margin-top: 30px;
+}
+
+.customer-details__info {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.customer-details__info ~ .customer-details__info {
+  margin-top: 20px;
+}
+
 /* ANOTHER MODULES */
 
 /* ANOTHER MODULES */
@@ -3650,6 +3749,10 @@ button.swiper-pagination-bullet {
   }
 
   .checkout-page {
+    padding: 25px 0 30px;
+  }
+
+  .order-received {
     padding: 25px 0 30px;
   }
 }
