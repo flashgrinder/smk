@@ -1970,7 +1970,7 @@ img {
           justify-content: space-between;
   -webkit-align-items: center;
           align-items: center;
-  background: var(--color-black-gray-op-75);
+  background: var(--color-dark);
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -1987,7 +1987,7 @@ img {
 /* Sidebar */
 
 .sidebar__category {
-  background: var(--color-black-gray-hight);
+  background: var(--color-dark);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding: 25px 20px;
   display: -webkit-flex;
@@ -2416,6 +2416,8 @@ img {
   grid-template-columns: minmax(0, 400px) minmax(0, 600px);
   -webkit-justify-content: space-between;
           justify-content: space-between;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
   grid-gap: 30px;
 }
 
