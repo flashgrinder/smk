@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 
 <!-- Order-received -->
 <section class="order-received woocommerce-order">
-    <div class="order-received__body container">
+    <div class="order-received__body container js-reveal a-reveal">
 
 	<?php
 	if ( $order ) :
@@ -36,7 +36,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php else : ?>
 
-            <h2 class="order-received__heading title title--orange title--large title--uppercase title--w-black center woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received">
+            <h2 class="order-received__heading title title--orange title--large title--uppercase title--w-black center woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received js-reveal a-reveal">
                 <?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?>
             </h2>
             <div class="order-received__container woocommerce-order-overview woocommerce-thankyou-order-details order_details">

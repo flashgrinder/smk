@@ -35,7 +35,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
             <h2 class="checkout-page__heading title title--orange title--large title--uppercase title--w-black title--indent js-reveal a-reveal">
                 <?php esc_html_e( 'Billing details', 'woocommerce' ); ?>
             </h2>
-            <div class="checkout-page__container">
+            <div class="checkout-page__container js-reveal a-reveal">
                 <form name="checkout" method="post" class="checkout-form checkout woocommerce-checkout bg--dark" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
                     <div class="checkout-form__container-grid">
                         <?php if ( $checkout->get_checkout_fields() ) : ?>
