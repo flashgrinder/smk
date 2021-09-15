@@ -182,7 +182,7 @@ defined( 'ABSPATH' ) || exit;
             let value = parseInt(input.value, 10);
 
             if (min !== undefined) {
-                if (value - step > min) {
+                if (value - step >= min) {
                     input.value = value - step;
                 }
             } else {
