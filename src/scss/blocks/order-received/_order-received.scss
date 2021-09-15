@@ -1,5 +1,5 @@
 .order-received {
-    padding: 30px 0 50px;
+    padding: 30px 40px 50px;
     @include tablet(padding, 25px 0 30px);
 }
 
@@ -16,8 +16,8 @@
 
 .order-received__details {
     list-style: none;
-    padding: 40px 30px 0 30px;
-    margin: 0;
+    padding: 0 30px;
+    margin: 30px 0 0 0;
 }
 
 .order-received__info-row {
@@ -27,7 +27,7 @@
     justify-content: space-between;
 }
 
-.order-received__row ~ .order-received__row {
+.order-received__info-row ~ .order-received__info-row {
     margin-top: 20px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .order-received__order-title {
-    padding: 0 30px;
+    padding: 40px 30px 0 30px;
 }
 
 .order-received__order-table {
@@ -49,6 +49,10 @@
     grid-gap: 20px;
     justify-content: space-between;
     padding: 0 30px;
+}
+
+.order-received__footer .order-received__product-row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 300px);
 }
 
 .order-received__product-row ~ .order-received__product-row {

@@ -1,11 +1,10 @@
 .customer-details {
-
+    padding: 0 30px 40px 30px;
 }
 
 .customer-details__address {
     max-width: 600px;
     margin: 0 auto;
-    padding: 0 30px 50px 30px;
     margin-top: 30px;
 }
 
@@ -16,4 +15,8 @@
 
 .customer-details__info ~ .customer-details__info {
     margin-top: 20px;
+}
+
+.customer-details__info-title {
+    margin-right: 15px;
 }

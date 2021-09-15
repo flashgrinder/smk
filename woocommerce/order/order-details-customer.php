@@ -19,35 +19,49 @@ defined( 'ABSPATH' ) || exit;
 
 $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_address();
 ?>
-<section class="woocommerce-customer-details">
+<!-- Customer-details -->
+<section class="customer-details woocommerce-customer-details">
+    <div class="customer-details__body">
+        <h2 class="customer-details__heading title title--black-gray title--large title--uppercase title--w-black center woocommerce-column__title">
+            <?php esc_html_e( 'Billing address', 'woocommerce' ); ?>
+        </h2>
+        <address class="customer-details__address text text--black-gray text--large text--w-bold center">
+            <div class="customer-details__info">
+                <span class="customer-details__info-title">Имя/Фамилия: </span>
+                <span class="customer-details__data"><?php echo $order->billing_first_name; echo $order->billing_last_name; ?></span>
+            </div>
+            <div class="customer-details__info">
+                <span class="customer-details__info-title">Город: </span>
+                <span class="customer-details__info-data"><?php echo $order->billing_city; ?></span>
+            </div>
+            <div class="customer-details__info">
+                <span class="customer-details__info-title">Адрес: </span>
+                <span class="customer-details__info-data"><?php echo $order->billing_address_1; ?></span>
+            </div>
+            <div class="customer-details__info">
+                <span class="customer-details__info-title">Область: </span>
+                <span class="customer-details__info-data"><?php echo $order->billing_state; ?></span>
+            </div>
+            <div class="customer-details__info">
+                <span class="customer-details__info-title">Почтовый индекс: </span>
+                <span class="customer-details__info-data"><?php echo $order->billing_postcode; ?></span>
+            </div>
+            <?php if ( $order->get_billing_phone() ) : ?>
+            <div class="customer-details__info customer-details__phone woocommerce-customer-details--phone">
+                <span class="customer-details__info-title">Телефон: </span>
+                <span class="customer-details__info-data"><?php echo esc_html( $order->get_billing_phone() ); ?></span>
+            </div>
+            <?php endif; ?>
+            <?php if ( $order->get_billing_email() ) : ?>
+            <div class="customer-details__info customer-details__email woocommerce-customer-details--email">
+                <span class="customer-details__info-title">Email:</span>
+                <span class="customer-details__info-data"><?php echo esc_html( $order->get_billing_email() ); ?></span>
+            </div>
+            <?php endif; ?>
+        </address>
 
-	<h2 class="woocommerce-column__title"><?php esc_html_e( 'Billing address', 'woocommerce' ); ?></h2>
-
-	<address>
+        <?php do_action( 'woocommerce_order_details_after_customer_details', $order ); ?>
         
-        <?php echo $order->billing_first_name; ?>
-
-        <?php echo $order->billing_last_name; ?>
-
-		<?php echo $order->billing_address_1; ?>
-
-        <?php echo $order->billing_city; ?>
-
-        <?php echo $order->billing_state; ?>
-        <br>PostCode:
-        <?php echo $order->billing_postcode; ?>
-        <br>Country:
-        <?php echo $order->billing_city; ?>
-
-		<?php if ( $order->get_billing_phone() ) : ?>
-			<p class="woocommerce-customer-details--phone"><?php echo esc_html( $order->get_billing_phone() ); ?></p>
-		<?php endif; ?>
-
-		<?php if ( $order->get_billing_email() ) : ?>
-			<p class="woocommerce-customer-details--email"><?php echo esc_html( $order->get_billing_email() ); ?></p>
-		<?php endif; ?>
-	</address>
-
-	<?php do_action( 'woocommerce_order_details_after_customer_details', $order ); ?>
-
+    </div>
 </section>
+<!-- Customer-details -->
