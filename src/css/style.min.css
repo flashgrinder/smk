@@ -1531,7 +1531,6 @@ img {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  margin-left: -21px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -1569,61 +1568,16 @@ img {
 
 .technique-card__side--right {
   position: relative;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
   width: 60%;
-}
-
-.technique-card__text {
-  margin-bottom: 15px;
 }
 
 .technique-card__picture {
   text-align: center;
-  margin-bottom: 15px;
-}
-
-.technique-card__features {
-  display: -webkit-flex;
-  display: flex;
-}
-
-.technique-card__item {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-          align-items: center;
-}
-
-.technique-card__item ~ .technique-card__item {
-  margin-left: 22px;
-}
-
-.technique-card__item-pic {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-  background: #000;
-  border-radius: 50px;
-}
-
-.technique-card__wrapp {
-  display: -webkit-flex;
-  display: flex;
-  width: 100%;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
-  -webkit-align-items: center;
-          align-items: center;
 }
 
 .technique-card__action {
-  max-width: 217px;
-  width: 100%;
+  margin-top: 50px;
+  text-align: center;
 }
 
 /* About */
@@ -3672,7 +3626,6 @@ button.swiper-pagination-bullet {
 
   .technique-card__table {
     width: 100%;
-    margin-left: 0;
   }
 
   .technique-card__side--right {
@@ -3680,13 +3633,8 @@ button.swiper-pagination-bullet {
     padding: 20px 30px 20px 20px;
   }
 
-  .technique-card__wrapp {
-    -webkit-flex-direction: column;
-            flex-direction: column;
-  }
-
   .technique-card__action {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .about {
@@ -4105,21 +4053,6 @@ button.swiper-pagination-bullet {
   .technique-card__side--right {
     width: 100%;
     padding: 20px 15px 20px 15px;
-  }
-
-  .technique-card__item {
-    -webkit-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-
-  .technique-card__item ~ .technique-card__item {
-    margin-left: 10px;
-  }
-
-  .technique-card__item-pic {
-    margin-right: 0;
-    margin-bottom: 5px;
   }
 
   .about__pic--left {
