@@ -2733,6 +2733,31 @@ img {
   margin-right: 15px;
 }
 
+/* 404 */
+
+.page-404 {
+  position: relative;
+  height: 100vh;
+}
+
+.page-404__wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-flex;
+  display: flex;
+}
+
+.page-404__column--first {
+  margin-right: 50px;
+}
+
+.page-404__action {
+  margin-top: 30px;
+}
+
 /* ANOTHER MODULES */
 
 /* ANOTHER MODULES */
@@ -4402,6 +4427,35 @@ button.swiper-pagination-bullet {
 
   .customer-details {
     padding: 0 15px 30px 15px;
+  }
+
+  .page-404__wrap {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+    padding-top: 100px;
+  }
+
+  .page-404__column--first {
+    margin-right: 0;
+  }
+
+  .page-404__text-svg {
+    max-width: 180px;
+  }
+
+  .page-404__action {
+    margin-top: 20px;
+  }
+
+  .page-404__column--second {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .page-404__svg {
+    max-width: 180px;
   }
 
   .shop-card.shop-card--archive .shop-card__icon {
