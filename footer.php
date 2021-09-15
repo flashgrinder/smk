@@ -11,38 +11,28 @@
                 <nav class="footer__menu menu">
                     <ul class="menu__list footer__menu-list">
                         <li class="menu__item footer__menu-item">
-                            <a href="" class="menu__link footer__menu-link">
+                            <a href="#services" class="menu__link footer__menu-link">
                                 Услуги
                             </a>
                         </li>
                         <li class="menu__item footer__menu-item">
-                            <a href="" class="menu__link footer__menu-link">
+                            <a href="#thechnique" class="menu__link footer__menu-link">
                                 Спецтехника
                             </a>
                         </li>
                         <li class="menu__item footer__menu-item">
-                            <a href="" class="menu__link footer__menu-link">
+                            <a href="#about" class="menu__link footer__menu-link">
                                 О компании
                             </a>
                         </li>
                         <li class="menu__item footer__menu-item">
-                            <a href=""class="menu__link footer__menu-link">
+                            <a href="#managment"class="menu__link footer__menu-link">
                                 Менеджмент
                             </a>
                         </li>
                         <li class="menu__item footer__menu-item">
-                            <a href="" class="menu__link footer__menu-link">
+                            <a href="#contacts" class="menu__link footer__menu-link">
                                 Контакты
-                            </a>
-                        </li>
-                        <li class="menu__item footer__menu-item">
-                            <a href="" class="menu__link footer__menu-link">
-                                База знаний
-                            </a>
-                        </li>
-                        <li class="menu__item footer__menu-item">
-                            <a href="" class="menu__link footer__menu-link">
-                                Оплата
                             </a>
                         </li>
                     </ul>

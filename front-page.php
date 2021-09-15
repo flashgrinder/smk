@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="services-slider__body container">
+            <div class="services-slider__body container" id="services">
                 <div class="services-slider__inner">
                     <h2 class="services-slider__heading title title--white title--large title--uppercase title--w-black js-reveal a-reveal">
                         Наши услуги:
@@ -279,7 +279,7 @@
         <!-- /. Services-slider -->
 
         <!-- Techniaue -->
-        <section class="technique">
+        <section class="technique" id="thechnique">
             <div class="technique__body container">
                 <h2 class="technique__heading title title--white title--large title--uppercase title--w-black title--indent js-reveal a-reveal">
                     Аренда и лизинг <br>спецтехники
@@ -541,7 +541,7 @@
         <!-- /. Techniaue -->
 
         <!-- About -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__body container">
                 <h2 class="about__heading title title--orange title--large title--uppercase title--w-black title--indent js-reveal a-reveal">
                     О компании
@@ -588,7 +588,7 @@
         <!-- /. About -->
 
         <!-- Management -->
-        <section class="management">
+        <section class="management" id="managment">
             <div class="management__body container">
                 <h2 class="management__heading title title--white title--large title--w-black title--uppercase title--indent js-reveal a-reveal">
                     Менеджмент <br>компании
@@ -678,7 +678,7 @@
         <!-- /. Management -->
 
         <!-- Contacts -->
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="contacts__body container">
                 <h2 class="contacts__heading title title--white title--large title--uppercase title--w-black title--indent js-reveal a-reveal">
                     Контакты
