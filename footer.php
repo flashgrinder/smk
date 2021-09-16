@@ -37,6 +37,17 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="footer__links footer__links--lg">
+                    <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+                        Политика возврата
+                    </a>
+                    <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+                        Пользовательское соглашение
+                    </a>
+                    <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+                        Политика конфиденциальности
+                    </a>
+                </div>
                 <div class="footer__text">
                     <div class="footer__descr text text--black-gray text--small text-w-regular">
                         Общество с ограниченной ответственностью «СТРОЙМОНТАЖКОНСАЛТИНГ»
@@ -66,6 +77,17 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="footer__links footer__links--mobile">
+            <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+                Политика возврата
+            </a>
+            <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+                Пользовательское соглашение
+            </a>
+            <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+                Политика конфиденциальности
+            </a>
         </div>
         <div class="footer__wrapper-text container">
             <div class="footer__text">

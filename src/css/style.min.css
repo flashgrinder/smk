@@ -1835,7 +1835,7 @@ img {
 }
 
 .footer__text {
-  margin-top: 45px;
+  margin-top: 20px;
 }
 
 .footer__descr {
@@ -1880,6 +1880,29 @@ img {
 
 .footer__social-icon ~ .footer__social-icon {
   margin-left: 5px;
+}
+
+.footer__links {
+  margin-top: 15px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.footer__links--mobile {
+  display: none;
+}
+
+.footer__link-page {
+  text-decoration: none;
+  transition: ease .3s;
+}
+
+.footer__link-page:hover {
+  color: var(--color-white);
+}
+
+.footer__link-page ~ .footer__link-page {
+  margin-left: 15px;
 }
 
 /* Services-store */
@@ -3928,6 +3951,28 @@ button.swiper-pagination-bullet {
     -webkit-align-items: center;
             align-items: center;
     width: 100%;
+  }
+
+  .footer__links {
+    margin-top: 30px;
+  }
+
+  .footer__links--lg {
+    display: none;
+  }
+
+  .footer__links--mobile {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+
+  .footer__link-page ~ .footer__link-page {
+    margin-left: 0;
+    margin-top: 15px;
   }
 
   .services-store.services-store--bascket {
