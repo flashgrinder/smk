@@ -38,13 +38,13 @@
                     </ul>
                 </nav>
                 <div class="footer__links footer__links--lg">
-                    <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+                    <a href="https://smk-contracts.ru/refund_returns/" class="footer__link-page text text--black-gray text--small text-w-regular">
                         Политика возврата
                     </a>
-                    <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+                    <a href="https://smk-contracts.ru/polzovatelskoe-soglashenie/" class="footer__link-page text text--black-gray text--small text-w-regular">
                         Пользовательское соглашение
                     </a>
-                    <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+                    <a href="https://smk-contracts.ru/privacy-policy/" class="footer__link-page text text--black-gray text--small text-w-regular">
                         Политика конфиденциальности
                     </a>
                 </div>
@@ -79,13 +79,13 @@
             </div>
         </div>
         <div class="footer__links footer__links--mobile">
-            <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+            <a href="https://smk-contracts.ru/refund_returns/" class="footer__link-page text text--black-gray text--small text-w-regular">
                 Политика возврата
             </a>
-            <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+            <a href="https://smk-contracts.ru/polzovatelskoe-soglashenie/" class="footer__link-page text text--black-gray text--small text-w-regular">
                 Пользовательское соглашение
             </a>
-            <a href="#" class="footer__link-page text text--black-gray text--small text-w-regular">
+            <a href="https://smk-contracts.ru/privacy-policy/" class="footer__link-page text text--black-gray text--small text-w-regular">
                 Политика конфиденциальности
             </a>
         </div>
