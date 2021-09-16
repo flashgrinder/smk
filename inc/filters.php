@@ -62,3 +62,8 @@
         return $fields;
 
     } );
+
+    /* Выод количества товаров на главной */
+    add_filter('loop_shop_per_page', function() {
+        return -1;
+    }, 10, 0);
