@@ -937,28 +937,29 @@ img {
   border-radius: 5px;
 }
 
-.modal__agree-text .wpcf7-acceptance label > span:hover::before {
+.modal__agree-text .modal__agree-text .wpcf7-acceptance label > span:hover::before {
   border: 2px solid var(--color-orange);
 }
 
-.wpcf7-acceptance label > .modal__checkbox--agree:focus + span::before {
+.modal__agree-text .wpcf7-acceptance label > .modal__checkbox--agree:focus + span::before {
   border: 2px solid var(--color-orange);
 }
 
-.wpcf7-acceptance label > .modal__checkbox--agree:focus:not(:checked) + span::before {
+.modal__agree-text .wpcf7-acceptance label > .modal__checkbox--agree:focus:not(:checked) + span::before {
   border: 2px solid var(--color-orange);
 }
 
-.wpcf7-acceptance label > .modal__checkbox--agree:disabled + span::before {
+.modal__agree-text .wpcf7-acceptance label > .modal__checkbox--agree:disabled + span::before {
   border: 2px solid var(--color-gray);
 }
 
-.wpcf7-acceptance label > .modal__checkbox--agree:checked + span::before {
+.modal__agree-text .wpcf7-acceptance label > .modal__checkbox--agree:checked + span::before {
   border: 2px solid var(--color-orange);
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeDE9IjEuMjQxNTMiIHkxPSI0LjQxNDk2IiB4Mj0iNy43OTExNSIgeTI9IjEwLjk2NDYiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPgo8bGluZSB4MT0iNi4zNzY4OCIgeTE9IjEwLjk2NDUiIHgyPSIxNi4yMDEzIiB5Mj0iMS4xNDAxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==");
 }
 
 .modal__actions {
+  position: relative;
   margin-top: 30px;
   text-align: center;
 }
@@ -966,6 +967,71 @@ img {
 .modal__btn {
   padding: 10px 53px;
   cursor: pointer;
+}
+
+.modal__actions .ajax-loader {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+
+.modal__actions .ajax-loader:before {
+  position: absolute;
+  top: -4px;
+  left: -5px;
+  background-color: transparent;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 4px solid #FFD600;
+  border-top: 4px solid #595959;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: rotate 1s infinite linear;
+          animation: rotate 1s infinite linear;
+}
+
+.modal .wpcf7 form .wpcf7-response-output {
+  font-family: var(--font-roboto);
+  font-size: calc(14px + 2 * ((100vw - 768px) / 256));
+  margin: 20px 0 0;
+  padding: 15px 1em;
+  border: 2px solid var(--color-yellow);
+  border-radius: 20px;
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 1024px) {
+
+  .modal .wpcf7 form .wpcf7-response-output {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .modal .wpcf7 form .wpcf7-response-output {
+    font-size: 14px;
+  }
+}
+
+.modal .wpcf7 form.invalid .wpcf7-response-output,
+.modal .wpcf7 form.unaccepted .wpcf7-response-output {
+  border: 2px solid var(--color-orange-hight);
+}
+
+.modal__form .wpcf7-not-valid-tip {
+  text-align: center;
+  font-family: var(--font-roboto);
+  font-size: 12px;
+  margin-top: 5px;
+  color: var(--color-orange-hight);
 }
 
 /* Modal-tooltip */
@@ -4221,6 +4287,10 @@ button.swiper-pagination-bullet {
 
   .modal__input {
     padding: 13px;
+  }
+
+  .modal__actions .ajax-loader {
+    margin: 0 10px;
   }
 
   .tooltip-modal__body {

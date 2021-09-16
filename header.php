@@ -23,43 +23,7 @@
                     Оставьте заявку
                 </h3>
             </div>
-            <div role="form" class="wpcf7" id="wpcf7-f382-o1" lang="ru-RU" dir="ltr">
-                <div class="screen-reader-response">
-                    <p role="status" aria-live="polite" aria-atomic="true"></p>
-                    <ul></ul>
-                </div>
-                <form action="/#wpcf7-f382-o1" method="post" class="modal__form wpcf7-form init" novalidate="novalidate"
-                    data-status="init">
-                    <div class="modal__field">
-                        <input class="modal__input" aria-required="true" aria-invalid="false" placeholder="Имя">
-                    </div>
-                    <div class="modal__field">
-                        <input type="email" class="modal__input" aria-required="true" placeholder="E-mail">
-                    </div>
-                    <div class="modal__field">
-                        <input type="tel" class="modal__input" aria-required="true" placeholder="Номер телефона">
-                    </div>
-                    <div class="modal__agree-text">
-                        <span class="wpcf7-form-control wpcf7-acceptance">
-                            <span class="wpcf7-list-item">
-                                <label>
-                                    <input class="modal__checkbox modal__checkbox--agree" type="checkbox" name="acceptance-656" value="1" aria-invalid="false">
-                                    <span class="wpcf7-list-item-label">
-                                        Подтверждаю своё согласие на обработку персональных данных в рамках данного проекта.
-                                    </span>
-                                </label>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="modal__actions">
-                        <input type="submit" value="Отправить" class="modal__btn button button--yellow"><span class="ajax-loader"></span>
-                    </div>
-                    <div class="wpcf7-response-output" aria-hidden="true"></div>
-                    <span class="wpa_hidden_field" style="display:none;height:0;width:0;">
-                        <input type="text" name="field2423" value="89079">
-                    </span>
-                </form>
-            </div>
+            <?php echo do_shortcode( '[contact-form-7 id="45" title="Контактная форма 1" html_class="modal__form"]' ); ?>
         </div>
     </div>
     <!-- /. Modal window -->
