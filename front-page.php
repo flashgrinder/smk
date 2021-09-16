@@ -102,7 +102,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -148,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -173,7 +173,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -198,7 +198,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -221,7 +221,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -244,7 +244,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -267,7 +267,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="javascript:;" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -321,7 +321,7 @@
                                     </tbody>
                                 </table>
                                 <div class="technique-card__action">
-                                    <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
+                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow" data-modal-trigger="modal">
                                         Арендовать
                                     </a>
                                 </div>
@@ -370,7 +370,7 @@
                                     </tbody>
                                 </table>
                                 <div class="technique-card__action">
-                                    <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
+                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow" data-modal-trigger="modal">
                                         Арендовать
                                     </a>
                                 </div>
@@ -415,7 +415,7 @@
                                     </tbody>
                                 </table>
                                 <div class="technique-card__action">
-                                    <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
+                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow" data-modal-trigger="modal">
                                         Арендовать
                                     </a>
                                 </div>
@@ -472,7 +472,7 @@
                                     </tbody>
                                 </table>
                                 <div class="technique-card__action">
-                                    <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
+                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow" data-modal-trigger="modal">
                                         Арендовать
                                     </a>
                                 </div>
@@ -521,7 +521,7 @@
                                     </tbody>
                                 </table>
                                 <div class="technique-card__action">
-                                    <a href="javascript:;" class="technique-card__button button button--yellow" data-modal-trigger="modal">
+                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow" data-modal-trigger="modal">
                                         Арендовать
                                     </a>
                                 </div>
