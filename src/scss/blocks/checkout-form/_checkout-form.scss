@@ -155,6 +155,10 @@
     }
 }
 
+.checkout-form__product-price .tax_label {
+    display: block;
+}
+
 .checkout-form__pay-info {
     padding: 25px 30px;
     @include tabletSM-block {

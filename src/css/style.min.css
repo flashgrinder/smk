@@ -2590,6 +2590,10 @@ img {
   grid-template-columns: minmax(0, 100px) minmax(0, 1fr);
 }
 
+.checkout-form__product-price .tax_label {
+  display: block;
+}
+
 .checkout-form__pay-info {
   padding: 25px 30px;
 }
