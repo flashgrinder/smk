@@ -2558,6 +2558,8 @@ img {
 .checkout-form__product-row--last {
   padding-top: 20px;
   border-top: 1px solid var(--color-black-gray-hight);
+  -ms-grid-columns: minmax(0, 100px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 100px) minmax(0, 1fr);
 }
 
 .checkout-form__pay-info {
@@ -4106,6 +4108,8 @@ button.swiper-pagination-bullet {
   }
 
   .checkout-form__product-row--last {
+    -ms-grid-columns: minmax(0, 100px) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 100px) minmax(0, 1fr);
     padding-top: 20px;
   }
 
@@ -4595,6 +4599,8 @@ button.swiper-pagination-bullet {
   }
 
   .checkout-form__product-row--last {
+    -ms-grid-columns: minmax(0, 100px) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 100px) minmax(0, 1fr);
     padding-top: 20px;
   }
 
