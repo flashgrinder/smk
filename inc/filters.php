@@ -8,20 +8,21 @@
 
     /* Изменение полей на форме оплаты */
     add_filter( 'woocommerce_checkout_fields', function ( $checkout_fields ){
-        
-        // echo '<pre>';print_r( $checkout_fields );exit;
 
         $checkout_fields['billing']['billing_country']['required'] = 0;
+        $checkout_fields['billing']['billing_address_1']['required'] = 0;
         $checkout_fields['billing']['billing_city']['priority'] = 41;
         $checkout_fields['billing']['billing_first_name']['placeholder'] = 'Иван';
         $checkout_fields['billing']['billing_last_name']['placeholder'] = 'Иванов';
+        $checkout_fields['billing']['billing_city']['required'] = 0;
         $checkout_fields['billing']['billing_city']['placeholder'] = 'г. Москва';
+        $checkout_fields['billing']['billing_state']['required'] = 0;
         $checkout_fields['billing']['billing_state']['placeholder'] = 'Московская область';
+        $checkout_fields['billing']['billing_postcode']['required'] = 0;
         $checkout_fields['billing']['billing_postcode']['placeholder'] = '000000';
         $checkout_fields['billing']['billing_phone']['placeholder'] = '+7 (999) 999 99 99';
-        $checkout_fields['billing']['billing_phone']['placeholder'] = '+7 (999) 999 99 99';
         $checkout_fields['billing']['billing_email']['placeholder'] = 'ivan-ivanov@mail.ru';
-
+        // echo '<pre>';print_r( $checkout_fields );exit;
         return $checkout_fields;
 
     } );

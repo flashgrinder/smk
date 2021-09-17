@@ -2473,6 +2473,10 @@ img {
           align-items: stretch;
 }
 
+.checkout-form__field.address-field {
+  display: none;
+}
+
 .checkout-form__field ~ .checkout-form__field {
   margin-top: 30px;
 }
