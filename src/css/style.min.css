@@ -2626,7 +2626,7 @@ img {
 }
 
 .checkout-form__pay-method-input {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .checkout-form__pay-box {
