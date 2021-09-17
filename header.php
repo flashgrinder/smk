@@ -39,27 +39,27 @@
                 <nav class="menu">
                     <ul class="menu__list header__menu-list">
                         <li class="menu__item header__menu-item">
-                            <a href="#services" class="menu__link header__menu-link js-anchor-link">
+                            <a href="<?php echo home_url(); ?>#services" class="menu__link header__menu-link js-anchor-link">
                                 Услуги
                             </a>
                         </li>
                         <li class="menu__item header__menu-item">
-                            <a href="#thechnique" class="menu__link header__menu-link js-anchor-link">
+                            <a href="<?php echo home_url(); ?>#thechnique" class="menu__link header__menu-link js-anchor-link">
                                 Спецтехника
                             </a>
                         </li>
                         <li class="menu__item header__menu-item">
-                            <a href="#about" class="menu__link header__menu-link js-anchor-link">
+                            <a href="<?php echo home_url(); ?>#about" class="menu__link header__menu-link js-anchor-link">
                                 О компании
                             </a>
                         </li>
                         <li class="menu__item header__menu-item">
-                            <a href="#managment" class="menu__link header__menu-link js-anchor-link">
+                            <a href="<?php echo home_url(); ?>#managment" class="menu__link header__menu-link js-anchor-link">
                                 Менеджмент
                             </a>
                         </li>
                         <li class="menu__item header__menu-item">
-                            <a href="#contacts" class="menu__link header__menu-link js-anchor-link">
+                            <a href="<?php echo home_url(); ?>#contacts" class="menu__link header__menu-link js-anchor-link">
                                 Контакты
                             </a>
                         </li>
