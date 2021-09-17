@@ -2625,6 +2625,10 @@ img {
   display: none;
 }
 
+.checkout-form__pay-method-input {
+  display: inline-block;
+}
+
 .checkout-form__pay-box {
   margin-top: 20px;
 }
