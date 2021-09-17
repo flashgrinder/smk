@@ -651,6 +651,10 @@ img {
   color: var(--color-black-gray);
 }
 
+.text--yellow {
+  color: var(--color-yellow);
+}
+
 .text--orange {
   color: var(--color-orange);
 }
@@ -2761,6 +2765,10 @@ img {
 
 .order-received__footer .order-received__product-row:first-child {
   margin-top: 20px;
+}
+
+.order-received__thankyou {
+  margin-top: 50px;
 }
 
 /* Customer-details */
