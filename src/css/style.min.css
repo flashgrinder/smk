@@ -2621,6 +2621,10 @@ img {
   margin-top: 20px;
 }
 
+.checkout-form__pay-method.payment_method_rbspayment img {
+  display: none;
+}
+
 .checkout-form__pay-box {
   margin-top: 20px;
 }
