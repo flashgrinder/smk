@@ -291,6 +291,55 @@
                         <div class="technique-card__inner">
                             <div class="technique-card__side technique-card__side--left">
                                 <h3 class="technique-card__heading title title--orange title--medium title--w-black">
+                                    Автобетононасос PUTZMEISTER BSF56-5.16Н VOLVO FMX460
+                                </h3>
+                                <span class="technique-card__title text text--white text--normal text-w-regular">
+                                    Технические данные:
+                                </span>
+                                <table class="technique-card__table">
+                                    <tbody class="technique-card__tbody">
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Объем подачи бетона макс.</td>
+                                            <td class="technique-card__td">160 м3/ч</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Высота подачи бетона</td>
+                                            <td class="technique-card__td">55,1 м</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Дальность подачи бетона по горизонтали</td>
+                                            <td class="technique-card__td">17,64 м³</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Максимальная высота смесителя без рамы</td>
+                                            <td class="technique-card__td">49,9 м</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Количество осей</td>
+                                            <td class="technique-card__td">5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="technique-card__action">
+                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow" data-modal-trigger="modal">
+                                        Арендовать
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="technique-card__side technique-card__side--right">
+                                <div class="technique-card__picture">
+                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-5.png" alt="" class="technique-card__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /. Technique-card -->
+
+                    <!-- Technique-card -->
+                    <div class="technique-card js-reveal a-reveal">
+                        <div class="technique-card__inner">
+                            <div class="technique-card__side technique-card__side--left">
+                                <h3 class="technique-card__heading title title--orange title--medium title--w-black">
                                     Автокран c телескопической стрелой LIEBHERR LTM 1050-3.1
                                 </h3>
                                 <span class="technique-card__title text text--white text--normal text-w-regular">
@@ -480,55 +529,6 @@
                             <div class="technique-card__side technique-card__side--right">
                                 <div class="technique-card__picture">
                                     <img src="<?php echo STANDART_DIR; ?>img/technique/tech-4.png" alt="" class="technique-card__img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /. Technique-card -->
-
-                    <!-- Technique-card -->
-                    <div class="technique-card js-reveal a-reveal">
-                        <div class="technique-card__inner">
-                            <div class="technique-card__side technique-card__side--left">
-                                <h3 class="technique-card__heading title title--orange title--medium title--w-black">
-                                    Автобетононасос PUTZMEISTER BSF56-5.16Н VOLVO FMX460
-                                </h3>
-                                <span class="technique-card__title text text--white text--normal text-w-regular">
-                                    Технические данные:
-                                </span>
-                                <table class="technique-card__table">
-                                    <tbody class="technique-card__tbody">
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Объем подачи бетона макс.</td>
-                                            <td class="technique-card__td">160 м3/ч</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Высота подачи бетона</td>
-                                            <td class="technique-card__td">55,1 м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Дальность подачи бетона по горизонтали</td>
-                                            <td class="technique-card__td">17,64 м³</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Максимальная высота смесителя без рамы</td>
-                                            <td class="technique-card__td">49,9 м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Количество осей</td>
-                                            <td class="technique-card__td">5</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="technique-card__action">
-                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow" data-modal-trigger="modal">
-                                        Арендовать
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="technique-card__side technique-card__side--right">
-                                <div class="technique-card__picture">
-                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-5.png" alt="" class="technique-card__img">
                                 </div>
                             </div>
                         </div>
