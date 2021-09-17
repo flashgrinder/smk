@@ -23,7 +23,7 @@
                     Оставьте заявку
                 </h3>
             </div>
-            <?php echo do_shortcode( '[contact-form-7 id="45" title="Контактная форма 1" html_class="modal__form"]' ); ?>
+            <?php echo do_shortcode( '[contact-form-7 id="130" title="Контактная форма 1" html_class="modal__form"]' ); ?>
         </div>
     </div>
     <!-- /. Modal window -->
