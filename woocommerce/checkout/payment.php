@@ -23,7 +23,7 @@ if ( ! is_ajax() ) {
 ?>
 <div class="checkout-form__pay-info woocommerce-checkout-payment" id="payment">
     <div class="checkout-form__pay-text text text--gray-hight text--small text--w-regular">
-        Текст с видом и условиями оплаты, дополнительная информация о платежных системах. Текст с видом и условиями оплаты, дополнительная информация о платежных системах
+        Оплата происходит через ПАО СБЕРБАНК с использованием банковских карт следующих платёжных систем:
     </div>
     <div class="checkout-form__pay-carts">
         <div class="checkout-form__pay-icon">
