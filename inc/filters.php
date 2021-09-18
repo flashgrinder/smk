@@ -72,7 +72,7 @@
     /* Отключаем стили, скрипты плагина везде кроме главной страницы */
     add_filter('wp', 'cf7_disable_css_js');
     function cf7_disable_css_js(){  
-        if( ! is_page('contacts') ){
+        if( ! is_page('Домашняя страница') ){
             add_filter( 'wpcf7_load_js', '__return_false' );
             add_filter( 'wpcf7_load_css', '__return_false' );
         }
