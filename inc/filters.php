@@ -73,8 +73,8 @@
     add_filter('wp', 'cf7_disable_css_js', function() {
 
         if( ! is_front_page() ){
-            add_filter( 'wpcf7_load_js', '__return_false' );
-            add_filter( 'wpcf7_load_css', '__return_false' );
+            wp_deregister_script( 'contact-form-7' ); // отключаем скрипты плагина
+		    wp_deregister_style( 'contact-form-7' ); // отключаем стили плагина
         }
 
     });
