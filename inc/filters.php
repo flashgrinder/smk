@@ -72,7 +72,7 @@
     /* Отключаем стили, скрипты плагина везде кроме главной страницы */
     add_filter('wp', 'cf7_disable_css_js', function() {
 
-        if( ! is_front_page() ){
+        if( ! is_page('Домашняя страница') ){
             wp_deregister_script( 'contact-form-7' ); // отключаем скрипты плагина
 		    wp_deregister_style( 'contact-form-7' ); // отключаем стили плагина
         }
