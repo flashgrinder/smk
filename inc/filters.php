@@ -68,3 +68,13 @@
     add_filter('loop_shop_per_page', function() {
         return -1;
     }, 10, 0);
+
+    /* Отключаем стили, скрипты плагина везде кроме главной страницы */
+    add_filter('wp', 'cf7_disable_css_js', function() {
+
+        if( ! is_front_page() ){
+            add_filter( 'wpcf7_load_js', '__return_false' );
+            add_filter( 'wpcf7_load_css', '__return_false' );
+        }
+
+    });
