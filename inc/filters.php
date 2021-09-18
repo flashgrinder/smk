@@ -70,10 +70,10 @@
     }, 10, 0);
 
     /* Отключаем стили, скрипты плагина везде кроме главной страницы */
-    add_filter('wp', 'cf7_disable_css_js');
-    function cf7_disable_css_js(){  
+    add_filter('wp', 'my_deregister_javascript', 100);
+    function my_deregister_javascript(){  
         if( ! is_page('Домашняя страница') ){
-            add_filter( 'wpcf7_load_js', '__return_false' );
-            add_filter( 'wpcf7_load_css', '__return_false' );
+            wp_deregister_script( 'contact-form-7' ); // отключаем скрипты плагина
+		    wp_deregister_style( 'contact-form-7' ); // отключаем стили плагина
         }
     }
