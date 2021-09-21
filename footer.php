@@ -38,6 +38,9 @@
                     </ul>
                 </nav>
                 <div class="footer__links footer__links--lg">
+                    <a href="https://smk-contracts.ru/rekvizity/" class="footer__link-page text text--black-gray text--small text-w-regular">
+                        Реквизиты
+                    </a>
                     <a href="https://smk-contracts.ru/refund_returns/" class="footer__link-page text text--black-gray text--small text-w-regular">
                         Политика возврата
                     </a>
