@@ -609,7 +609,7 @@
                                 +7 499 380 7997
                             </a>
                             <a href="tel:+7903239604" class="management__link management__link--phone title title--white title--small title--w-normal link">
-                                +7 903 239 604
+                                +7 903 239 6045
                             </a>
                         </div>
                         <div class="management__emails">
