@@ -59,6 +59,11 @@
                             </a>
                         </li>
                         <li class="menu__item header__menu-item">
+                            <a href="javascript:;" class="menu__link header__menu-link js-anchor-link" onclick="ipayCheckout({currency:'RUB', order_number:'', description: ''}, function(order) { showSuccessfulPurchase(order) }, function(order) { showFailurefulPurchase(order) })">
+                                Оплата
+                            </a>
+                        </li>
+                        <li class="menu__item header__menu-item">
                             <a href="<?php echo home_url(); ?>#contacts" class="menu__link header__menu-link js-anchor-link">
                                 Контакты
                             </a>
