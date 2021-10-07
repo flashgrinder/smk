@@ -59,11 +59,6 @@
                             </a>
                         </li>
                         <li class="menu__item header__menu-item">
-                            <a href="javascript:;" class="menu__link header__menu-link js-anchor-link">
-                                Оплата
-                            </a>
-                        </li>
-                        <li class="menu__item header__menu-item">
                             <a href="<?php echo home_url(); ?>#contacts" class="menu__link header__menu-link js-anchor-link">
                                 Контакты
                             </a>
