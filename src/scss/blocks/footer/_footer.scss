@@ -17,7 +17,7 @@
 
 .footer__body {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     @include tablet-block {
@@ -33,6 +33,11 @@
     @include mobile-block {
         width: 70px;
     }
+}
+
+.footer__inner {
+    margin-left: 200px;
+    @include tablet(margin-left, 0);
 }
 
 .footer__menu {

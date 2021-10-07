@@ -1837,8 +1837,6 @@ img {
 .footer__body {
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
   -webkit-align-items: flex-start;
           align-items: flex-start;
   -webkit-flex-wrap: wrap;
@@ -1847,6 +1845,10 @@ img {
 
 .footer__logo {
   margin: 0 0 0 37px;
+}
+
+.footer__inner {
+  margin-left: 200px;
 }
 
 .footer__menu {
@@ -3982,6 +3984,10 @@ button.swiper-pagination-bullet {
 
   .footer__logo {
     margin: 0;
+  }
+
+  .footer__inner {
+    margin-left: 0;
   }
 
   .footer__menu {
