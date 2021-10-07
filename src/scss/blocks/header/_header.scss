@@ -126,23 +126,49 @@
     }
 }
 
-.header__phone {
+.header__actions {
+    display: flex;
+    margin-top: 18px;
+    @include tablet(margin, 0);
+    @include mobileXSS(flex-direction, column);
+}
+
+.header__payment {
+    margin-right: 30px;
+    @include tablet(margin-right, 15px);
+}
+
+.header__phone,
+.header__payment {
     display: flex;
     align-items: center;
-    margin-top: 18px;
     font-family: var(--font-gotham);
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
     color: var(--color-black-gray);
-    transition: ease .3s;
-    @include tablet(margin, 0);
+    transition: color .3s ease;
+    cursor: pointer;
+    @include mobileXS(font-size, 14px);
+    @include mobileXSS(font-size, 12px);
 }
 
-.header__phone:hover {
+.header__phone:hover,
+.header__payment:hover {
     color: var(--color-white);
 }
 
-.header__icon-phone {
+.header__icon-phone,
+.header__icon-payment {
     margin: 2px 10px 0 0;
+}
+
+.header__icon-payment-svg,
+.header__icon-phone-svg {
+    width: 30px;
+    height: 30px;
+    @include mobileXSS-block {
+        width: 24px;
+        height: 24px;
+    }
 }

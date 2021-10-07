@@ -1,7 +1,7 @@
 /* Fonts */
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Light.eot");
   src: url("../fonts/Roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Italic.eot");
   src: url("../fonts/Roboto/Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Italic.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Italic.woff") format("woff"), url("../fonts/Roboto/Roboto-Italic.ttf") format("truetype");
   font-weight: normal;
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Regular.eot");
   src: url("../fonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -28,7 +28,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Bold.eot");
   src: url("../fonts/Roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
@@ -37,7 +37,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Black.eot");
   src: url("../fonts/Roboto/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Black.woff") format("woff"), url("../fonts/Roboto/Roboto-Black.ttf") format("truetype");
   font-weight: 900;
@@ -46,7 +46,7 @@
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   src: url("../fonts/GothamPro/GothamPro.eot");
   src: url("../fonts/GothamPro/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro.woff") format("woff"), url("../fonts/GothamPro/GothamPro.ttf") format("truetype");
   font-weight: normal;
@@ -55,7 +55,7 @@
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   src: url("../fonts/GothamPro/GothamPro-Light.eot");
   src: url("../fonts/GothamPro/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Light.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Light.ttf") format("truetype");
   font-weight: 300;
@@ -64,7 +64,7 @@
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   src: url("../fonts/GothamPro/GothamPro-LightItalic.eot");
   src: url("../fonts/GothamPro/GothamPro-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-LightItalic.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-LightItalic.woff") format("woff"), url("../fonts/GothamPro/GothamPro-LightItalic.ttf") format("truetype");
   font-weight: 300;
@@ -73,7 +73,7 @@
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   src: url("../fonts/GothamPro/GothamPro-Medium.eot");
   src: url("../fonts/GothamPro/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Medium.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Medium.ttf") format("truetype");
   font-weight: 500;
@@ -82,7 +82,7 @@
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   src: url("../fonts/GothamPro/GothamPro-Bold.eot");
   src: url("../fonts/GothamPro/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Bold.ttf") format("truetype");
   font-weight: bold;
@@ -91,7 +91,7 @@
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   src: url("../fonts/GothamPro/GothamPro-BoldItalic.eot");
   src: url("../fonts/GothamPro/GothamPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-BoldItalic.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-BoldItalic.woff") format("woff"), url("../fonts/GothamPro/GothamPro-BoldItalic.ttf") format("truetype");
   font-weight: bold;
@@ -100,7 +100,7 @@
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   src: url("../fonts/GothamPro/GothamPro-Black.eot");
   src: url("../fonts/GothamPro/GothamPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Black.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-Black.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Black.ttf") format("truetype");
   font-weight: 900;
@@ -109,7 +109,7 @@
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   src: url("../fonts/GothamPro/GothamPro-BlackItalic.eot");
   src: url("../fonts/GothamPro/GothamPro-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-BlackItalic.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-BlackItalic.woff") format("woff"), url("../fonts/GothamPro/GothamPro-BlackItalic.ttf") format("truetype");
   font-weight: 900;
@@ -391,9 +391,9 @@ img {
   -webkit-transform: translate3d(0, 50px, 0);
           transform: translate3d(0, 50px, 0);
   opacity: 0;
-  transition: opacity 0.5s ease-in-out .5s, -webkit-transform ease-in-out 0.5s .250s;
-  transition: transform ease-in-out 0.5s .250s, opacity 0.5s ease-in-out .5s;
-  transition: transform ease-in-out 0.5s .250s, opacity 0.5s ease-in-out .5s, -webkit-transform ease-in-out 0.5s .250s;
+  transition: opacity 0.5s ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s 0.25s;
+  transition: transform ease-in-out 0.5s 0.25s, opacity 0.5s ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s 0.25s, opacity 0.5s ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s 0.25s;
 }
 
 .a-reveal.is-revealed {
@@ -453,7 +453,7 @@ img {
 .services-store__container .blockUI.blockOverlay:after,
 .checkout-form .blockUI.blockOverlay:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 45%;
   left: 50%;
   margin-left: -25px;
@@ -521,7 +521,7 @@ img {
 
 .link {
   text-decoration: none;
-  transition: ease .3s;
+  transition: ease 0.3s;
   color: var(--color-white);
 }
 
@@ -923,7 +923,7 @@ img {
 }
 
 .modal__agree-text .wpcf7-acceptance label > span::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 50%;
@@ -1059,27 +1059,27 @@ img {
   display: block;
   position: fixed;
   opacity: 1;
-  -webkit-animation: fadeIn .5s;
-          animation: fadeIn .5s;
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
 }
 
 .tooltip-modal.is-open .tooltip-modal__body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: slideIn .3s;
-          animation: slideIn .3s;
+  -webkit-animation: slideIn 0.3s;
+          animation: slideIn 0.3s;
 }
 
 .tooltip-modal.is-out {
   display: block;
   position: fixed;
-  -webkit-animation: fadeOut .5s;
-          animation: fadeOut .5s;
+  -webkit-animation: fadeOut 0.5s;
+          animation: fadeOut 0.5s;
 }
 
 .tooltip-modal.is-out .tooltip-modal__body {
-  -webkit-animation: slideOut .3s;
-          animation: slideOut .3s;
+  -webkit-animation: slideOut 0.3s;
+          animation: slideOut 0.3s;
 }
 
 .tooltip-modal__body {
@@ -1166,26 +1166,45 @@ img {
   margin-top: 28px;
 }
 
-.header__phone {
+.header__actions {
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 18px;
+}
+
+.header__payment {
+  margin-right: 30px;
+}
+
+.header__phone,
+.header__payment {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
           align-items: center;
-  margin-top: 18px;
   font-family: var(--font-gotham);
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   color: var(--color-black-gray);
-  transition: ease .3s;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
-.header__phone:hover {
+.header__phone:hover,
+.header__payment:hover {
   color: var(--color-white);
 }
 
-.header__icon-phone {
+.header__icon-phone,
+.header__icon-payment {
   margin: 2px 10px 0 0;
+}
+
+.header__icon-payment-svg,
+.header__icon-phone-svg {
+  width: 30px;
+  height: 30px;
 }
 
 /* Menu */
@@ -1214,7 +1233,7 @@ img {
 .menu__link {
   color: var(--color-black-gray);
   text-decoration: none;
-  transition: ease .3s;
+  transition: ease 0.3s;
 }
 
 .menu__link:hover {
@@ -1242,7 +1261,7 @@ img {
 
 .burger-menu__line::before,
 .burger-menu__line::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 3px;
@@ -1276,7 +1295,7 @@ img {
   width: 100%;
   z-index: 10;
   border-radius: 50px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .button--yellow {
@@ -1444,7 +1463,7 @@ img {
 
 .services-slider__arrow-text {
   margin-right: 30px;
-  transition: ease .3s;
+  transition: ease 0.3s;
 }
 
 .services-slider__swiper {
@@ -1493,7 +1512,7 @@ img {
           align-items: center;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-  transition: ease .3s background;
+  transition: ease 0.3s background;
   cursor: pointer;
 }
 
@@ -1898,7 +1917,7 @@ img {
 
 .footer__link-page {
   text-decoration: none;
-  transition: ease .3s;
+  transition: ease 0.3s;
 }
 
 .footer__link-page:hover {
@@ -2231,11 +2250,11 @@ img {
   width: 100%;
 }
 
-.shop-card__field[type="number"]::-webkit-outer-spin-button,
-.shop-card__field[type="number"]::-webkit-inner-spin-button,
-.shop-card__field[type="number"]:hover,
-.shop-card__field[type="number"]:focus,
-.shop-card__field[type="number"] {
+.shop-card__field[type=number]::-webkit-outer-spin-button,
+.shop-card__field[type=number]::-webkit-inner-spin-button,
+.shop-card__field[type=number]:hover,
+.shop-card__field[type=number]:focus,
+.shop-card__field[type=number] {
   -webkit-appearance: none;
   -moz-appearance: textfield;
   -moz-appearance: number-input;
@@ -2251,10 +2270,6 @@ img {
 }
 
 .shop-card__field:-ms-input-placeholder {
-  color: var(--color-white);
-}
-
-.shop-card__field::-ms-input-placeholder {
   color: var(--color-white);
 }
 
@@ -2287,7 +2302,7 @@ img {
 
 .shop-card__btn-svg {
   stroke: var(--color-white);
-  transition: ease .3s;
+  transition: ease 0.3s;
 }
 
 .shop-card__btn-svg:hover {
@@ -2304,7 +2319,7 @@ img {
 
 .shop-card.is-load:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 45%;
   left: 50%;
   margin-left: -15px;
@@ -2342,7 +2357,7 @@ img {
 
 .bascket__svg {
   stroke: var(--color-black-gray);
-  transition: ease .3s;
+  transition: ease 0.3s;
 }
 
 .bascket__svg:hover {
@@ -2423,7 +2438,7 @@ img {
   width: 100%;
   z-index: 10;
   border-radius: 50px;
-  transition: .3s;
+  transition: 0.3s;
   font-family: var(--font-gotham);
   font-weight: bold;
   font-size: 18px;
@@ -2463,7 +2478,7 @@ img {
   margin-top: 20px;
   text-decoration: none;
   color: var(--color-yellow);
-  transition: ease .3s;
+  transition: ease 0.3s;
 }
 
 .checkout-page__container .woocommerce-error .wc-backward:hover {
@@ -2699,7 +2714,7 @@ img {
 
 .errors {
   margin-bottom: 30px;
-  transition: ease .3s;
+  transition: ease 0.3s;
 }
 
 .errors__notice ~ .errors__notice {
@@ -2961,7 +2976,7 @@ img {
 }
 
 .wysiwyg ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 4px;
   height: 4px;
@@ -2993,7 +3008,7 @@ img {
 .wysiwyg a {
   text-decoration: none;
   color: var(--color-yellow);
-  transition: ease .3s;
+  transition: ease 0.3s;
 }
 
 .wysiwyg a:hover {
@@ -3009,7 +3024,7 @@ img {
 /* Swiper Slider*/
 
 @font-face {
-  font-family: 'swiper-icons';
+  font-family: "swiper-icons";
   src: url("data:application/font-woff;charset=utf-8;base64, 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") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -3405,7 +3420,7 @@ button.swiper-pagination-bullet {
   top: 50%;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
-  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
   z-index: 10;
   cursor: pointer;
   display: -webkit-flex;
@@ -3443,7 +3458,7 @@ button.swiper-pagination-bullet {
 
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
-  content: 'prev';
+  content: "prev";
 }
 
 .swiper-button-next,
@@ -3454,7 +3469,7 @@ button.swiper-pagination-bullet {
 
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
-  content: 'next';
+  content: "next";
 }
 
 .swiper-button-prev.swiper-button-white,
@@ -3551,7 +3566,7 @@ button.swiper-pagination-bullet {
   .shop-card.shop-card--archive {
     -ms-grid-columns: minmax(0, 103px) 1fr 1fr 1fr 1fr;
     grid-template-columns: minmax(0, 103px) 1fr 1fr 1fr 1fr;
-        grid-template-areas: "icon name name quantity price" "icon name name quantity action";
+        grid-template-areas: "icon name name quantity price" "icon name name quantity action";
   }
 
   .shop-card.shop-card--archive .shop-card__icon {
@@ -3717,7 +3732,7 @@ button.swiper-pagination-bullet {
             transform: scale(1) scaleZ(1) rotateX(-90deg) rotateY(0deg);
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    transition: ease-in-out .4s;
+    transition: ease-in-out 0.4s;
     transition-delay: 1s;
   }
 
@@ -3746,7 +3761,7 @@ button.swiper-pagination-bullet {
 
   .header__menu .menu__item {
     opacity: 0;
-    transition: ease-out .2s;
+    transition: ease-out 0.2s;
   }
 
   .header__menu .menu__item ~ .menu__item {
@@ -3763,8 +3778,12 @@ button.swiper-pagination-bullet {
     color: var(--color-orange);
   }
 
-  .header__phone {
+  .header__actions {
     margin: 0;
+  }
+
+  .header__payment {
+    margin-right: 15px;
   }
 
   .burger-menu {
@@ -4079,7 +4098,7 @@ button.swiper-pagination-bullet {
     grid-template-rows: 1fr 1fr;
     -ms-grid-columns: minmax(0, 103px) minmax(0, 1fr) minmax(0, 227px) minmax(0, 180px) minmax(0, 200px);
     grid-template-columns: minmax(0, 103px) minmax(0, 1fr) minmax(0, 227px) minmax(0, 180px) minmax(0, 200px);
-        grid-template-areas: "icon name name quantity price" "icon name name quantity action";
+        grid-template-areas: "icon name name quantity price" "icon name name quantity action";
   }
 
   .shop-card.shop-card--basket .shop-card__icon {
@@ -4416,7 +4435,7 @@ button.swiper-pagination-bullet {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     -ms-grid-rows: auto 20px auto;
-        grid-template-areas: "sidebar" "shops-cards";
+        grid-template-areas: "sidebar" "shops-cards";
   }
 
   .services-store__actions {
@@ -4548,6 +4567,11 @@ button.swiper-pagination-bullet {
     max-width: 320px;
   }
 
+  .header__phone,
+  .header__payment {
+    font-size: 14px;
+  }
+
   .about__pic--left {
     margin-right: -20px;
   }
@@ -4562,7 +4586,7 @@ button.swiper-pagination-bullet {
     grid-template-rows: 100px 50px 50px;
     -ms-grid-columns: minmax(0, 70px) minmax(0, 130px) minmax(140px, 1fr);
     grid-template-columns: minmax(0, 70px) minmax(0, 130px) minmax(140px, 1fr);
-        grid-template-areas: "icon name name" "quantity quantity price" "quantity quantity action";
+        grid-template-areas: "icon name name" "quantity quantity price" "quantity quantity action";
   }
 
   .shop-card.shop-card--archive .shop-card__icon {
@@ -4591,7 +4615,7 @@ button.swiper-pagination-bullet {
     grid-template-rows: 100px 50px 50px;
     -ms-grid-columns: minmax(0, 70px) minmax(0, 140px) minmax(130px, 1fr);
     grid-template-columns: minmax(0, 70px) minmax(0, 140px) minmax(130px, 1fr);
-        grid-template-areas: "icon name name" "quantity quantity price" "quantity quantity action";
+        grid-template-areas: "icon name name" "quantity quantity price" "quantity quantity action";
   }
 
   .shop-card__number {
@@ -4839,6 +4863,22 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 400px) {
+  .header__actions {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header__phone,
+  .header__payment {
+    font-size: 12px;
+  }
+
+  .header__icon-payment-svg,
+  .header__icon-phone-svg {
+    width: 24px;
+    height: 24px;
+  }
+
   .shop-card__number {
     max-width: 100px;
   }
