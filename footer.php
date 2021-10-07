@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer__social hide">
+            <div class="footer__social">
                 <span class="footer__social-text title title--black-gray title--tiny title--w-bold title--uppercase">
                     Мы в СОЦСЕТЯХ
                 </span>
