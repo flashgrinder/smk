@@ -3,10 +3,6 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <script src="https://securepayments.sberbank.ru/payment/docsite/assets/js/ipay.js"></script>
-    <script>
-        var ipay = new IPAY({api_token: '37u4f5i31svjrvj71j1u6plt3a'});
-    </script>
     <?php wp_head(); ?>
 </head>
 

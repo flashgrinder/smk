@@ -45,3 +45,16 @@
     });
 
     remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+
+    add_action( 'wp_head', function() {
+
+		?>
+            <!-- Подключения платёжного шлюза -->
+            <script src="https://securepayments.sberbank.ru/payment/docsite/assets/js/ipay.js"></script>
+            <script>
+                var ipay = new IPAY({api_token: '37u4f5i31svjrvj71j1u6plt3a'});
+            </script>
+
+		<?php
+
+	}, 20);
