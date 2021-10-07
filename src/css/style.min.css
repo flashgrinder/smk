@@ -1173,7 +1173,10 @@ img {
 }
 
 .header__payment {
-  margin-right: 30px;
+  padding: 0 10px;
+  margin-right: 20px;
+  border-radius: 50px;
+  border: 1px solid var(--color-black-gray);
 }
 
 .header__phone,
@@ -1184,6 +1187,7 @@ img {
           align-items: center;
   font-family: var(--font-gotham);
   font-size: 16px;
+  line-height: 1;
   font-weight: 700;
   text-decoration: none;
   color: var(--color-black-gray);
@@ -4871,6 +4875,10 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 400px) {
   .header__payment {
     margin-right: 8px;
+  }
+
+  .header__payment {
+    padding: 0 5px;
   }
 
   .header__phone,

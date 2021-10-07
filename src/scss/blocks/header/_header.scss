@@ -133,9 +133,15 @@
 }
 
 .header__payment {
-    margin-right: 30px;
+    padding: 0 10px;
+    margin-right: 20px;
+    border-radius: 50px;
+    border: 1px solid var(--color-black-gray);
     @include tablet(margin-right, 15px);
     @include mobileXSS(margin-right, 8px);
+    @include mobileXSS-block {
+        padding: 0 5px;
+    }
 }
 
 .header__phone,
@@ -144,6 +150,7 @@
     align-items: center;
     font-family: var(--font-gotham);
     font-size: 16px;
+    line-height: 1;
     font-weight: 700;
     text-decoration: none;
     color: var(--color-black-gray);
