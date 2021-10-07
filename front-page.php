@@ -102,7 +102,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -148,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -173,7 +173,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -198,7 +198,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -221,7 +221,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -244,7 +244,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow">
                                     Рассчитать услугу
                                 </a>
                             </div>
@@ -267,7 +267,7 @@
                                 </div>
                             </div>
                             <div class="services-slider__action services-slider__action--outer">
-                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow" data-modal-trigger="modal">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow">
                                     Рассчитать услугу
                                 </a>
                             </div>
