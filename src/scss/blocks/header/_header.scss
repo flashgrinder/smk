@@ -130,12 +130,12 @@
     display: flex;
     margin-top: 18px;
     @include tablet(margin, 0);
-    @include mobileXSS(flex-direction, column);
 }
 
 .header__payment {
     margin-right: 30px;
     @include tablet(margin-right, 15px);
+    @include mobileXSS(margin-right, 8px);
 }
 
 .header__phone,
@@ -161,6 +161,7 @@
 .header__icon-phone,
 .header__icon-payment {
     margin: 2px 10px 0 0;
+    @include mobileXSS(margin, 2px 4px 0 0);
 }
 
 .header__icon-payment-svg,
@@ -168,7 +169,7 @@
     width: 30px;
     height: 30px;
     @include mobileXSS-block {
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
     }
 }

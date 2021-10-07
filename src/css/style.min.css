@@ -4869,9 +4869,8 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 400px) {
-  .header__actions {
-    -webkit-flex-direction: column;
-            flex-direction: column;
+  .header__payment {
+    margin-right: 8px;
   }
 
   .header__phone,
@@ -4879,10 +4878,15 @@ button.swiper-pagination-bullet {
     font-size: 12px;
   }
 
+  .header__icon-phone,
+  .header__icon-payment {
+    margin: 2px 4px 0 0;
+  }
+
   .header__icon-payment-svg,
   .header__icon-phone-svg {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
   }
 
   .shop-card__number {
