@@ -3,11 +3,11 @@
     /* Подключение стилей и скриптов */
     add_action( 'wp_enqueue_scripts', function() {
 
-        wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/assets/css/style.min.css', [], time() );
+        wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/assets/css/style.min.css', [], '1.0.0.1' );
 
 
         wp_enqueue_script( 'jquery' );
-        wp_enqueue_script( 'scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', [], time(), true );
+        wp_enqueue_script( 'scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', [], '1.0.0.1', true );
 
     } );
 
