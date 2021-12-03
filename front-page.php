@@ -96,7 +96,7 @@
                                     Чистка и уборка прилегающих территорий
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="modal">
+                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
                                         Узнать подробнее
                                     </a>
                                 </div>
@@ -119,7 +119,7 @@
                                     Благоустройство ландшафта
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="modal">
+                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
                                         Узнать подробнее
                                     </a>
                                 </div>
@@ -142,7 +142,7 @@
                                     Комплексное обслуживание территорий и помещений
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="modal">
+                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
                                         Узнать подробнее
                                     </a>
                                 </div>
@@ -167,7 +167,7 @@
                                     Выполнение строительного контроля и авторского надзора
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="modal">
+                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
                                         Узнать подробнее
                                     </a>
                                 </div>
@@ -192,7 +192,7 @@
                                     Сбор неопасных отходов и обработка сточных вод
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="modal">
+                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
                                         Узнать подробнее
                                     </a>
                                 </div>
@@ -215,7 +215,7 @@
                                     Управления проектами строительства
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="modal">
+                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
                                         Узнать подробнее
                                     </a>
                                 </div>
@@ -238,7 +238,7 @@
                                     Деятельность в области инженерных изысканий
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="modal">
+                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
                                         Узнать подробнее
                                     </a>
                                 </div>
@@ -261,7 +261,7 @@
                                     Строительство и эксплуатация автомобильных дорог и автомагистралей
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="modal">
+                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
                                         Узнать подробнее
                                     </a>
                                 </div>
