@@ -1,8 +1,9 @@
 <?php /* Template Name: Домашняя страница */?>
 <?php get_header(); ?>
 
+    <? the_post(); ?>
         <!-- Main-screen -->
-        <section class="main-screen">
+        <section class="main-screen" style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
             <div class="main-screen__vector js-reveal a-reveal-top">
                 <div class="main-screen__inner container">
                     <div class="main-screen__actions js-reveal a-reveal-element">
