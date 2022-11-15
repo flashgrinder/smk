@@ -315,137 +315,6 @@
                         <div class="technique-card__inner">
                             <div class="technique-card__side technique-card__side--left">
                                 <h3 class="technique-card__heading title title--orange title--medium title--w-black">
-                                    Буровая установка BG28H BT85
-                                </h3>
-                                <span class="technique-card__title text text--white text--normal text-w-regular">
-                                    Технические данные:
-                                </span>
-                                <table class="technique-card__table">
-                                    <tbody class="technique-card__tbody">
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Общая высота</td>
-                                            <td class="technique-card__td">25,4 - 27,4м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Глубина бурения</td>
-                                            <td class="technique-card__td">68,4 м></td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Вес без оборудования</td>
-                                            <td class="technique-card__td">87,1 т</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Крутящий момент</td>
-                                            <td class="technique-card__td">300 кНм</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="technique-card__action">
-                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow">
-                                        Арендовать
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="technique-card__side technique-card__side--right">
-                                <div class="technique-card__picture">
-                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-6.png" alt="" class="technique-card__img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /. Technique-card -->
-
-                    <!-- Technique-card -->
-                    <div class="technique-card js-reveal a-reveal">
-                        <div class="technique-card__inner">
-                            <div class="technique-card__side technique-card__side--left">
-                                <h3 class="technique-card__heading title title--orange title--medium title--w-black">
-                                    Буровая установка BG36H BS 95
-                                </h3>
-                                <span class="technique-card__title text text--white text--normal text-w-regular">
-                                    Технические данные:
-                                </span>
-                                <table class="technique-card__table">
-                                    <tbody class="technique-card__tbody">
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Общая высота</td>
-                                            <td class="technique-card__td">25,6 - 27,1м</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Глубина бурения</td>
-                                            <td class="technique-card__td">68 м></td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Вес без оборудования</td>
-                                            <td class="technique-card__td">98,3 т</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Крутящий момент</td>
-                                            <td class="technique-card__td">365 кНм</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="technique-card__action">
-                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow">
-                                        Арендовать
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="technique-card__side technique-card__side--right">
-                                <div class="technique-card__picture">
-                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-7.png" alt="" class="technique-card__img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /. Technique-card -->
-
-                    <!-- Technique-card -->
-                    <div class="technique-card js-reveal a-reveal">
-                        <div class="technique-card__inner">
-                            <div class="technique-card__side technique-card__side--left">
-                                <h3 class="technique-card__heading title title--orange title--medium title--w-black">
-                                    Буровая установка Soilmec SR-40
-                                </h3>
-                                <span class="technique-card__title text text--white text--normal text-w-regular">
-                                    Технические данные:
-                                </span>
-                                <table class="technique-card__table">
-                                    <tbody class="technique-card__tbody">
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Двигатель</td>
-                                            <td class="technique-card__td">168 кВт/ 2200 об/мин</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Макс. диаметр</td>
-                                            <td class="technique-card__td">130 кНм</td>
-                                        </tr>
-                                        <tr class="technique-card__tr">
-                                            <td class="technique-card__td">Макс. глубина</td>
-                                            <td class="technique-card__td">56/44 м</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="technique-card__action">
-                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow">
-                                        Арендовать
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="technique-card__side technique-card__side--right">
-                                <div class="technique-card__picture">
-                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-10.png" alt="" class="technique-card__img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /. Technique-card -->
-
-                    <!-- Technique-card -->
-                    <div class="technique-card js-reveal a-reveal">
-                        <div class="technique-card__inner">
-                            <div class="technique-card__side technique-card__side--left">
-                                <h3 class="technique-card__heading title title--orange title--medium title--w-black">
                                     Буровая установка Sany SR265
                                 </h3>
                                 <span class="technique-card__title text text--white text--normal text-w-regular">
@@ -517,6 +386,137 @@
                             <div class="technique-card__side technique-card__side--right">
                                 <div class="technique-card__picture">
                                     <img src="<?php echo STANDART_DIR; ?>img/technique/tech-9.png" alt="" class="technique-card__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /. Technique-card -->
+
+                    <!-- Technique-card -->
+                    <div class="technique-card js-reveal a-reveal">
+                        <div class="technique-card__inner">
+                            <div class="technique-card__side technique-card__side--left">
+                                <h3 class="technique-card__heading title title--orange title--medium title--w-black">
+                                    Буровая установка Soilmec SR-40
+                                </h3>
+                                <span class="technique-card__title text text--white text--normal text-w-regular">
+                                    Технические данные:
+                                </span>
+                                <table class="technique-card__table">
+                                    <tbody class="technique-card__tbody">
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Двигатель</td>
+                                            <td class="technique-card__td">168 кВт/ 2200 об/мин</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Макс. диаметр</td>
+                                            <td class="technique-card__td">130 кНм</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Макс. глубина</td>
+                                            <td class="technique-card__td">56/44 м</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="technique-card__action">
+                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow">
+                                        Арендовать
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="technique-card__side technique-card__side--right">
+                                <div class="technique-card__picture">
+                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-10.png" alt="" class="technique-card__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /. Technique-card -->
+
+                    <!-- Technique-card -->
+                    <div class="technique-card js-reveal a-reveal">
+                        <div class="technique-card__inner">
+                            <div class="technique-card__side technique-card__side--left">
+                                <h3 class="technique-card__heading title title--orange title--medium title--w-black">
+                                    Буровая установка BAUER BG28H BT 85
+                                </h3>
+                                <span class="technique-card__title text text--white text--normal text-w-regular">
+                                    Технические данные:
+                                </span>
+                                <table class="technique-card__table">
+                                    <tbody class="technique-card__tbody">
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Общая высота</td>
+                                            <td class="technique-card__td">25,4 - 27,4м</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Глубина бурения</td>
+                                            <td class="technique-card__td">68,4 м></td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Вес без оборудования</td>
+                                            <td class="technique-card__td">87,1 т</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Крутящий момент</td>
+                                            <td class="technique-card__td">300 кНм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="technique-card__action">
+                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow">
+                                        Арендовать
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="technique-card__side technique-card__side--right">
+                                <div class="technique-card__picture">
+                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-6.png" alt="" class="technique-card__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /. Technique-card -->
+
+                    <!-- Technique-card -->
+                    <div class="technique-card js-reveal a-reveal">
+                        <div class="technique-card__inner">
+                            <div class="technique-card__side technique-card__side--left">
+                                <h3 class="technique-card__heading title title--orange title--medium title--w-black">
+                                    Буровая установка BAUER BG36H BS 95
+                                </h3>
+                                <span class="technique-card__title text text--white text--normal text-w-regular">
+                                    Технические данные:
+                                </span>
+                                <table class="technique-card__table">
+                                    <tbody class="technique-card__tbody">
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Общая высота</td>
+                                            <td class="technique-card__td">25,6 - 27,1м</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Глубина бурения</td>
+                                            <td class="technique-card__td">68 м></td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Вес без оборудования</td>
+                                            <td class="technique-card__td">98,3 т</td>
+                                        </tr>
+                                        <tr class="technique-card__tr">
+                                            <td class="technique-card__td">Крутящий момент</td>
+                                            <td class="technique-card__td">365 кНм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="technique-card__action">
+                                    <a href="<?php echo site_url('/shop/'); ?>" class="technique-card__button button button--yellow">
+                                        Арендовать
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="technique-card__side technique-card__side--right">
+                                <div class="technique-card__picture">
+                                    <img src="<?php echo STANDART_DIR; ?>img/technique/tech-7.png" alt="" class="technique-card__img">
                                 </div>
                             </div>
                         </div>
