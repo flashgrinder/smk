@@ -86,6 +86,29 @@
                         <div class="services-slider__slide swiper-slide">
                             <div class="services-slider__card">
                                 <div class="services-slider__illustration">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-9.png" alt="" class="services-slider__illustration-img">
+                                </div>
+                                <div class="services-slider__icon">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-9.png" alt="" class="services-slider__icon-img">
+                                </div>
+                                <div class="services-slider__text title title--white title--medium title--w-bold">
+                                    Буровые услуги
+                                </div>
+                                <div class="services-slider__action services-slider__action--inner">
+                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
+                                        Узнать подробнее
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="services-slider__action services-slider__action--outer">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow">
+                                    Рассчитать услугу
+                                </a>
+                            </div>
+                        </div>
+                        <div class="services-slider__slide swiper-slide">
+                            <div class="services-slider__card">
+                                <div class="services-slider__illustration">
                                     <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-1.png" alt=""
                                         class="services-slider__illustration-img">
                                 </div>
@@ -260,29 +283,6 @@
                                 </div>
                                 <div class="services-slider__text title title--white title--medium title--w-bold">
                                     Строительство и эксплуатация автомобильных дорог и автомагистралей
-                                </div>
-                                <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
-                                        Узнать подробнее
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="services-slider__action services-slider__action--outer">
-                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow">
-                                    Рассчитать услугу
-                                </a>
-                            </div>
-                        </div>
-                        <div class="services-slider__slide swiper-slide">
-                            <div class="services-slider__card">
-                                <div class="services-slider__illustration">
-                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-9.png" alt="" class="services-slider__illustration-img">
-                                </div>
-                                <div class="services-slider__icon">
-                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-9.png" alt="" class="services-slider__icon-img">
-                                </div>
-                                <div class="services-slider__text title title--white title--medium title--w-bold">
-                                    Буровые услуги
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
                                     <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
