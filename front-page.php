@@ -140,14 +140,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="dril__actions">
-                    <a href="javascript:;" class="dril__btn button button--trs" data-modal-trigger="modal">
-                        Узнать подробнее
-                    </a>
-                    <a href="<?php echo site_url('/shop/'); ?>" class="dril__btn button button--yellow" data-modal-trigger="modal">
-                        Рассчитать услуги
-                    </a>
-                </div>
             </div>
         </div>
         <!-- /. Dril -->
@@ -223,16 +215,39 @@
                         <div class="services-slider__slide swiper-slide">
                             <div class="services-slider__card">
                                 <div class="services-slider__illustration">
-                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-9.png" alt="" class="services-slider__illustration-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-10.png" alt="" class="services-slider__illustration-img">
                                 </div>
                                 <div class="services-slider__icon">
-                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-9.png" alt="" class="services-slider__icon-img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-10.png" alt="" class="services-slider__icon-img">
                                 </div>
                                 <div class="services-slider__text title title--white title--medium title--w-bold">
                                     Монтаж металлоконструкций
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
                                     <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
+                                        Узнать подробнее
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="services-slider__action services-slider__action--outer">
+                                <a href="<?php echo site_url('/shop/'); ?>" class="button button--yellow">
+                                    Рассчитать услугу
+                                </a>
+                            </div>
+                        </div>
+                        <div class="services-slider__slide swiper-slide">
+                            <div class="services-slider__card">
+                                <div class="services-slider__illustration">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-img-9.png" alt="" class="services-slider__illustration-img">
+                                </div>
+                                <div class="services-slider__icon">
+                                    <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-9.png" alt="" class="services-slider__icon-img">
+                                </div>
+                                <div class="services-slider__text title title--white title--medium title--w-bold">
+                                    Буровые услуги
+                                </div>
+                                <div class="services-slider__action services-slider__action--inner">
+                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
                                         Узнать подробнее
                                     </a>
                                 </div>
