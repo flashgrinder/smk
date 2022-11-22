@@ -3,7 +3,7 @@
     background-color: transparent;
     overflow-y: hidden;
     opacity: 0;
-    z-index: 998;
+    z-index: 999;
     top: 0;
     bottom: 0;
     left: 0;
@@ -53,6 +53,20 @@
     backdrop-filter: blur(10px);
     border-radius: 20px;
     transform: translate(-50%, -100%);
+}
+
+.tooltip-modal__body--full {
+    padding: 10px;
+    max-width: 85vw;
+    @include mobile(max-width, 100%);
+    @include mobileXS-block {
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+.tooltip-modal__body img {
+    display: block;
 }
 
 .tooltip-modal__close {
