@@ -1,0 +1,70 @@
+.dril {
+    padding: 30px 0 30px;
+}
+
+.dril__heading {
+    margin: 0 0 0 50px;
+    @include tablet(margin, 0 0 0 15px);
+    @include mobile(margin, 0 0 0 0);
+}
+
+.dril__inner {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-gap: 30px;
+    @include tablet-block {
+        margin-top: 20px;
+        grid-gap: 20px;
+    }
+    @include mobile-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dril__card {
+    color: var(--color-white);
+    padding: 30px;
+    background: var(--color-black-gray);
+    border-radius: 20px;
+}
+
+.dril_card p {
+    margin: 0;
+}
+
+.dril__card--icon {
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: minmax(50px, 60px) minmax(200px, 1fr);
+    grid-gap: 20px;
+    @include tablet-block {
+        grid-gap: 15px;
+        grid-template-columns: minmax(40px, 40px) minmax(180px, 1fr);
+    }
+    @include mobile(padding, 30px 20px);
+}
+
+.dril__icon {
+    max-width: 60px;
+}
+
+.dril__img-icon {
+    display: block;
+}
+
+.dril__actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+    @include mobile-block {
+        margin-top: 30px;
+        grid-gap: 30px;
+        grid-template-columns: 1fr;
+    }
+}
+
+.dril__btn {
+    margin: auto;
+}

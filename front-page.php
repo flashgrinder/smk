@@ -29,6 +29,129 @@
         </section>
         <!-- /. Main-screen -->
 
+        <!-- Dril -->
+        <div class="dril">
+            <div class="dril__body container">
+                <h2 class="dril__heading title title--white title--large title--uppercase title--w-black js-reveal a-reveal">
+                    Буровые работы
+                </h2>
+                <div class="dril__inner">
+                    <div class="dril__card">
+                        <div class="dril_card__text wysiwyg wysiwyg--page">
+                            <ul>
+                                <li>
+                                    Выполнение объектов «под ключ»
+                                </li>
+                                <li>
+                                    Выполнение нулевого цикла «под ключ»
+                                </li>
+                                <li>
+                                    Выполнение земляных работ – (разработка котлована)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dril__card">
+                        <div class="dril_card__text wysiwyg wysiwyg--page">
+                            <ul>
+                                <li>
+                                    Выполнение буровых работ - (бурение свай, 
+                                    буронабивные сваи, буросекущие сваи, забивные сваи, 
+                                    джет граутинг (инъектирование) - CFA, стена в грунте, 
+                                    шпунтовое ограждение, усиление фундаментов)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /. Dril -->
+
+        <!-- Dril -->
+        <div class="dril">
+            <div class="dril__body container">
+                <h2 class="dril__heading title title--white title--large title--uppercase title--w-black js-reveal a-reveal">
+                    Наши объекты
+                </h2>
+                <div class="dril__inner">
+                    <div class="dril__card dril__card--icon">
+                        <div class="dril__icon">
+                            <img src="<?php echo STANDART_DIR; ?>img/dril/icon-1.png" class="dril__img-icon" alt="">
+                        </div>
+                        <div class="dril_card__text text text--white text--normal text-w-regular">
+                            «Инженерное обеспечение развития территории Олимпийского комплекса «Лужники» 1 этап: БСА и 16 сооружений для проведения Чемпионата мира-2018» - комплекс работ по устройству «стены в грунте».
+                        </div>
+                    </div>
+                    <div class="dril__card dril__card--icon">
+                        <div class="dril__icon">
+                            <img src="<?php echo STANDART_DIR; ?>img/dril/icon-1.png" class="dril__img-icon" alt="">
+                        </div>
+                        <div class="dril_card__text text text--white text--normal text-w-regular">
+                            «Калининско-Солнцевская линия Московского метрополитена» - комплекс работ по сооружению ограждения котлована правого перегонного тоннеля от ПК170+66 до ПК171+76,38 из БСС 1020 мм, 830 мм и БКС 830 мм.
+                        </div>
+                    </div>
+                    <div class="dril__card dril__card--icon">
+                        <div class="dril__icon">
+                            <img src="<?php echo STANDART_DIR; ?>img/dril/icon-1.png" class="dril__img-icon" alt="">
+                        </div>
+                        <div class="dril_card__text text text--white text--normal text-w-regular">
+                            «Военно-патриотический парк Вооруженных сил РФ (Патриот)» - работы по устройству свайного основания из буронабивных свай диаметром 1200 мм.
+                        </div>
+                    </div>
+                    <div class="dril__card dril__card--icon">
+                        <div class="dril__icon">
+                            <img src="<?php echo STANDART_DIR; ?>img/dril/icon-1.png" class="dril__img-icon" alt="">
+                        </div>
+                        <div class="dril_card__text text text--white text--normal text-w-regular">
+                            «Аэропорт Шереметьево» - устройство траншей для возведения железобетонной конструкции «стена в грунте», устройство шпунтового ограждения из труб диаметром 426 мм.
+                        </div>
+                    </div>
+                    <div class="dril__card dril__card--icon">
+                        <div class="dril__icon">
+                            <img src="<?php echo STANDART_DIR; ?>img/dril/icon-1.png" class="dril__img-icon" alt="">
+                        </div>
+                        <div class="dril_card__text text text--white text--normal text-w-regular">
+                            «Реконструкция спортивного комплекса СК «Воробьевы горы». Комбинированная пассажирская подвесная канатная дорога с отцепляемыми зажимами» - устройство буронабивных свай диаметром 450 мм, устройство буронабивных свай диаметром 830 мм.
+                        </div>
+                    </div>
+                    <div class="dril__card dril__card--icon">
+                        <div class="dril__icon">
+                            <img src="<?php echo STANDART_DIR; ?>img/dril/icon-1.png" class="dril__img-icon" alt="">
+                        </div>
+                        <div class="dril_card__text text text--white text--normal text-w-regular">
+                            «Участок автодороги Москва – Санкт-Петербург (Северная Рокада). Участок от улицы Фестивальная до Дмитровского шоссе». – устройство буронабивных свай (в обсадных трубах) диаметром 1500 мм.
+                        </div>
+                    </div>
+                    <div class="dril__card dril__card--icon">
+                        <div class="dril__icon">
+                            <img src="<?php echo STANDART_DIR; ?>img/dril/icon-1.png" class="dril__img-icon" alt="">
+                        </div>
+                        <div class="dril_card__text text text--white text--normal text-w-regular">
+                            «Физкультурно-оздоровительный комплекс «Центр художественной гимнастики», г. Сочи» - комплекс строительно-монтажных работ по устройству буронабивных свай диаметром 880 мм.
+                        </div>
+                    </div>
+                    <div class="dril__card dril__card--icon">
+                        <div class="dril__icon">
+                            <img src="<?php echo STANDART_DIR; ?>img/dril/icon-1.png" class="dril__img-icon" alt="">
+                        </div>
+                        <div class="dril_card__text text text--white text--normal text-w-regular">
+                            «Складской комплекс «Бирнетекс». Складское здание по адресу: Московская область, Раменский район, гп. Родники». – комплекс работ по подготовке свайного поля методом вдавливания железобетонных свай С120-30-8 с лидерным бурением.
+                        </div>
+                    </div>
+                </div>
+                <div class="dril__actions">
+                    <a href="javascript:;" class="dril__btn button button--trs" data-modal-trigger="modal">
+                        Узнать подробнее
+                    </a>
+                    <a href="<?php echo site_url('/shop/'); ?>" class="dril__btn button button--yellow" data-modal-trigger="modal">
+                        Рассчитать услуги
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /. Dril -->
+
         <!-- Services-slider -->
         <section class="services-slider">
             <div class="tooltip-modal" data-tooltip="tooltip-id-1">
@@ -92,10 +215,10 @@
                                     <img src="<?php echo STANDART_DIR; ?>img/service-slider/service-icon-9.png" alt="" class="services-slider__icon-img">
                                 </div>
                                 <div class="services-slider__text title title--white title--medium title--w-bold">
-                                    Буровые услуги
+                                    Монтаж металлоконструкций
                                 </div>
                                 <div class="services-slider__action services-slider__action--inner">
-                                    <a href="javascript:;" class="button button--trs" data-modal-trigger="modal">
+                                    <a href="javascript:;" class="button button--trs" data-tooltip-trigger="tooltip-id-1">
                                         Узнать подробнее
                                     </a>
                                 </div>
